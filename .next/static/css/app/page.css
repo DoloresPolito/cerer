@@ -1,0 +1,1578 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/Preloader/style.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_introduction__Zm025 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 2000;
+  margin: 0 auto;
+  background-color: var(--text);
+}
+.style_introduction__Zm025 h2 {
+  font-size: 15vw;
+  color: var(--background);
+  position: absolute;
+  width: 100%;
+  z-index: 5000;
+  line-height: 120%;
+  font-family: "TalismanCompactRegular", sans-serif;
+}
+@media screen and (max-width: 800px) {
+  .style_introduction__Zm025 h2 {
+    font-size: 30vw;
+  }
+}
+.style_introduction__Zm025 img {
+  position: absolute;
+  top: 230px;
+  width: 100%;
+  height: calc(100% + 300px);
+  z-index: 5000;
+  height: 100px;
+  width: auto;
+}
+.style_introduction__Zm025 svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 300px);
+}
+.style_introduction__Zm025 svg path {
+  fill: var(--text);
+}
+.style_introduction__Zm025 p {
+  display: flex;
+  color: var(--background);
+  font-size: 6vh;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-family: "TalismanCompactRegular", sans-serif;
+}
+@media screen and (max-width: 800px) {
+  .style_introduction__Zm025 p {
+    font-size: 4vw;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/MovingTitle/style.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_landing__Z0MZd {
+  position: relative;
+  height: 30vh;
+  overflow: hidden;
+}
+.style_landing__Z0MZd .style_sliderContainer__e72_z {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-50%);
+}
+.style_landing__Z0MZd .style_textWrapper__o67I7 {
+  display: flex; /* Ensures text is in a row */
+  white-space: nowrap;
+  margin-top: 15vh;
+}
+.style_landing__Z0MZd .style_textItem__7QRLY {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.style_landing__Z0MZd .style_textItem__7QRLY span {
+  display: inline-block;
+  margin: 0;
+  font-size: 20vh;
+  font-weight: 400;
+  padding-right: 10vw;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Michroma", sans-serif;
+  font-family: "TalismanLight", sans-serif;
+}
+@media only screen and (max-width: 1000px) {
+  .style_landing__Z0MZd .style_textItem__7QRLY span {
+    font-size: 15vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .style_landing__Z0MZd .style_textItem__7QRLY span {
+    font-size: 12vh;
+  }
+}
+.style_landing__Z0MZd .style_textItem__7QRLY svg {
+  height: 20vh;
+  width: 20vh;
+  padding-right: 10vw;
+}
+@media only screen and (max-width: 1000px) {
+  .style_landing__Z0MZd .style_textItem__7QRLY svg {
+    height: 15vh;
+    width: 15vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .style_landing__Z0MZd .style_textItem__7QRLY svg {
+    height: 12vh;
+    width: 12vh;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/ProjectsV2/style.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+.style_section__axio4 {
+  width: 98%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+  justify-content: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.style_section__axio4 a {
+  text-decoration: none;
+  color: var(--text);
+}
+.style_section__axio4 .style_projectscontainer__k7Cch {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  margin-top: 15vh;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .style_section__axio4 .style_projectscontainer__k7Cch {
+    gap: 2%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .style_section__axio4 .style_projectscontainer__k7Cch {
+    flex-direction: column;
+    margin-top: 0vh;
+    width: 97%;
+    margin: 0 auto;
+  }
+}
+.style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC {
+  width: 32%;
+  padding-bottom: 32%; /* Esto asegura que el contenedor sea cuadrado */
+  position: relative;
+}
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC {
+    width: 48%; /* Cambia el ancho para que haya dos elementos por fila */
+    padding-bottom: 48%; /* Mantén el aspecto cuadrado */
+  }
+}
+@media screen and (max-width: 800px) {
+  .style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC {
+    width: 100%;
+    padding-bottom: 100%;
+    margin-bottom: 3vh;
+  }
+}
+.style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC .style_imagecontainer__1E2d9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+.style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC .style_imagecontainer__1E2d9:hover {
+  opacity: 1;
+}
+.style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC .style_imagecontainer__1E2d9 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto asegura que la imagen cubra todo el contenedor */
+}
+.style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC .style_textcontainer__rTcXe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+}
+.style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC .style_textcontainer__rTcXe .style_left__U0Rw7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC .style_textcontainer__rTcXe .style_left__U0Rw7 h4 {
+  font-family: "TalismanLight", sans-serif;
+  font-size: 3vh;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+}
+.style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC .style_textcontainer__rTcXe .style_left__U0Rw7 p {
+  font-family: "OverusedGrotesk-Light", sans-serif;
+  font-weight: 300;
+  font-size: 1.7vh;
+  color: rgb(145, 145, 145);
+  text-align: center;
+  margin: 0;
+}
+.style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC .style_textcontainer__rTcXe .style_right__TqVpg {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row !important;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC .style_textcontainer__rTcXe .style_right__TqVpg p {
+  font-family: "OverusedGrotesk-Light", sans-serif;
+  font-weight: 300;
+  font-size: 2vh;
+  margin: 0;
+}
+.style_section__axio4 .style_projectscontainer__k7Cch .style_project__SNfMC .style_textcontainer__rTcXe .style_right__TqVpg .style_underline__8l30_ {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: var(--text);
+  width: 0;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/ContactForm/styles.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.styles_formcontainer__7aZ7k {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end !important;
+  justify-content: flex-end;
+  width: 40vw;
+  height: auto;
+}
+@media only screen and (max-width: 1000px) {
+  .styles_formcontainer__7aZ7k {
+    width: 90vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+}
+.styles_formcontainer__7aZ7k form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.styles_inputcontainer__7igtO,
+.styles_inputcontainertextarea__9_bfC {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 2vh 0;
+}
+@media only screen and (max-width: 1000px) {
+  .styles_inputcontainer__7igtO,
+  .styles_inputcontainertextarea__9_bfC {
+    width: 100%;
+  }
+}
+
+.styles_input__QMsCR {
+  height: 3vh;
+  width: 100%;
+  border: none;
+  padding-right: 1vw;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2vh;
+  font-weight: 300;
+  border-bottom: 1px solid black;
+  background-color: var(--text);
+  outline: none;
+  color: var(--background);
+}
+.styles_input__QMsCR::placeholder {
+  color: var(--background);
+  text-align: right;
+}
+
+.styles_textarea__Rpz8Q {
+  height: 10vh;
+  width: 100%;
+  padding-right: 1vw;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2vh;
+  font-weight: 300;
+  outline: none;
+  color: var(--background);
+}
+.styles_textarea__Rpz8Q::placeholder {
+  color: var(--background);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: right;
+}
+
+.styles_buttoncontainer__2DnnG {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.styles_button__zqpcK {
+  height: 6vh;
+  width: auto;
+  border-bottom: 1px solid #47C237;
+  background-color: var(--text);
+  outline: none;
+  border: none;
+  color: var(--background);
+  cursor: pointer;
+  font-size: 2vh;
+  font-weight: 300;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/Contact/style.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_section__b4UpC {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--text);
+  color: var(--background);
+  margin-top: 3vw;
+  margin-bottom: 1vw;
+  padding: 2vh 0;
+}
+@media only screen and (max-width: 1000px) {
+  .style_section__b4UpC {
+    height: auto;
+  }
+}
+.style_section__b4UpC h2 {
+  margin: 0px;
+  font-size: 5vh;
+  font-weight: 600;
+  margin-top: 2vh;
+  font-family: "OverusedGrotesk-Light", sans-serif;
+  margin-left: 3vw;
+  font-weight: 300;
+  font-size: 2.5vh;
+}
+@media only screen and (max-width: 1000px) {
+  .style_section__b4UpC h2 {
+    align-self: center;
+    margin-left: 0vw !important;
+    margin-bottom: 2vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .style_section__b4UpC h2 {
+    font-size: 3vh;
+  }
+}
+.style_section__b4UpC .style_contentcontainer__V6Nlq {
+  display: flex;
+  padding-bottom: 2vh;
+  align-items: flex-start;
+  margin-top: 15vh;
+}
+@media only screen and (max-width: 1000px) {
+  .style_section__b4UpC .style_contentcontainer__V6Nlq {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0vh;
+  }
+}
+.style_section__b4UpC .style_contentcontainer__V6Nlq .style_left__EkkrR {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: auto;
+  margin-left: 3vw;
+  align-items: flex-end;
+  padding-bottom: 3vh;
+  gap: 3vw;
+}
+@media only screen and (max-width: 1000px) {
+  .style_section__b4UpC .style_contentcontainer__V6Nlq .style_left__EkkrR {
+    margin-left: 0vw;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.style_section__b4UpC .style_contentcontainer__V6Nlq .style_left__EkkrR span {
+  font-family: "OverusedGrotesk-Light", sans-serif;
+  font-weight: 300;
+  border-top: 1px solid #47C237;
+  line-height: 120%;
+  padding-right: 20vw;
+  margin-right: 40px;
+  font-size: 2vh;
+  padding-top: 1vh;
+  color: #47C237;
+}
+.style_section__b4UpC .style_contentcontainer__V6Nlq .style_left__EkkrR p {
+  font-size: 4vh;
+  margin: 0;
+  font-weight: 300;
+  max-width: 40vw;
+  font-family: "OverusedGrotesk-Light", sans-serif;
+  line-height: 120%;
+}
+@media only screen and (max-width: 1000px) {
+  .style_section__b4UpC .style_contentcontainer__V6Nlq .style_left__EkkrR p {
+    max-width: 90vw;
+  }
+}
+.style_section__b4UpC .style_contentcontainer__V6Nlq .style_left__EkkrR .style_styled-paragraph__VMw7K {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.style_section__b4UpC .style_contentcontainer__V6Nlq .style_left__EkkrR .style_styled-paragraph__VMw7K .style_highlighted__Ja7P0 {
+  font-weight: bold;
+  color: #007bff;
+  border-top: 2px solid #007bff;
+  padding-top: 2px;
+  display: inline-block;
+  align-items: flex-start;
+}
+.style_section__b4UpC .style_contentcontainer__V6Nlq .style_right__Ydbnl {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 300px;
+}
+@media only screen and (max-width: 1000px) {
+  .style_section__b4UpC .style_contentcontainer__V6Nlq .style_right__Ydbnl {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .style_section__b4UpC .style_contentcontainer__V6Nlq .style_right__Ydbnl {
+    width: 90%;
+  }
+}
+.style_section__b4UpC .style_contentcontainer__V6Nlq p {
+  font-size: 1vw;
+  font-weight: 300;
+  margin-top: 5vh;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+}
+.style_section__b4UpC .style_line__DNzws {
+  background-color: var(--background);
+  width: 100%;
+  height: 5vh;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/LandingV2/style.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_section__Kfaow {
+  width: 98%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  color: var(--text);
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 10vh;
+  overflow: hidden;
+}
+.style_section__Kfaow .style_motionDiv__ZhCah {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-image: url("/images/paneles/hero.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.style_section__Kfaow .style_textcontainer__9TBqz {
+  height: auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+.style_section__Kfaow .style_textcontainer__9TBqz .style_title__dOfzA {
+  font-size: 12.2vh;
+  margin: 0;
+  font-family: "VisbyMedium", sans-serif;
+  color: black;
+  text-align: center;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/ChangeColor/styles.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.styles_main__2MVuW {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  z-index: 50;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  overflow-x: hidden;
+}
+
+.styles_section__t8HQG {
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.styles_container__ASJdm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/Description/style.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_description__mJBNA {
+  height: 60vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text);
+  color: var(--background);
+}
+@media only screen and (max-width: 1000px) {
+  .style_description__mJBNA {
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+}
+.style_description__mJBNA .style_body__QadG8 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.style_description__mJBNA .style_body__QadG8 span {
+  font-family: "OverusedGrotesk-Light", sans-serif;
+  font-weight: 300;
+  border-top: 1px solid #47C237;
+  line-height: 120%;
+  padding-right: 20vw;
+  margin-right: 40px;
+  font-size: 2vh;
+  padding-top: 1vh;
+  color: #47C237;
+}
+.style_description__mJBNA .style_body__QadG8 p {
+  font-size: 3vh;
+  margin: 0;
+  font-weight: 300;
+  max-width: 60vw;
+  font-family: "OverusedGrotesk-Light", sans-serif;
+  line-height: 130%;
+}
+@media only screen and (max-width: 1000px) {
+  .style_description__mJBNA .style_body__QadG8 p {
+    max-width: 90vw;
+  }
+}
+.style_description__mJBNA .style_body__QadG8 .style_styled-paragraph__FMgNu {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.style_description__mJBNA .style_body__QadG8 .style_styled-paragraph__FMgNu .style_highlighted__djboG {
+  font-weight: bold;
+  color: #007bff;
+  border-top: 2px solid #007bff;
+  padding-top: 2px;
+  display: inline-block;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1000px) {
+  .style_description__mJBNA .style_body__QadG8 {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 0;
+  }
+}
+.style_description__mJBNA .style_moreWork__WT89A {
+  padding: 2vh;
+  border-radius: 4vh;
+  border: 1px solid grey;
+}
+
+.style_header__gUPeO {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  top: 50px;
+  color: white;
+  padding: 35px;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 300;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: violet;
+}
+.style_header__gUPeO .style_logo__SdWIP {
+  display: flex;
+  cursor: pointer;
+}
+.style_header__gUPeO .style_logo__SdWIP p {
+  margin: 0px;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.style_header__gUPeO .style_logo__SdWIP .style_name__wQPdf {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 1px;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.style_header__gUPeO .style_logo__SdWIP .style_name__wQPdf p {
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.style_header__gUPeO .style_logo__SdWIP .style_name__wQPdf p:nth-of-type(2) {
+  padding-left: 0.3em;
+}
+.style_header__gUPeO .style_logo__SdWIP .style_name__wQPdf p:nth-of-type(3) {
+  position: absolute;
+  left: 180px;
+  padding-left: 0.3em;
+}
+.style_header__gUPeO .style_logo__SdWIP:hover .style_copyright__5Yth_ {
+  transform: rotate(360deg);
+}
+.style_header__gUPeO .style_logo__SdWIP:hover .style_name__wQPdf .style_codeBy__El0qk {
+  transform: translateY(-100%);
+}
+.style_header__gUPeO .style_logo__SdWIP:hover .style_name__wQPdf .style_dennis__Fue8o {
+  transform: translateY(-100px);
+}
+.style_header__gUPeO .style_logo__SdWIP:hover .style_name__wQPdf .style_snellenberg__57TVd {
+  transform: translateX(-180px);
+}
+
+.style_header2__XnHdz {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  top: 150px;
+  color: white;
+  padding: 35px;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 300;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: grey;
+}
+.style_header2__XnHdz .style_logo__SdWIP {
+  display: flex;
+  cursor: pointer;
+}
+.style_header2__XnHdz .style_logo__SdWIP p {
+  margin: 0px;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.style_header2__XnHdz .style_logo__SdWIP .style_name__wQPdf {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 1px;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.style_header2__XnHdz .style_logo__SdWIP .style_name__wQPdf p {
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.style_header2__XnHdz .style_logo__SdWIP .style_name__wQPdf p:nth-of-type(2) {
+  padding-left: 0.3em;
+}
+.style_header2__XnHdz .style_logo__SdWIP .style_name__wQPdf p:nth-of-type(3) {
+  position: absolute;
+  top: 80px;
+  padding-left: 0.3em;
+}
+.style_header2__XnHdz .style_logo__SdWIP .style_name__wQPdf p:nth-of-type(4) {
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  padding-left: 0.3em;
+}
+.style_header2__XnHdz .style_logo__SdWIP:hover .style_copyright__5Yth_ {
+  transform: rotate(360deg);
+}
+.style_header2__XnHdz .style_logo__SdWIP:hover .style_name__wQPdf .style_codeBy__El0qk {
+  transform: translateY(-100%);
+}
+.style_header2__XnHdz .style_logo__SdWIP:hover .style_name__wQPdf .style_dennis__Fue8o {
+  transform: translateY(-100px);
+}
+.style_header2__XnHdz .style_logo__SdWIP:hover .style_name__wQPdf .style_snellenberg__57TVd {
+  transform: translateY(-80px);
+}
+.style_header2__XnHdz .style_logo__SdWIP:hover .style_name__wQPdf .style_snellenberg2__zMYgM {
+  transform: translateY(-80px);
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/GridScroll/style.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_gallery__021J9 {
+  height: 175vh;
+  background: rgb(45, 45, 45);
+  position: relative;
+  display: flex;
+  gap: 2vw;
+  padding: 2vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: var(--text);
+}
+.style_gallery__021J9 .style_column___UBxd {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.style_gallery__021J9 .style_column___UBxd .style_imageContainer__xD5i_ {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 1vw;
+  overflow: hidden;
+}
+.style_gallery__021J9 .style_column___UBxd .style_imageContainer__xD5i_ img {
+  object-fit: cover;
+}
+.style_gallery__021J9 .style_column___UBxd:nth-of-type(1) {
+  top: -45%;
+}
+.style_gallery__021J9 .style_column___UBxd:nth-of-type(2) {
+  top: -95%;
+}
+.style_gallery__021J9 .style_column___UBxd:nth-of-type(3) {
+  top: -45%;
+}
+.style_gallery__021J9 .style_column___UBxd:nth-of-type(4) {
+  top: -75%;
+}
+
+.style_spacer__4AXbZ {
+  height: 20vh;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/TopHeader/Nav/Body/style.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_body__4PB3s {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+  width: 70vw;
+}
+@media only screen and (max-width: 1000px) {
+  .style_body__4PB3s {
+    flex-direction: column;
+    width: 70vw;
+  }
+}
+.style_body__4PB3s a {
+  color: var(--nav-text);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.style_body__4PB3s p {
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  font-size: 13vh;
+  padding-right: 3vw;
+  padding-top: 1vh;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif !important;
+  color: var(--text) !important;
+}
+@media only screen and (max-width: 1000px) {
+  .style_body__4PB3s p {
+    font-size: 8vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .style_body__4PB3s p {
+    font-size: 10vw;
+  }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/TopHeader/Nav/Footer/style.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_footer__91P7m {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  margin-top: 20vh;
+  width: 90vw;
+}
+@media only screen and (max-width: 1000px) {
+  .style_footer__91P7m {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2vw;
+    margin-top: 10vh;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .style_footer__91P7m {
+    font-size: 3vw;
+  }
+}
+.style_footer__91P7m ul {
+  width: 50%;
+  margin-top: 1vh;
+  overflow: hidden;
+  list-style-type: none;
+  padding: 0;
+}
+.style_footer__91P7m li {
+  font-family: var(--font-jose);
+  font-family: "Josefin Sans", sans-serif !important;
+}
+.style_footer__91P7m li span {
+  color: #9f9689;
+}
+
+@media only screen and (min-width: 1000px) {
+  .style_footer__91P7m {
+    justify-content: space-between;
+  }
+  .style_footer__91P7m ul {
+    width: auto;
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/TopHeader/Nav/Image/style.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_imageContainer__IUkAk {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .style_imageContainer__IUkAk {
+    display: block;
+    width: 500px;
+    height: 450px;
+    position: relative;
+  }
+  .style_imageContainer__IUkAk img {
+    object-fit: cover;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/TopHeader/Nav/style.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_nav__h_KDU {
+  overflow: hidden;
+  margin: 0 auto;
+}
+.style_nav__h_KDU .style_wrapper__s2wrB {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin: 0 auto;
+}
+.style_nav__h_KDU .style_container__9ZroW {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1000px) {
+  .style_nav__h_KDU .style_wrapper__s2wrB {
+    margin-bottom: 0px;
+    justify-content: space-between;
+  }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/TopHeader/style.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_header__GiPLv {
+  background-color: rgba(255, 255, 255, 0.1);
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3vh 2vw;
+  z-index: 1000;
+  top: 0;
+  border-bottom: 1px solid black;
+}
+.style_header__GiPLv .style_header2__4Rzmp {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  justify-content: space-between;
+  width: auto;
+  font-weight: 300;
+  box-sizing: border-box;
+  align-items: center;
+  margin-top: -7.5vh;
+}
+.style_header__GiPLv .style_header2__4Rzmp .style_logo__72cyw {
+  display: flex;
+  cursor: pointer;
+}
+.style_header__GiPLv .style_header2__4Rzmp .style_logo__72cyw p {
+  margin: 0px;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.style_header__GiPLv .style_header2__4Rzmp .style_logo__72cyw .style_name__OvOyo {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 1px;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.style_header__GiPLv .style_header2__4Rzmp .style_logo__72cyw .style_name__OvOyo p {
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.style_header__GiPLv .style_header2__4Rzmp .style_logo__72cyw .style_name__OvOyo p:nth-of-type(2) {
+  padding-left: 0.3em;
+}
+.style_header__GiPLv .style_header2__4Rzmp .style_logo__72cyw .style_name__OvOyo p:nth-of-type(3) {
+  position: absolute;
+  top: 80px;
+}
+.style_header__GiPLv .style_header2__4Rzmp .style_logo__72cyw .style_name__OvOyo p:nth-of-type(4) {
+  position: absolute;
+  top: 80px;
+  left: 55px;
+}
+.style_header__GiPLv .style_header2__4Rzmp .style_logo__72cyw:hover .style_copyright___v2ON {
+  transform: rotate(360deg);
+}
+.style_header__GiPLv .style_header2__4Rzmp .style_logo__72cyw:hover .style_name__OvOyo .style_codeBy__uEBEA {
+  transform: translateY(-100%);
+}
+.style_header__GiPLv .style_header2__4Rzmp .style_logo__72cyw:hover .style_name__OvOyo .style_dennis__FYESX {
+  transform: translateY(-100px);
+}
+.style_header__GiPLv .style_header2__4Rzmp .style_logo__72cyw:hover .style_name__OvOyo .style_snellenberg__f7C_6 {
+  transform: translateY(-80px);
+}
+.style_header__GiPLv .style_header2__4Rzmp .style_logo__72cyw:hover .style_name__OvOyo .style_snellenberg2__oZjAO {
+  transform: translateY(-80px);
+}
+.style_header__GiPLv .style_background__GnCRu {
+  background-color: white;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 10000;
+}
+.style_header__GiPLv .style_bar__a_dhj {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1vw !important;
+  font-weight: 400;
+  position: relative;
+  margin: 0 auto;
+  height: 3vh;
+}
+.style_header__GiPLv .style_bar__a_dhj h2 {
+  color: black;
+  font-size: 1.6vw;
+  font-family: "TalismanLight", sans-serif;
+}
+@media only screen and (max-width: 1000px) {
+  .style_header__GiPLv .style_bar__a_dhj h2 {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .style_header__GiPLv .style_bar__a_dhj h2 {
+    font-size: 4vw;
+  }
+}
+.style_header__GiPLv .style_bar__a_dhj p {
+  margin: 0px;
+  font-size: 1vw;
+}
+@media only screen and (max-width: 1000px) {
+  .style_header__GiPLv .style_bar__a_dhj p {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .style_header__GiPLv .style_bar__a_dhj p {
+    font-size: 3vw;
+  }
+}
+.style_header__GiPLv .style_bar__a_dhj a {
+  text-decoration: none;
+  color: var(--nav-text);
+}
+.style_header__GiPLv .style_bar__a_dhj .style_navcontainerdesktop__EBfvV {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: auto;
+}
+@media only screen and (max-width: 1000px) {
+  .style_header__GiPLv .style_bar__a_dhj .style_navcontainerdesktop__EBfvV {
+    display: none;
+  }
+}
+.style_header__GiPLv .style_bar__a_dhj .style_navcontainerdesktop__EBfvV .style_navitem__SoGXU {
+  display: flex;
+  flex-direction: row !important;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_navcontainerdesktop__EBfvV .style_navitem__SoGXU .style_underline__hXbiX {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #47C237;
+  width: 0;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_navcontainerdesktop__EBfvV .style_navitem__SoGXU span {
+  font-family: "OverusedGrotesk-Light", sans-serif;
+  font-weight: 300;
+  border-top: 1px solid var(--background);
+  font-size: 1.5vh;
+  align-self: flex-start !important;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_navcontainerdesktop__EBfvV .style_navitem__SoGXU p {
+  font-size: 2vh;
+  margin: 0;
+  font-weight: 300;
+  font-family: "OverusedGrotesk-Light", sans-serif;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_navcontainerdesktop__EBfvV .style_navitem__SoGXU .style_styled-paragraph__vYkBG {
+  font-size: 1rem;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_navcontainerdesktop__EBfvV .style_navitem__SoGXU .style_styled-paragraph__vYkBG .style_highlighted__DJ7xZ {
+  font-weight: bold;
+  color: #007bff;
+  border-top: 2px solid #007bff;
+  padding-top: 2px;
+  display: inline-block;
+  align-items: flex-start;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_shopContainer__lPCLC {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  right: 0;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_shopContainer__lPCLC .style_shop__SI37t {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .style_header__GiPLv .style_bar__a_dhj .style_shopContainer__lPCLC {
+    display: none;
+  }
+}
+.style_header__GiPLv .style_bar__a_dhj .style_logocontainer__BuO6F svg {
+  height: 15vh;
+  width: 5vh;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  cursor: pointer;
+  margin-right: 2vw;
+}
+@media only screen and (max-width: 1000px) {
+  .style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 0vw;
+  }
+}
+.style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR .style_label__Dh09Q {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR p {
+  font-family: var(--font-jose);
+  font-family: "Josefin Sans", sans-serif;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR p:nth-of-type(2) {
+  position: absolute;
+  opacity: 0;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR .style_burger__X_GxI {
+  width: 5vh;
+  position: relative;
+  pointer-events: none;
+}
+@media only screen and (max-width: 1000px) {
+  .style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR .style_burger__X_GxI {
+    width: 4vh;
+  }
+}
+.style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR .style_burger__X_GxI::after, .style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR .style_burger__X_GxI::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--text);
+  position: relative;
+  display: block;
+  transition: all 1s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR .style_burger__X_GxI::after {
+  top: -4px;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR .style_burger__X_GxI::before {
+  top: 4px;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR .style_burgerActive__KYdQu::after {
+  transform: rotate(45deg);
+  top: -1px;
+}
+.style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR .style_burgerActive__KYdQu::before {
+  transform: rotate(-45deg);
+  top: 1px;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/Cards/style.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_cardContainer__9eyn3 {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+.style_cardContainer__9eyn3 .style_card__IVjd5 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -5vh;
+  height: 50vh;
+  width: 40vw;
+  border-radius: 2.5vw;
+  padding: 4vw;
+  margin-top: 17vh;
+  transform-origin: top;
+  border: 1px solid;
+  background-color: var(--background);
+}
+@media only screen and (max-width: 1000px) {
+  .style_cardContainer__9eyn3 .style_card__IVjd5 {
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .style_cardContainer__9eyn3 .style_card__IVjd5 {
+    width: 80vw;
+  }
+}
+.style_cardContainer__9eyn3 .style_card__IVjd5 .style_iconcontainer___I_6M {
+  height: 5vh;
+  width: 5vh;
+  position: absolute;
+  top: 3vh;
+  left: 5vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--text);
+}
+.style_cardContainer__9eyn3 .style_card__IVjd5 .style_iconcontainer___I_6M img {
+  height: 2vh;
+  width: 2vh;
+}
+.style_cardContainer__9eyn3 .style_card__IVjd5 h2 {
+  margin: 0px;
+  font-size: 3.2vw;
+  font-weight: 600;
+  margin-top: 2vh;
+  text-transform: uppercase;
+  font-family: "Michroma", sans-serif;
+}
+.style_cardContainer__9eyn3 .style_card__IVjd5 .style_body__hcfl2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-top: 5vh;
+  gap: 5vw;
+}
+.style_cardContainer__9eyn3 .style_card__IVjd5 .style_body__hcfl2 p {
+  font-family: "Roboto";
+  font-size: 2.5vh;
+  text-align: center;
+}
+.style_cardContainer__9eyn3 .style_card__IVjd5 .style_body__hcfl2 .style_imageContainer__IfuBY {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  border-radius: 2.5vw;
+  overflow: hidden;
+}
+.style_cardContainer__9eyn3 .style_card__IVjd5 .style_body__hcfl2 .style_imageContainer__IfuBY .style_inner__Xqhkq {
+  width: 100%;
+  height: 100%;
+}
+.style_cardContainer__9eyn3 .style_card__IVjd5 .style_body__hcfl2 .style_imageContainer__IfuBY img {
+  object-fit: cover;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/WorkProgressV2/style.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_section__1qsYn {
+  width: 98%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+  justify-content: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 10vh;
+}
+@media only screen and (max-width: 600px) {
+  .style_section__1qsYn {
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+.style_section__1qsYn .style_item__SEv1A {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid var(--text);
+}
+@media only screen and (max-width: 1000px) {
+  .style_section__1qsYn .style_item__SEv1A {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .style_section__1qsYn .style_item__SEv1A {
+    align-items: center;
+  }
+}
+.style_section__1qsYn .style_item__SEv1A.style_lastItem__SnC2s {
+  border-bottom: 1px solid var(--text);
+}
+.style_section__1qsYn .style_item__SEv1A h2 {
+  font-size: 23vh;
+  margin: 0;
+  font-family: "OverusedGrotesk-Light", sans-serif;
+  font-weight: 400;
+}
+.style_section__1qsYn .style_item__SEv1A h4 {
+  font-family: "TalismanLight", sans-serif;
+  font-size: 3vh;
+}
+.style_section__1qsYn .style_item__SEv1A p {
+  font-family: "OverusedGrotesk-Light", sans-serif;
+  font-weight: 300;
+  font-size: 2vh;
+  max-width: 30vw;
+}
+@media only screen and (max-width: 1000px) {
+  .style_section__1qsYn .style_item__SEv1A p {
+    max-width: 100%;
+    font-size: 2.3vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .style_section__1qsYn .style_item__SEv1A p {
+    font-size: 2vh;
+  }
+}
+.style_section__1qsYn .style_item__SEv1A .style_indexcontainer__jZL_o {
+  height: auto;
+  width: 30%;
+  display: flex;
+  align-items: flex-start !important;
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 1000px) {
+  .style_section__1qsYn .style_item__SEv1A .style_indexcontainer__jZL_o {
+    width: 98%;
+  }
+}
+.style_section__1qsYn .style_item__SEv1A .style_titlecontainer__F_Xan {
+  height: auto;
+  width: 40%;
+}
+@media only screen and (max-width: 1000px) {
+  .style_section__1qsYn .style_item__SEv1A .style_titlecontainer__F_Xan {
+    width: 98%;
+  }
+}
+.style_section__1qsYn .style_item__SEv1A .style_textcontainer__zb1r3 {
+  height: auto;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end !important;
+}
+@media only screen and (max-width: 1000px) {
+  .style_section__1qsYn .style_item__SEv1A .style_textcontainer__zb1r3 {
+    width: 98%;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/CardsSection/style.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_main__lVkJY {
+  position: relative;
+  margin-bottom: 150px;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/Cursor/styles.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.styles_container__R99fe {
+  position: relative;
+}
+
+.styles_circle__pJHvt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: red;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: height 0.3s ease-out, width 0.3s ease-out, filter 0.3s ease-out;
+  z-index: 10000;
+}
+.styles_circle__pJHvt.styles_active__6N_2f {
+  width: 200px;
+  height: 200px;
+  filter: blur(30px);
+  background-color: #87e3f1 !important;
+}
+.styles_circle__pJHvt:not(.styles_active__6N_2f) {
+  width: 10px;
+  height: 10px;
+  filter: blur(0px);
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/LandingV3/style.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.style_section__8280d {
+  width: 98%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 10vh;
+  overflow: hidden;
+  background-color: white;
+}
+@media screen and (max-width: 800px) {
+  .style_section__8280d {
+    height: auto;
+  }
+}
+.style_section__8280d .style_motionDiv__vQb4T {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.style_section__8280d .style_topcontainer__P1_gA {
+  width: 100%;
+  height: 40vh;
+  border-bottom: 1px solid var(--text);
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .style_section__8280d .style_topcontainer__P1_gA {
+    height: auto;
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .style_section__8280d .style_topcontainer__P1_gA {
+    height: auto;
+    height: 20vh;
+  }
+}
+.style_section__8280d .style_topcontainer__P1_gA h1 {
+  margin: 0;
+  font-weight: 400;
+  font-family: "TalismanLight", sans-serif;
+  line-height: 100%;
+  width: 100vw;
+  font-size: 18vw;
+}
+.style_section__8280d .style_bottomcontainer__kUsML {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  .style_section__8280d .style_bottomcontainer__kUsML {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .style_section__8280d .style_bottomcontainer__kUsML {
+    flex-direction: column;
+    height: 70vh;
+  }
+}
+.style_section__8280d p {
+  font-family: "OverusedGrotesk-Light", sans-serif;
+  font-weight: 300;
+  font-size: 2.5vh;
+  max-width: 30vw;
+  padding-bottom: 10vh;
+}
+.style_section__8280d .style_textcontainer__tXQhS {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  margin-left: 5vw;
+}
+.style_section__8280d .style_textcontainer__tXQhS .style_results__yzovB {
+  font-size: 2.2vh;
+  margin: 0;
+}
+@media screen and (max-width: 800px) {
+  .style_section__8280d .style_textcontainer__tXQhS .style_results__yzovB {
+    max-width: 40vw;
+    align-self: center;
+    margin-top: 10vh;
+    margin-left: 0vw !important;
+    margin-bottom: 5vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .style_section__8280d .style_textcontainer__tXQhS .style_results__yzovB {
+    text-align: center;
+    max-width: 90vw;
+    margin-top: 5vh;
+  }
+}
+.style_section__8280d .style_textcontainer__tXQhS .style_bottombuttons__gGIkz {
+  display: flex;
+  margin-top: 0;
+}
+@media screen and (max-width: 600px) {
+  .style_section__8280d .style_textcontainer__tXQhS .style_bottombuttons__gGIkz {
+    display: none;
+  }
+}
+.style_section__8280d .style_textcontainer__tXQhS .style_buttoncontainer__DU0w8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+  background-color: var(--background);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--text);
+}
+@media screen and (max-width: 1000px) {
+  .style_section__8280d .style_textcontainer__tXQhS .style_buttoncontainer__DU0w8 {
+    width: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .style_section__8280d .style_textcontainer__tXQhS .style_buttoncontainer__DU0w8 {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.style_section__8280d .style_textcontainer__tXQhS .style_buttoncontainer__DU0w8:hover {
+  background-color: var(--text);
+  border: 1px solid var(--background);
+}
+.style_section__8280d .style_textcontainer__tXQhS .style_buttoncontainer__DU0w8:hover h6 {
+  color: var(--background);
+}
+.style_section__8280d .style_textcontainer__tXQhS .style_buttoncontainer__DU0w8 h6 {
+  font-family: "TalismanLight", sans-serif;
+  font-weight: 400;
+  font-size: 2.5vh;
+  letter-spacing: 0.5px;
+  color: var(--text);
+  margin: 0;
+}

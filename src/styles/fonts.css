@@ -54,3 +54,16 @@
   }
 
 
+  @font-face {
+    font-family: 'VisbyLight';
+    src: url('/fonts/Visby/VisbyLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }  
+  
+  @font-face {
+    font-family: 'VisbyThin';
+    src: url('/fonts/Visby/VisbyThin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }

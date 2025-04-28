@@ -8,30 +8,30 @@ import Link from "next/link";
 const projects = [
   {
     title: "N1U",
-    src: "/work/n1u.2.png",
+    src: "/paneles/hero.png",
     color: "#706D63",
-    link: "https://n1u.app/",
+    link: "/",
     text: "Development",
   },
   {
     title: "INES MIGUENS PHOTO",
-    src: "/work/ines.1.png",
+    src: "/paneles/hero.png",
     color: "black",
-    link: "https://inesmiguens.vercel.app/",
+    link: "/",
     text: "Development & Design",
   },
   {
     title: "KOIBANX",
-    src: "/work/koi.4.png",
+    src: "/paneles/hero.png",
     color: "#8C8C8C",
-    link: "https://koibanx.com/",
+    link: "/",
     text: "Development",
   },
   {
     title: "CAPILLARIE",
-    src: "/work/capillarie.png",
+    src: "/paneles/hero.png",
     color: "#8C8C8C",
-    link: "https://capillarie.com/",
+    link: "/",
     text: "Development & Design",
   },
 ];
@@ -79,21 +79,7 @@ const Item = ({ project }) => {
           <p>{project.text}</p>
           <h4>{project.title}</h4>
         </div>
-        {/* <Link href={project.link}> */}
-          {/* <div className={styles.right}> */}
-          {/* <motion.div className={styles.right} whileHover="hover">
-            <p class="styled-paragraph">
-      
-              view more
-            </p>
-            <motion.div
-              className={styles.underline}
-              variants={underlineVariants}
-            />
-          </motion.div> */}
-          {/* <p>view more</p> */}
-          {/* </div> */}
-        {/* </Link> */}
+ 
       </div>
       </Link>
     </div>

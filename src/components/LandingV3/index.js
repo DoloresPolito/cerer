@@ -8,9 +8,6 @@ import {
   useTransform,
 } from "framer-motion";
 import React, { useRef} from "react";
-import { Link } from "react-scroll";
-// import image from "../../../public/images/ines.png"
-// import Image from "next/image";
 export default function LandingV3() {
   const home = useRef(null);
   const isInView = useInView(home);
@@ -28,27 +25,34 @@ export default function LandingV3() {
   return (
     <>
       <div className={styles.section} ref={home} id="home">
-      {/* <Image src={image} alt="background"/> */}
+   
         <motion.div style={{ y }} className={styles.motionDiv}>
-      
+     
           <div className={styles.topcontainer}>
             <motion.div variants={slideUp2} initial="initial" animate="enter">
-              <h1>cerer</h1>
+              <h1>Cámara de Energías Renovables de Entre Ríos</h1>
             </motion.div>
           </div>
 
           <div className={styles.bottomcontainer}>
+
+          <video autoplay muted loop playsinline class="video-background">
+    <source src="/video/video.mp4" type="video/mp4"/>
+    Tu navegador no soporta el video.
+  </video>
+
             <motion.div
               variants={slideUp}
               initial="initial"
               animate="enter"
               className={styles.textcontainer}
             >
-              <p className={styles.results}>
-               Impulsamos la energia del futuro. Sumate a la transición energética.
+           
+              <p className={styles.text}>
+               Impulsamos la energia del futuro. <br/>Sumate a la transición energética.
               </p>
 
-              <div className={styles.bottombuttons}>
+              {/* <div className={styles.bottombuttons}>
                 <Link
                   to="projects"
                   spy={true}
@@ -68,7 +72,7 @@ export default function LandingV3() {
                     </div>
                   </motion.div>
                 </Link>
-              </div>
+              </div> */}
             </motion.div>
     
           </div>

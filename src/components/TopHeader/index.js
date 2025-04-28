@@ -5,16 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { opacity, background } from "./anim";
 import Nav from "./Nav";
 
-import { Link } from "react-scroll";
+import Link from "next/link";
 
 export default function Index() {
   const [isActive, setIsActive] = useState(false);
 
   const navdesktop = [
     { id: "1.", title: "INICIO", url: "/", href: "home" },
-    { id: "2.", title: "NOSOTROS", url: "/", href: "projects" },
-    { id: "3.", title: "NOTICIAS", url: "/", href: "projects" },
-    { id: "4.", title: "CONTACTO", url: "/", href: "contact" },
+    { id: "2.", title: "NOSOTROS", url: "/nosotros", href: "projects" },
+    { id: "3.", title: "NOTICIAS", url: "/noticias", href: "projects" },
+    { id: "4.", title: "CONTACTO", url: "/contacto", href: "contact" },
   ];
   const underlineVariants = {
     initial: {
@@ -32,11 +32,13 @@ export default function Index() {
   return (
     <div className={styles.header}>
       <div className={styles.bar}>
-        <Link to="home" spy={true} smooth={true} offset={-100} duration={800}>
+        <Link href="/">
           <div className={styles.logocontainer}>
             <div className={styles.header2}>
               <div className={styles.logo}>
-                <p className={styles.copyright}> <svg
+                <p className={styles.copyright}>
+                  {" "}
+                  <svg
                     width="19"
                     height="19"
                     viewBox="0 0 19 19"
@@ -75,11 +77,10 @@ export default function Index() {
                         fill="currentColor"
                       ></path>
                     </g>
-                  </svg></p>
-        
+                  </svg>
+                </p>
               </div>
             </div>
-            
           </div>
         </Link>
         <div
@@ -106,22 +107,12 @@ export default function Index() {
           </div>
         </div>
 
-
         <div>
           <div className={styles.navcontainerdesktop}>
             {navdesktop.map((link, i) => {
               return (
                 <>
-               
-
-                  <Link
-                    key={i}
-                    to={link.href}
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={800}
-                  >
+                  <Link key={i} href={link.url}>
                     <motion.div className={styles.navitem} whileHover="hover">
                       <p class="styled-paragraph">
                         <span class="highlighted">{link.id} </span> {link.title}
@@ -132,10 +123,6 @@ export default function Index() {
                       />
                     </motion.div>
                   </Link>
-                  <div>
-                    {" "}
-                    <p>/</p>
-                  </div>
                 </>
               );
             })}

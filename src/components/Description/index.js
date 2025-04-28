@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 // import { slideUp } from "./animation";
 import AnimatedDiv from "../AnimatedDiv";
 
-import ColorChangeOnScrollGsap from "../ChangeColor";
+
 
 export default function Index() {
 

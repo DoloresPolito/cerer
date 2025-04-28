@@ -1,12 +1,13 @@
 .header {
-  background-color: rgba(255, 255, 255, 0.1);
+  // background-color: rgba(255, 255, 255, 1);
   position: fixed;
   width: 100%;
   box-sizing: border-box;
   padding: 3vh 2vw;
   z-index: 1000;
   top: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
+  color:white;
   // height: 8vh;
 
   .header2 {
@@ -104,7 +105,7 @@
     height: 3vh;
 
     h2 {
-      color: black;
+      color: white;
       font-size: 1.6vw;
       font-family: "TalismanLight", sans-serif;
 

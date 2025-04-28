@@ -8,7 +8,10 @@ import ProjectsV2 from "../ProjectsV2";
 import styles from "./styles.module.scss";
 import Description from "@/components/Description";
 import Contact from "@/components/Contact";
-import LandingV2 from "@/components/LandingV2";
+import LandingV3 from "@/components/LandingV3";
+import Loop from "../Loop";
+import ReviewsSection from "@/components/Reviews";
+import ThreeItems from "@/components/ThreeItems";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,25 +75,39 @@ function ColorChangeOnScrollGsap() {
 
   return (
     <main className={styles.main} ref={mainRef}>
-      {/* Tus secciones */}
-      <section className={styles.section} data-bgcolor="#001D19" data-textcolor="#d0b6c0">
+
+      <section className={styles.section} data-bgcolor="#013D35" data-textcolor="#d0b6c0">
         <div className={styles.container}>
-          <LandingV2 />
+          <LandingV3 />
         </div>
       </section>
-      <section className={styles.section} data-bgcolor="#013D35" data-textcolor="#ffffff">
+      <section className={styles.section} data-bgcolor="#001D19" data-textcolor="#ffffff">
         <div className={styles.container}>
           <Description />
+
         </div>
       </section>
+
+      <section className={styles.section} data-bgcolor="#013D35" data-textcolor="#ffffff">
+        <div className={styles.container}>
+        <Loop/>
+        </div>
+      </section>
+     
+      <section className={styles.section} data-bgcolor="#f4f4d6" data-textcolor="#000000">
+        <div className={styles.container}>
+          <ReviewsSection />
+        </div>
+      </section>
+      <section className={styles.section} data-bgcolor="#013D35" data-textcolor="#d0b6c0">
+        <div className={styles.container}>
+          <ThreeItems />
+        </div>
+      </section>
+
       <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
         <div className={styles.container}>
           <Contact />
-        </div>
-      </section>
-      <section className={styles.section} data-bgcolor="#f4f4d6" data-textcolor="#000000">
-        <div className={styles.container}>
-          <ProjectsV2 />
         </div>
       </section>
     </main>

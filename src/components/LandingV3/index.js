@@ -36,10 +36,10 @@ export default function LandingV3() {
 
           <div className={styles.bottomcontainer}>
 
-          <video autoplay muted loop playsinline class="video-background">
+          {/* <video autoplay muted loop playsinline class="video-background">
     <source src="/video/video.mp4" type="video/mp4"/>
     Tu navegador no soporta el video.
-  </video>
+  </video> */}
 
             <motion.div
               variants={slideUp}

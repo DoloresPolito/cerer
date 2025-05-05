@@ -30,78 +30,6 @@ body {
 .font-michroma {
   font-family: var(--font-michroma);
 }
-/*!****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/styles/fonts.css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-    font-family: 'TalismanBoldItalic';
-    src: url('/fonts/Talisman/OTF/PPTalisman-Bold-Italic.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-
-
-  @font-face {
-    font-family: 'TalismanCompactRegular';
-    src: url('/fonts/Talisman/OTF/PPTalisman-Compact-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-
-
-  @font-face {
-    font-family: 'TalismanLight';
-    src: url('/fonts/Talisman/OTF/PPTalisman-Light.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-
-  @font-face {
-    font-family: 'OverusedGrotesk-Light';
-    src: url('/fonts/overused-grotesk/OverusedGrotesk-Light-BF64eeac17cade6.otf.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-
-  @font-face {
-    font-family: 'VisbyBold';
-    src: url('/fonts/Visby/VisbyBold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'VisbyBoldItalic';
-    src: url('/fonts/Visby/VisbyBold Italic.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'VisbyMedium';
-    src: url('/fonts/Visby/VisbyMedium.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-
-  @font-face {
-    font-family: 'VisbyLight';
-    src: url('/fonts/Visby/VisbyLight.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }  
-  
-  @font-face {
-    font-family: 'VisbyThin';
-    src: url('/fonts/Visby/VisbyThin.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[4].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[5].oneOf[4].use[2]!./node_modules/@next/font/google/target.css?{"path":"src/app/layout.js","import":"Michroma","arguments":[{"subsets":["latin"],"weight":["400"],"variable":"--font-michroma"}],"variableName":"michroma"} ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -494,3 +422,75 @@ body {
 }.__variable_22ceb1 {--font-roboto: '__Roboto_22ceb1', '__Roboto_Fallback_22ceb1'
 }
 
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[12].use[3]!./src/styles/fonts.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+    font-family: 'TalismanBoldItalic';
+    src: url('/fonts/Talisman/OTF/PPTalisman-Bold-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+  @font-face {
+    font-family: 'TalismanCompactRegular';
+    src: url('/fonts/Talisman/OTF/PPTalisman-Compact-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+  @font-face {
+    font-family: 'TalismanLight';
+    src: url('/fonts/Talisman/OTF/PPTalisman-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'OverusedGrotesk-Light';
+    src: url('/fonts/overused-grotesk/OverusedGrotesk-Light-BF64eeac17cade6.otf.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'VisbyBold';
+    src: url('/fonts/Visby/VisbyBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'VisbyBoldItalic';
+    src: url('/fonts/Visby/VisbyBold Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'VisbyMedium';
+    src: url('/fonts/Visby/VisbyMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'VisbyLight';
+    src: url('/fonts/Visby/VisbyLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }  
+  
+  @font-face {
+    font-family: 'VisbyThin';
+    src: url('/fonts/Visby/VisbyThin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }

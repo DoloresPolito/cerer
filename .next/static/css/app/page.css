@@ -307,23 +307,12 @@
   display: inline-block;
   align-items: flex-start;
 }
-.style_header__GiPLv .style_bar__a_dhj .style_shopContainer__lPCLC {
+.style_header__GiPLv .style_bar__a_dhj .style_logocontainer__BuO6F {
   display: flex;
-  gap: 30px;
-  position: absolute;
-  right: 0;
 }
-.style_header__GiPLv .style_bar__a_dhj .style_shopContainer__lPCLC .style_shop__SI37t {
-  display: none;
-}
-@media only screen and (max-width: 600px) {
-  .style_header__GiPLv .style_bar__a_dhj .style_shopContainer__lPCLC {
-    display: none;
-  }
-}
-.style_header__GiPLv .style_bar__a_dhj .style_logocontainer__BuO6F svg {
-  height: 15vh;
-  width: 5vh;
+.style_header__GiPLv .style_bar__a_dhj .style_logocontainer__BuO6F img {
+  height: 7vh;
+  width: 6vh;
 }
 .style_header__GiPLv .style_bar__a_dhj .style_el__FfCzR {
   display: flex;
@@ -1071,10 +1060,16 @@
 }
 .style_section__8280d .style_topcontainer__P1_gA {
   width: 100%;
-  height: 40vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.style_section__8280d .style_topcontainer__P1_gA img {
+  display: flex;
+  width: 80%;
+  height: auto;
+  justify-self: center;
 }
 .style_section__8280d .style_topcontainer__P1_gA h1 {
   font-size: 8vh;

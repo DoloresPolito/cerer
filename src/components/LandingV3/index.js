@@ -8,6 +8,8 @@ import {
   useTransform,
 } from "framer-motion";
 import React, { useRef} from "react";
+import Image from "next/image";
+import completelogo from "../../../public/logo/logo-completo.png"
 export default function LandingV3() {
   const home = useRef(null);
   const isInView = useInView(home);
@@ -30,7 +32,8 @@ export default function LandingV3() {
      
           <div className={styles.topcontainer}>
             <motion.div variants={slideUp2} initial="initial" animate="enter">
-              <h1>Cámara de Energías Renovables de Entre Ríos</h1>
+              {/* <h1>Cámara de Energías Renovables de Entre Ríos</h1> */}
+              <Image src={completelogo} alt="logo camara"/>
             </motion.div>
           </div>
 
@@ -48,9 +51,9 @@ export default function LandingV3() {
               className={styles.textcontainer}
             >
            
-              <p className={styles.text}>
+              {/* <p className={styles.text}>
                Impulsamos la energia del futuro. <br/>Sumate a la transición energética.
-              </p>
+              </p> */}
 
               {/* <div className={styles.bottombuttons}>
                 <Link

@@ -1,10 +1,10 @@
-import TopHeader from "../components/TopHeader";
+
 
 export default function Nosotros() {
   return (
     <>
       <div>
-        <TopHeader />
+      <h1>NOSOTROS</h1>
       </div>
     </>
   );

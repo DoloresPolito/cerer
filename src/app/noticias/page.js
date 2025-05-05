@@ -1,10 +1,10 @@
-import TopHeader from "../components/TopHeader";
+
 
 export default function Noticias() {
   return (
     <>
       <div>
-        <TopHeader />
+      <h1>NOTICIAS</h1>
       </div>
     </>
   );

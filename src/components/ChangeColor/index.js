@@ -12,6 +12,8 @@ import LandingV3 from "@/components/LandingV3";
 import Loop from "../Loop";
 import ReviewsSection from "@/components/Reviews";
 import ThreeItems from "@/components/ThreeItems";
+import NewsHome from "@/home/NewsHome"
+import ExtraSection from "@/home/ExtraSection"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -85,6 +87,18 @@ function ColorChangeOnScrollGsap() {
         <div className={styles.container}>
           <Description />
 
+        </div>
+      </section>
+
+      <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
+        <div className={styles.container}>
+          <ExtraSection />
+        </div>
+      </section>
+
+      <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
+        <div className={styles.container}>
+          <NewsHome />
         </div>
       </section>
 

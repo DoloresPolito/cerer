@@ -1,0 +1,44 @@
+.loopSection {
+    overflow: hidden;
+    width: 100%;
+
+    .marquee {
+      display: flex;
+      align-items: center;
+      animation: scroll 60s linear infinite;
+      white-space: nowrap;
+  
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  
+    &.reverse .marquee {
+      animation-direction: reverse;
+    }
+  
+    .logoWrapper {
+      margin: 0 8vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 18vh; // Altura fija razonable para alinear visualmente
+    }
+  
+    .logo {
+      height: 100%;
+      width: auto;
+      max-height: 100%;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+    }
+  
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  }

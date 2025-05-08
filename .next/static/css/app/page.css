@@ -137,10 +137,9 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  padding: 3vh 2vw;
+  padding: 1vh 2vw;
   z-index: 1000;
   top: 0;
-  border-bottom: 1px solid white;
   color: white;
 }
 .style_header__GiPLv .style_header2__4Rzmp {
@@ -222,6 +221,10 @@
   position: relative;
   margin: 0 auto;
   height: 3vh;
+  background-color: rgba(100, 150, 116, 0.951);
+  padding: 0vh 2vh;
+  height: 10vh;
+  border-radius: 5vh;
 }
 .style_header__GiPLv .style_bar__a_dhj h2 {
   color: white;
@@ -1035,7 +1038,7 @@
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .style_section__8280d {
   width: 98%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   color: var(--text);
@@ -1043,20 +1046,16 @@
   align-items: flex-start;
   margin-left: 1vw;
   margin-right: 1vw;
-  margin-top: 10vh;
   overflow: hidden;
+  background-image: url("/images/paneles/paneles2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 800px) {
   .style_section__8280d {
     height: auto;
   }
-}
-.style_section__8280d .style_motionDiv__vQb4T {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 .style_section__8280d .style_topcontainer__P1_gA {
   width: 100%;
@@ -2411,6 +2410,81 @@ button.swiper-pagination-bullet {
 }
 .styles_section__50aGe .styles_container__6wQui .styles_content__9JO__ .styles_bottomRow__9A9dr .styles_circleButton__RSiUq:hover {
   background-color: #f3f3f3;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/Loop2/styles.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.styles_loopSection__qGr4V {
+  overflow: hidden;
+  width: 100%;
+}
+.styles_loopSection__qGr4V .styles_marquee__IuvME {
+  display: flex;
+  align-items: center;
+  animation: styles_scroll__cb0n2 60s linear infinite;
+  white-space: nowrap;
+}
+.styles_loopSection__qGr4V .styles_marquee__IuvME:hover {
+  animation-play-state: paused;
+}
+.styles_loopSection__qGr4V.styles_reverse__KNQuJ .styles_marquee__IuvME {
+  animation-direction: reverse;
+}
+.styles_loopSection__qGr4V .styles_logoWrapper__D4TFh {
+  margin: 0 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18vh;
+}
+.styles_loopSection__qGr4V .styles_logo__4zfEI {
+  height: 100%;
+  width: auto;
+  max-height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+@keyframes styles_scroll__cb0n2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/home/LogosMoving/styles.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.styles_section__S_PgT {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12vh;
+  overflow-x: hidden;
+}
+.styles_section__S_PgT h4 {
+  font-family: "MoriLight";
+  font-size: 3.5vh;
+  letter-spacing: 0.1vh;
+  color: #0d0d0d;
+  padding-bottom: 9vh;
+  text-align: center;
+}
+@media only screen and (max-width: 750px) {
+  .styles_section__S_PgT h4 {
+    font-size: 2.5vh;
+    max-width: 65%;
+  }
+}
+.styles_section__S_PgT .styles_container__M_1BO {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  padding-bottom: 12vh;
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/ChangeColor/styles.module.scss ***!

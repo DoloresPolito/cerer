@@ -14,6 +14,7 @@ import ReviewsSection from "@/components/Reviews";
 import ThreeItems from "@/components/ThreeItems";
 import NewsHome from "@/home/NewsHome"
 import ExtraSection from "@/home/ExtraSection"
+import LogosMoving from "@/home/LogosMoving";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,10 +25,10 @@ function ColorChangeOnScrollGsap() {
     if (!mainRef.current) return;
 
     const scrollBar = Scrollbar.init(mainRef.current, {
-      damping: 0.06,
+      damping: 0.1,
       delegateTo: document,
       alwaysShowTracks: false,
-      speed: 3,
+      speed: 1,
     });
 
     ScrollTrigger.defaults({
@@ -78,7 +79,10 @@ function ColorChangeOnScrollGsap() {
   return (
     <main className={styles.main} ref={mainRef}>
 
-      <section className={styles.section} data-bgcolor="#013D35" data-textcolor="#d0b6c0">
+      <section className={styles.section}
+      data-bgcolor="#001D19" data-textcolor="#ffffff"
+      // data-bgcolor="#013D35" data-textcolor="#d0b6c0"
+      >
         <div className={styles.container}>
           <LandingV3 />
         </div>
@@ -92,9 +96,18 @@ function ColorChangeOnScrollGsap() {
 
       <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
         <div className={styles.container}>
+          <LogosMoving/>
+     
+        </div>
+      </section>
+
+      <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
+        <div className={styles.container}>
+
           <ExtraSection />
         </div>
       </section>
+
 
       <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
         <div className={styles.container}>

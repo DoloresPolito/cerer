@@ -4,22 +4,24 @@ import TopHeader from "../components/TopHeader";
 import { useEffect, useState } from "react";
 import Cursor from "../components/Cursor";
 import ColorChangeOnScrollGsap from "@/components/ChangeColor";
-
+import LandingV3 from "@/components/LandingV3";
+import Description from "@/components/Description";
+import LogosMoving from "@/home/LogosMoving";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
 
-      setTimeout(() => {
-        setIsLoading(false);
-        document.body.style.cursor = "default";
-        window.scrollTo(0, 0);
-      }, 2000);
-    })();
-  }, []);
+  //     setTimeout(() => {
+  //       setIsLoading(false);
+  //       document.body.style.cursor = "default";
+  //       window.scrollTo(0, 0);
+  //     }, 2000);
+  //   })();
+  // }, []);
 
   const [width, setWidth] = useState(null);
 
@@ -42,22 +44,14 @@ export default function Home() {
       {/* {width > 600 ? <Cursor /> : <></>} */}
 
       <AnimatePresence mode="wait">
-        {/* {isLoading ? (
-          <Preloader key="preloader" />
-        ) : ( */}
+
           <div key="content">
             <TopHeader />
-            {/* <LandingV2 /> */}
-            {/* <Description /> */}
+   
             <ColorChangeOnScrollGsap />
-            {/* <ProjectsV2 /> */}
-            {/* <CardsSection /> */}
-
-            {/* {width > 800 && <GridScroll />} */}
-
-            {/* <Contact /> */}
+           
           </div>
-        {/* )} */}
+   
       </AnimatePresence>
     </>
   );

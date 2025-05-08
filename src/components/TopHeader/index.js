@@ -1,16 +1,19 @@
 "use client";
 import styles from "./style.module.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { opacity, background } from "./anim";
 import Nav from "./Nav";
-
 import Link from "next/link";
 import Image from "next/image";
-
 import logo from "../../../public/logo/logo-blanco.png"
+
+
 export default function Index() {
   const [isActive, setIsActive] = useState(false);
+
+
+ 
 
   const navdesktop = [
     { id: "1.", title: "INICIO", url: "/", href: "home" },
@@ -32,7 +35,11 @@ export default function Index() {
   };
 
   return (
-    <div className={styles.header}>
+
+      <div className={`${styles.header} `} id="contenedor"
+      
+     
+      >
       <div className={styles.bar}>
         <Link href="/">
           <div className={styles.logocontainer}>

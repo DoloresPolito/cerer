@@ -1,0 +1,63 @@
+.navsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;  
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+  
+    .navcontainer {
+      width: 95%;
+      height: 10vh;
+      border-radius: 5vh;
+      z-index: 90000;
+      display: flex;
+      background-color: #032823;
+      opacity: 0.9;
+    }
+  }
+  
+  
+  .headerBrand {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    width: 50%;
+    height: 10vh;
+    
+    @media only screen and (max-width: 600px) {
+      margin-left: 1vh;
+    }
+  
+    p{
+      color: white;
+      // font-family: "HattonLight";
+      font-size: 7vh;
+      margin-left: 2vh;
+      @media only screen and (max-width: 600px) {
+        font-size: 4vh;
+        margin-left: 0vh;
+      }
+    }
+  
+  
+    img{
+      height: 7vh;
+      width: 7vh;
+      margin-left: 2vh;
+      @media only screen and (max-width: 600px) {
+        height: 5vh;
+        width: 5vh;
+        margin-right: 1.5vh;
+      }
+    }
+  }
+  
+  
+  
+  .headerOptions {
+    display: flex;
+    align-items: center;
+  
+  }

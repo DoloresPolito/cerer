@@ -4,9 +4,7 @@ import TopHeader from "../components/TopHeader";
 import { useEffect, useState } from "react";
 import Cursor from "../components/Cursor";
 import ColorChangeOnScrollGsap from "@/components/ChangeColor";
-import LandingV3 from "@/components/LandingV3";
-import Description from "@/components/Description";
-import LogosMoving from "@/home/LogosMoving";
+import { HeaderBar } from "@/structure/HeaderBar";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -46,7 +44,7 @@ export default function Home() {
       <AnimatePresence mode="wait">
 
           <div key="content">
-            <TopHeader />
+            <HeaderBar />
    
             <ColorChangeOnScrollGsap />
            

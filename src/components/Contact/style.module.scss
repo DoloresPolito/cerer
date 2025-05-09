@@ -62,41 +62,31 @@
       }
 
       span {
-        font-family: "OverusedGrotesk-Light", sans-serif;
         font-weight: 300;
         border-top: 1px solid #47C237;
         line-height: 120%;
-        padding-right: 20vw;
+        padding-right: 10vw;
         margin-right: 40px;
-        font-size: 2vh;
+        font-size: 2.5vh;
         padding-top: 1vh;
         color:#47C237
       }
 
-      p {
+      h6 {
+ 
+
         font-size: 4vh;
-        margin: 0;
-        font-weight: 300;
-        max-width: 40vw;
-        font-family: "OverusedGrotesk-Light", sans-serif;
-        line-height: 120%;
-        @media only screen and (max-width: 1000px) {
-          max-width: 90vw;
-        }
+        color: #39442b;
+        width: auto;
+        letter-spacing: 1px;
       }
 
       .styled-paragraph {
         font-size: 1rem;
         line-height: 1.5;
 
-        .highlighted {
-          font-weight: bold; // Cambia el peso de la fuente
-          color: #007bff; // Cambia el color de las palabras
-          border-top: 2px solid #007bff; // Agrega un borde superior
-          padding-top: 2px; // Ajusta el espacio entre el borde y el texto
-          display: inline-block; // Asegura que el span respete los bordes
-          align-items: flex-start;
-        }
+    
+    
       }
     }
 
@@ -124,9 +114,4 @@
     }
   }
 
-  .line {
-    background-color: var(--background);
-    width: 100%;
-    height: 5vh;
-  }
 }

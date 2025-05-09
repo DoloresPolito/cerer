@@ -2,7 +2,6 @@
 import styles from "./style.module.scss";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import MovingTitle from "../MovingTitle";
 import Link from "next/link";
 
 const projects = [

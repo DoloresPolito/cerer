@@ -22,9 +22,9 @@ export default function Index() {
         <div className={styles.body}>
 
 
-          <p class="styled-paragraph">
+          <h6 class="styled-paragraph">
             <span class="highlighted">quienes somos </span> Somos una organización comprometida con el desarrollo y la promoción de las energías renovables en Entre Ríos. Impulsamos iniciativas sustentables, conectamos actores del sector y trabajamos para fomentar una transición energética justa y responsable en la región.
-          </p>
+          </h6>
 
        
         </div>

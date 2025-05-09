@@ -94,6 +94,15 @@ function ColorChangeOnScrollGsap() {
         </div>
       </section>
 
+      <section className={styles.section} data-bgcolor="#122724" data-textcolor="#ffffff">
+        <div className={styles.container}>
+   
+
+        </div>
+      </section>
+
+  
+
       <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
         <div className={styles.container}>
           <LogosMoving/>
@@ -115,13 +124,13 @@ function ColorChangeOnScrollGsap() {
         </div>
       </section>
 
-      <section className={styles.section} data-bgcolor="#013D35" data-textcolor="#ffffff">
+      {/* <section className={styles.section} data-bgcolor="#013D35" data-textcolor="#ffffff">
         <div className={styles.container}>
         <Loop/>
         </div>
-      </section>
+      </section> */}
      
-      <section className={styles.section} data-bgcolor="#f4f4d6" data-textcolor="#000000">
+      {/* <section className={styles.section} data-bgcolor="#f4f4d6" data-textcolor="#000000">
         <div className={styles.container}>
           <ReviewsSection />
         </div>
@@ -130,7 +139,7 @@ function ColorChangeOnScrollGsap() {
         <div className={styles.container}>
           <ThreeItems />
         </div>
-      </section>
+      </section> */}
 
       <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
         <div className={styles.container}>

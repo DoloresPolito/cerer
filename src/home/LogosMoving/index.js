@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 const LogosMoving = () => {
   return (
     <div className={styles.section}>
-      <h4>Miembros de la Cámara de Energías Renovables de Entre Ríos</h4>
+      <h6>Miembros de la Cámara de Energías Renovables de Entre Ríos</h6>
       <div className={styles.container}>
         <Loop2 reverse="true" />
       </div>

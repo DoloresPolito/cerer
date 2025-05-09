@@ -1,0 +1,77 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10vh 4vh 5vh 4vh;
+    height: 93vh;
+    box-sizing: border-box;
+    background-color: #032823;
+    opacity: 0.95;
+  
+    z-index: 10000;
+    border-radius: 5vh;
+    margin-top: -1vh;
+    margin-right: 3vh;
+  
+  
+    @media only screen and (max-width: 480px) {
+  
+      width: 95vw;
+      // align-self: flex-end;
+      position: absolute; 
+      top: 0;
+      right: 0; // Lo mantiene pegado al borde derecho
+      margin-right: 1.2vh;
+      padding: 5vh 2vh 5vh 2vh;
+  
+    }
+  
+  
+    .body {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      .linkContainer {
+        perspective-origin: bottom;
+      }
+      a {
+        text-decoration: none;
+        font-size: 5.5vh;
+        font-family: 'VisbyLight';
+        color: white;
+  
+        @media only screen and (max-width: 480px) {
+          font-size: 4vh;
+        }
+      }
+  
+      .textContainer {
+        position: relative;
+        display: inline-block; // Solo ocupa el ancho del texto
+      }
+    
+      .underline {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0.2vh;
+        background-color: white;
+        width: 0;
+      }
+    
+      .active .underline {
+        background-color: white;
+      }
+    }
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      cursor: pointer;
+      a {
+          font-size: 2vh;
+        width: 50%;
+        margin-top: 2vh;
+        color: white;
+      }
+    }
+  }

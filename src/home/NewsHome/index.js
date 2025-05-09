@@ -66,9 +66,9 @@ const NewsHome = () => {
     <div className={styles.section} ref={ref}>
       <div className={styles.titles}>
         <AnimatedDiv>
-          <h6 className={styles.heading}>NOVEDADES</h6>
+          <h6 className={styles.heading}>La energía se transforma, y nosotros te lo contamos</h6>
         </AnimatedDiv>
-        <h3 className={styles.reviewstitle}>subtitulo de novedades</h3>
+        {/* <h3 className={styles.reviewstitle}>subtitulo de novedades</h3> */}
       </div>
 
       <AnimatedDiv>
@@ -114,7 +114,7 @@ const Card = ({ name, title, image }) => {
     <div className={styles.cardcontainer}>
     <div className={styles.cardleft}>
       <p className={styles.topText}>{name}</p>
-      <p className={styles.bottomText}>{title}</p>
+      <h6 className={styles.bottomText}>{title}</h6>
     </div>
 
     <div className={styles.cardright}>

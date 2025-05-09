@@ -8,7 +8,6 @@
   align-items: flex-start;
   margin-left: 1vw;
   margin-right: 1vw;
-  // margin-top: 10vh;
   overflow: hidden;
   background-image: url('/images/paneles/paneles2.jpg'); // <-- AQUÍ
   background-size: cover; // Ajusta la imagen para cubrir el área
@@ -17,13 +16,7 @@
   @media screen and (max-width: 800px) {
     height: auto;
   }
-  // .motionDiv {
-  //   position: relative;
-  //   height: 100%;
-  //   width: 100%;
-  //   display: flex;
-  //   flex-direction: column;
-  // }
+
 
   .topcontainer {
     width: 100%;
@@ -34,7 +27,7 @@
 
     img{
       display: flex;
-      width: 60%;
+      width: 50%;
       height: auto;
       justify-self: center;
     }
@@ -51,29 +44,4 @@
 
 
   
-  .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-  }
-
-  .textcontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    .text {
-      font-size: 5vh;
-      margin-top: -15vh;
-      font-family: "VisbyMedium", sans-serif;
-      text-align: center;
-
-    }
-
- 
-  }
 }

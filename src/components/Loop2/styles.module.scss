@@ -31,6 +31,9 @@
       max-height: 100%;
       object-fit: contain;
       mix-blend-mode: multiply;
+
+      max-width: 40vh; // Agregá esto
+
     }
   
     @keyframes scroll {

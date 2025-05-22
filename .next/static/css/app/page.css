@@ -549,15 +549,15 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/Description/style.module.scss ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .style_description__mJBNA {
-  padding-left: 4vw;
-  padding-right: 4vw;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding-left: 16vw;
+  padding-right: 16vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -30vh;
+  margin-top: -10vh;
+  height: 100vh;
+  margin-top: 50vh;
 }
 @media only screen and (max-width: 1000px) {
   .style_description__mJBNA {
@@ -572,19 +572,20 @@
 }
 .style_description__mJBNA .style_body__QadG8 span {
   font-weight: 300;
-  border-top: 1px solid #47c237;
+  border-top: 1px solid #cbc288;
   line-height: 120%;
   padding-right: 10vw;
   margin-right: 40px;
   font-size: 2.5vh;
   padding-top: 1vh;
-  color: #47c237;
+  color: #cbc288;
 }
 .style_description__mJBNA .style_body__QadG8 h6 {
   font-size: 4vh;
-  color: #f6f6f6;
+  color: grey;
   width: auto;
   letter-spacing: 1px;
+  font-family: var(--font-roboto), sans-serif;
 }
 .style_description__mJBNA .style_body__QadG8 .style_styled-paragraph__FMgNu {
   font-size: 1rem;
@@ -2073,7 +2074,7 @@ button.swiper-pagination-bullet {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 95%;
+  width: 98%;
   height: 90vh;
   border-radius: 8vh;
   overflow: hidden;
@@ -2099,24 +2100,31 @@ button.swiper-pagination-bullet {
   z-index: 1;
   width: 100%;
   height: 100%;
-  padding: 4vh;
+  padding: 6vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
 }
 .styles_section__50aGe .styles_container__6wQui .styles_content__9JO__ .styles_title__cbrMC {
-  font-size: 3vh;
-  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  width: auto;
+  max-width: 80vh;
+  letter-spacing: 1px;
+  font-family: "VisbyMedium";
 }
 .styles_section__50aGe .styles_container__6wQui .styles_content__9JO__ .styles_bottomRow__9A9dr {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 5vh;
 }
 .styles_section__50aGe .styles_container__6wQui .styles_content__9JO__ .styles_bottomRow__9A9dr .styles_text__FsnWa {
-  font-size: 2vh;
+  font-size: 2.5vh;
   max-width: 60%;
+  font-weight: 300;
+  font-family: var(--font-roboto), sans-serif;
 }
 .styles_section__50aGe .styles_container__6wQui .styles_content__9JO__ .styles_bottomRow__9A9dr .styles_circleButton__RSiUq {
   width: 60px;
@@ -2169,6 +2177,7 @@ button.swiper-pagination-bullet {
   max-height: 100%;
   object-fit: contain;
   mix-blend-mode: multiply;
+  max-width: 40vh;
 }
 @keyframes styles_scroll__cb0n2 {
   0% {
@@ -2190,6 +2199,7 @@ button.swiper-pagination-bullet {
   justify-content: center;
   padding-top: 12vh;
   overflow-x: hidden;
+  margin-top: -50vh;
 }
 .styles_section__S_PgT h6 {
   font-size: 5vh;
@@ -2205,6 +2215,233 @@ button.swiper-pagination-bullet {
   justify-content: space-between;
   height: auto;
   padding-bottom: 12vh;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/SwiperHeroNew/styles.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.styles_container__c9s_G {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 10vh;
+}
+
+.styles_carouselcontainer__aBfMH {
+  width: 100%;
+  height: 100vh;
+}
+
+.styles_carouselcontent__Qk869 {
+  position: relative;
+  height: 100%;
+}
+
+.styles_slide__LwWMO {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.styles_videocontainer__lOS1M {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.styles_video__wI58N {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.styles_textcontainer__9PMC2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.styles_textcontent__NLL__ {
+  height: 80vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.styles_textcontent__NLL__ .styles_logocontainer__rB1QW {
+  height: 30vh;
+  width: auto;
+}
+.styles_textcontent__NLL__ .styles_logocontainer__rB1QW img {
+  height: 40vh;
+  width: auto;
+}
+
+.styles_title__xecWU {
+  color: #fdfdf1;
+  font-family: "HattonLight";
+  font-size: 9vh;
+  margin-bottom: 3vh;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1px 2vw;
+  line-height: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .styles_title__xecWU {
+    font-size: 6vh;
+  }
+}
+
+.styles_text__T4Qeu {
+  color: #fdfdf1;
+  font-family: "HattonLight";
+  font-size: 3vh;
+  text-align: center;
+  margin-bottom: 2vh;
+  max-width: 70vh;
+  line-height: 120%;
+  letter-spacing: 0.1vh;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+}
+@media only screen and (max-width: 800px) {
+  .styles_text__T4Qeu {
+    font-size: 2.5vh;
+    max-width: 100vw;
+    margin-bottom: 6vh;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/home/BenefitsSection/styles.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.styles_section__igjGp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.styles_section__igjGp .styles_top__7wXJc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30vh;
+  width: 95%;
+  padding: 2rem 0;
+}
+.styles_section__igjGp .styles_top__7wXJc .styles_left__TTXql {
+  width: 50%;
+}
+.styles_section__igjGp .styles_top__7wXJc .styles_left__TTXql h6 {
+  font-size: 5vh;
+  color: white;
+  width: auto;
+  letter-spacing: 1px;
+}
+.styles_section__igjGp .styles_top__7wXJc .styles_right__ftEGw {
+  width: 45%;
+}
+.styles_section__igjGp .styles_top__7wXJc .styles_right__ftEGw p {
+  font-size: 2.5vh;
+  line-height: 1.6;
+  font-family: var(--font-roboto), sans-serif;
+  font-weight: 200;
+  color: grey;
+}
+.styles_section__igjGp .styles_grid__CnctB {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.styles_section__igjGp .styles_grid__CnctB .styles_row__osyOL {
+  display: flex;
+  gap: 2rem;
+}
+.styles_section__igjGp .styles_grid__CnctB .styles_row__osyOL .styles_card__EwVj_ {
+  position: relative;
+  height: 35vh;
+  padding: 3vh;
+  border-radius: 20px;
+  border: 1px solid grey;
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.styles_section__igjGp .styles_grid__CnctB .styles_row__osyOL .styles_card__EwVj_:hover {
+  background-color: rgb(58, 91, 58);
+}
+.styles_section__igjGp .styles_grid__CnctB .styles_row__osyOL .styles_card__EwVj_ .styles_logo__E_rfp {
+  width: 40px;
+  height: auto;
+}
+.styles_section__igjGp .styles_grid__CnctB .styles_row__osyOL .styles_card__EwVj_ h6 {
+  font-size: 4vh;
+  color: white;
+  width: auto;
+  letter-spacing: 1px;
+}
+.styles_section__igjGp .styles_grid__CnctB .styles_row__osyOL .styles_large__Fubu1 {
+  width: 60%;
+  background-image: url("/img1.jpg");
+}
+.styles_section__igjGp .styles_grid__CnctB .styles_row__osyOL .styles_large__Fubu1 button {
+  justify-self: center;
+  align-self: center;
+  padding: 1vh 4vh;
+  height: 8vh;
+  border-radius: 30px;
+  background-color: green;
+  border: none;
+  font-size: 3vh;
+  color: white;
+  width: auto;
+  letter-spacing: 1px;
+}
+.styles_section__igjGp .styles_grid__CnctB .styles_row__osyOL .styles_small__mR3pT {
+  width: 40%;
+  background-image: url("/img2.jpg");
+}
+@media screen and (max-width: 800px) {
+  .styles_section__igjGp .styles_top__7wXJc {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+  }
+  .styles_section__igjGp .styles_top__7wXJc .styles_left__TTXql,
+  .styles_section__igjGp .styles_top__7wXJc .styles_right__ftEGw {
+    width: 100%;
+    text-align: center;
+  }
+  .styles_section__igjGp .styles_top__7wXJc .styles_left__TTXql h2 {
+    font-size: 2.2rem;
+  }
+  .styles_section__igjGp .styles_top__7wXJc .styles_right__ftEGw p {
+    font-size: 1rem;
+  }
+  .styles_section__igjGp .styles_grid__CnctB .styles_row__osyOL {
+    flex-direction: column;
+  }
+  .styles_section__igjGp .styles_grid__CnctB .styles_row__osyOL .styles_large__Fubu1,
+  .styles_section__igjGp .styles_grid__CnctB .styles_row__osyOL .styles_small__mR3pT {
+    width: 100%;
+  }
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/ChangeColor/styles.module.scss ***!
@@ -2222,7 +2459,7 @@ button.swiper-pagination-bullet {
 }
 
 .styles_section__t8HQG {
-  min-height: 100vh;
+  min-height: 50vh;
   width: 100vw;
   max-width: 100%;
   position: relative;
@@ -2384,15 +2621,13 @@ button.swiper-pagination-bullet {
   width: 100%;
   background-color: transparent;
   position: absolute;
+  margin-top: -2vh;
 }
 .styles_navsection__5Xge2 .styles_navcontainer__FfL7l {
-  width: 95%;
+  width: 100%;
   height: 10vh;
-  border-radius: 5vh;
   z-index: 90000;
   display: flex;
-  background-color: #032823;
-  opacity: 0.9;
 }
 
 .styles_headerBrand__J2XTP {
@@ -2434,4 +2669,38 @@ button.swiper-pagination-bullet {
 .styles_headerOptions__PzWJh {
   display: flex;
   align-items: center;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/FixedMedia/styles.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.styles_section__vFRsB {
+  position: fixed;
+  top: 50%;
+  right: 5vh;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: transparent;
+  padding: 0.5rem;
+  z-index: 10000;
+}
+.styles_section__vFRsB a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(251, 249, 249, 0.2549019608);
+  border-radius: 50%;
+  color: #c5c4c4;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.styles_section__vFRsB a img {
+  height: 3.2vh;
+}
+.styles_section__vFRsB a:hover {
+  background-color: #007bff;
+  color: #ffffff;
 }

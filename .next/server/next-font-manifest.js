@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/dolorespolito/Desktop/cerer/src/app/layout\":[\"static/media/a0da7ac9f229b656-s.p.woff2\",\"static/media/47cbc4e2adbc5db9-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/dolorespolito/Desktop/cerer/src/app/layout\":[\"static/media/47cbc4e2adbc5db9-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

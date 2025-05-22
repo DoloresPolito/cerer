@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Cursor from "../components/Cursor";
 import ColorChangeOnScrollGsap from "@/components/ChangeColor";
 import { HeaderBar } from "@/structure/HeaderBar";
+import FixedMedia from "@/components/FixedMedia";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -45,7 +46,7 @@ export default function Home() {
 
           <div key="content">
             <HeaderBar />
-   
+   <FixedMedia/>
             <ColorChangeOnScrollGsap />
            
           </div>

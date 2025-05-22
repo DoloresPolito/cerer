@@ -1,13 +1,16 @@
 .description {
-  padding-left: 4vw;
-  padding-right: 4vw;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding-left: 16vw;
+  padding-right: 16vw;
+  // padding-top: 2vw;
+  // padding-bottom: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -30vh;
+  margin-top: -10vh;
+
+  height: 100vh;
+  margin-top: 50vh;
 
   @media only screen and (max-width: 1000px) {
     padding-left: 1vw;
@@ -21,20 +24,21 @@
 
     span {
       font-weight: 300;
-      border-top: 1px solid #47c237;
+      border-top: 1px solid #cbc288;
       line-height: 120%;
       padding-right: 10vw;
       margin-right: 40px;
       font-size: 2.5vh;
       padding-top: 1vh;
-      color: #47c237;
+      color: #cbc288;
     }
 
     h6 {
       font-size: 4vh;
-      color: #f6f6f6;
+      color: grey;
       width: auto;
       letter-spacing: 1px;
+      font-family: var(--font-roboto), sans-serif;
     }
 
     .styled-paragraph {

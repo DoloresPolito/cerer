@@ -15,6 +15,9 @@ import ThreeItems from "@/components/ThreeItems";
 import NewsHome from "@/home/NewsHome"
 import ExtraSection from "@/home/ExtraSection"
 import LogosMoving from "@/home/LogosMoving";
+import SwiperHeroNew from "@/components/SwiperHeroNew"
+import Swiper from "swiper";
+import BenefitSection from "@/home/BenefitsSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -84,7 +87,8 @@ function ColorChangeOnScrollGsap() {
       // data-bgcolor="#013D35" data-textcolor="#d0b6c0"
       >
         <div className={styles.container}>
-          <LandingV3 />
+          {/* <LandingV3 /> */}
+          <SwiperHeroNew/>
         </div>
       </section>
       <section className={styles.section} data-bgcolor="#001D19" data-textcolor="#ffffff">
@@ -94,13 +98,7 @@ function ColorChangeOnScrollGsap() {
         </div>
       </section>
 
-      <section className={styles.section} data-bgcolor="#122724" data-textcolor="#ffffff">
-        <div className={styles.container}>
-   
-
-        </div>
-      </section>
-
+     
   
 
       <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
@@ -118,9 +116,16 @@ function ColorChangeOnScrollGsap() {
       </section>
 
 
+
       <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
         <div className={styles.container}>
           <NewsHome />
+        </div>
+      </section>
+      <section className={styles.section} data-bgcolor="#122724" data-textcolor="#ffffff">
+        <div className={styles.container}>
+   <BenefitSection/>
+
         </div>
       </section>
 

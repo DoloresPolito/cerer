@@ -1,13 +1,8 @@
-import { Roboto, Michroma } from "@next/font/google";
-// import { ThemeProvider } from "../context/Themecontext";
+import { Roboto} from "@next/font/google";
 import "./globals.scss";
 import "../styles/fonts.css";
 
-const michroma = Michroma({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-michroma",
-});
+
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -57,7 +52,7 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body className={`${michroma.variable} ${roboto.variable}`}>
+      <body className={`${roboto.variable}`}>
         {children}
       </body>
     </html>

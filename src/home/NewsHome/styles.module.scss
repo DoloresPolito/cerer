@@ -1,13 +1,14 @@
 .section {
-  height: auto;
+  height: 120vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   z-index: 10;
   margin: 0 auto;
   overflow-x: hidden;
+  margin-top: 0vh;
 
   .titles {
     display: flex;
@@ -19,9 +20,12 @@
 
     h6 {
       font-size: 5vh;
-      color: #39442b;
+      color: white;
       width: auto;
       letter-spacing: 1px;
+    }
+    span{
+      color:#27d16a
     }
   }
 }
@@ -102,6 +106,16 @@
       width: 100%;
     }
 
+    .titlediv{
+      display: flex;
+      align-items: center;
+
+      img{
+        height: 4vh;
+        width: 4vh;
+        margin-right: 2vh;
+      }
+    }
     .topText {
       font-size: 1rem;
       font-weight: 500;
@@ -226,7 +240,7 @@
   border: 0.2vh solid #39442b;
   cursor: pointer;
   &:hover {
-    background-color: #f8fb9c; /* Color de fondo al hacer hover */
+    background-color: #27d16a; /* Color de fondo al hacer hover */
   }
   svg {
     width: 5vh;
@@ -244,7 +258,7 @@
 
   border: 0.2vh solid #39442b;
   &:hover {
-    background-color: #f8fb9c;
+    background-color: #27d16a;
   }
   svg {
     transform: rotate(180deg);

@@ -8,6 +8,7 @@ import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import AnimatedDiv from "@/components/AnimatedDiv";
 import Image from "next/image";
+import location from "../../../public/icons/location-50.png"
 const NewsHome = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -66,7 +67,7 @@ const NewsHome = () => {
     <div className={styles.section} ref={ref}>
       <div className={styles.titles}>
         <AnimatedDiv>
-          <h6 className={styles.heading}>La energía se transforma, y nosotros te lo contamos</h6>
+          <h6 className={styles.heading}>La energía se <span>transforma</span>, y nosotros te lo <span>contamos</span></h6>
         </AnimatedDiv>
         {/* <h3 className={styles.reviewstitle}>subtitulo de novedades</h3> */}
       </div>
@@ -113,7 +114,11 @@ const Card = ({ name, title, image }) => {
   return (
     <div className={styles.cardcontainer}>
     <div className={styles.cardleft}>
+      <div className={styles.titlediv}>
+        <Image src={location} alt="ubicacion"/>
       <p className={styles.topText}>{name}</p>
+      </div>
+
       <h6 className={styles.bottomText}>{title}</h6>
     </div>
 
@@ -124,7 +129,7 @@ const Card = ({ name, title, image }) => {
         fill
         style={{ objectFit: "cover" }}
       />
-      <a href="#noticia" className={styles.circleButton}>
+      {/* <a href="#noticia" className={styles.circleButton}>
         <svg viewBox="0 0 24 24" fill="none">
           <path
             d="M5 12h14M13 6l6 6-6 6"
@@ -134,7 +139,7 @@ const Card = ({ name, title, image }) => {
             strokeLinejoin="round"
           />
         </svg>
-      </a>
+      </a> */}
     </div>
   </div>
   );

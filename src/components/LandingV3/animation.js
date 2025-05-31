@@ -53,3 +53,27 @@ export const slideUp3 = {
     },
   },
 }
+
+export const slideLeft = {
+  initial: { x: -100, opacity: 0 },
+  enter: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1.2,
+      ease: [0.33, 1, 0.68, 1],
+    },
+  },
+};
+
+export const fadeInScale = {
+  initial: { scale: 0.5, opacity: 0 },
+  enter: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 1.4,
+      ease: [0.33, 1, 0.68, 1],
+    },
+  },
+};

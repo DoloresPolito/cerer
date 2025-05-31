@@ -12,10 +12,10 @@ import LandingV3 from "@/components/LandingV3";
 import Loop from "../Loop";
 import ReviewsSection from "@/components/Reviews";
 import ThreeItems from "@/components/ThreeItems";
-import NewsHome from "@/home/NewsHome"
-import ExtraSection from "@/home/ExtraSection"
+import NewsHome from "@/home/NewsHome";
+import ExtraSection from "@/home/ExtraSection";
 import LogosMoving from "@/home/LogosMoving";
-import SwiperHeroNew from "@/components/SwiperHeroNew"
+import SwiperHeroNew from "@/components/SwiperHeroNew";
 import Swiper from "swiper";
 import BenefitSection from "@/home/BenefitsSection";
 
@@ -52,7 +52,8 @@ function ColorChangeOnScrollGsap() {
     const sectionColor = document.querySelectorAll("[data-bgcolor]");
     sectionColor.forEach((colorSection, i) => {
       const prevBgColor = i === 0 ? "" : sectionColor[i - 1].dataset.bgcolor;
-      const prevTextColor = i === 0 ? "" : sectionColor[i - 1].dataset.textcolor;
+      const prevTextColor =
+        i === 0 ? "" : sectionColor[i - 1].dataset.textcolor;
 
       ScrollTrigger.create({
         trigger: colorSection,
@@ -75,82 +76,110 @@ function ColorChangeOnScrollGsap() {
 
     return () => {
       scrollBar.destroy();
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
   return (
     <main className={styles.main} ref={mainRef}>
-
-      <section className={styles.section}
-      data-bgcolor="#001D19" data-textcolor="#ffffff"
-      // data-bgcolor="#013D35" data-textcolor="#d0b6c0"
+      <section
+        className={styles.section}
+        data-bgcolor="#001D19"
+        data-textcolor="#ffffff"
       >
         <div className={styles.container}>
-          {/* <LandingV3 /> */}
-          <SwiperHeroNew/>
+          <LandingV3 />
+
         </div>
       </section>
-      <section className={styles.section} data-bgcolor="#001D19" data-textcolor="#ffffff">
+
+      <section
+        className={styles.section}
+        data-bgcolor="#001D19"
+        data-textcolor="#ffffff"
+      >
         <div className={styles.container}>
           <Description />
-
         </div>
       </section>
+      {/* <section
+        className={styles.section}
+        data-bgcolor="#001D19"
+        data-textcolor="#ffffff"
+      >
+        <div className={styles.container}></div>
+      </section> */}
 
-     
-  
 
-      <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
+
+      <section
+        className={styles.section}
+        data-bgcolor="#fcf5eb"
+        data-textcolor="black"
+      >
         <div className={styles.container}>
-          <LogosMoving/>
-     
-        </div>
-      </section>
-
-      <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
-        <div className={styles.container}>
-
           <ExtraSection />
         </div>
       </section>
 
 
-
-      <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
+      <section
+        className={styles.section}
+        data-bgcolor="#0f3627"
+        data-textcolor="white"
+      >
         <div className={styles.container}>
           <NewsHome />
         </div>
       </section>
-      <section className={styles.section} data-bgcolor="#122724" data-textcolor="#ffffff">
+      <section
+        className={styles.section}
+        data-bgcolor="#0f3627"
+        data-textcolor="white"
+      >
         <div className={styles.container}>
-   <BenefitSection/>
+   
+        </div>
+      </section>
+      
 
+      <section
+        className={styles.section}
+        data-bgcolor="#fcf5eb"
+        data-textcolor="black"
+      >
+        <div className={styles.container}>
+          <LogosMoving />
+        </div>
+      </section>
+      <section
+        className={styles.section}
+        data-bgcolor="#fcf5eb"
+        data-textcolor="black"
+      >
+        <div className={styles.container}>
+          <BenefitSection />
         </div>
       </section>
 
-      {/* <section className={styles.section} data-bgcolor="#013D35" data-textcolor="#ffffff">
-        <div className={styles.container}>
-        <Loop/>
-        </div>
-      </section> */}
-     
-      {/* <section className={styles.section} data-bgcolor="#f4f4d6" data-textcolor="#000000">
-        <div className={styles.container}>
-          <ReviewsSection />
-        </div>
-      </section>
-      <section className={styles.section} data-bgcolor="#013D35" data-textcolor="#d0b6c0">
-        <div className={styles.container}>
-          <ThreeItems />
-        </div>
-      </section> */}
 
-      <section className={styles.section} data-bgcolor="#ffffff" data-textcolor="black">
+      {/* <section
+        className={styles.section}
+        data-bgcolor="#111b21"
+        data-textcolor="white"
+      >
         <div className={styles.container}>
           <Contact />
         </div>
       </section>
+
+      <section
+        className={styles.section}
+        data-bgcolor="#f0ebe5"
+        data-textcolor="black"
+      >
+        <div className={styles.container}></div>
+      </section> */}
     </main>
   );
 }

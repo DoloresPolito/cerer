@@ -3,11 +3,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--text);
-  color: var(--background);
-  // justify-content: center;
-  margin-top: 3vw;
-  margin-bottom: 1vw;
+
   padding:2vh 0;
   @media only screen and (max-width: 1000px) {
     height: auto}
@@ -18,7 +14,6 @@
     font-weight: 600;
     margin-top: 2vh; // Ajuste proporcional usando vh
 
-    font-family: "OverusedGrotesk-Light", sans-serif;
     margin-left: 3vw;
     font-weight: 300;
     font-size: 2.5vh;
@@ -54,7 +49,7 @@
       align-items: flex-end;
       padding-bottom: 3vh;
       gap: 3vw;
-
+background-color: red;
       @media only screen and (max-width: 1000px) {
         margin-left: 0vw;
         justify-content: center;

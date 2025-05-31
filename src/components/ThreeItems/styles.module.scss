@@ -1,9 +1,8 @@
 .section {
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     z-index: 5;
-    background-color: #f4f0ea;
     overflow-x: hidden;
   
     @media only screen and (max-width: 750px) {
@@ -45,23 +44,7 @@
         flex-direction: column; // Cambiar a disposición vertical
       }
   
-      img {
-        position: relative;
-        width: 100%; // Ajustar la imagen al 100% del contenedor
-        height: auto; // Permitir que la altura se ajuste automáticamente
-        min-height: 80vh;
-        min-width: 33.5vw;
-        @media only screen and (max-width: 750px) {
-          object-fit: cover; // Cubrir el contenedor sin distorsionar
-          max-height: 55vh; // Limitar la altura máxima
-          min-height: auto;
-          min-width: auto;
-          width: 100vw;
-        }
-       
-          
       
-      }
 
   
       .textcontainer {
@@ -77,15 +60,15 @@
           max-height: 45vh;
         }
   
-        h2 {
+        h6 {
           margin-bottom: 1rem;
           color: #62685e;
-  font-family: "HattonLight";
-          font-size: 6vh;
+
+          font-size: 4vh;
           text-align: center;
-          text-transform: uppercase;
+     
           padding: 0px 7vw;
-          // color: white;
+   
   
           @media only screen and (max-width: 750px) {
             font-size: 5vh;

@@ -22,14 +22,14 @@ const BenefitSection = () => {
           <div className={`${styles.card} ${styles.large}`}   
         //   style={{ backgroundImage: `url('/images/paneles/2...jpg')` }}
           >
-            <Image src={logo} alt="logo" className={styles.logo} />
+            {/* <Image src={logo} alt="logo" className={styles.logo} /> */}
             <h6 className={styles.cardTitle}>Representación sectorial</h6>
             <p>Formá parte de una organización que representa los intereses del sector ante organismos públicos y privados, impulsando políticas que favorezcan el desarrollo de las energías renovables.</p>
           </div>
           <div className={`${styles.card} ${styles.small}`} 
         //   style={{ backgroundImage: `url('/images/paneles/3...jpg')` }}
           >
-            <Image src={logo}  alt="logo" className={styles.logo} />
+            {/* <Image src={logo}  alt="logo" className={styles.logo} /> */}
             <h6 className={styles.cardTitle}>Acceso a eventos y networking</h6>
             <p>Participá de encuentros, capacitaciones y espacios de vinculación con otros actores del sector para generar nuevas oportunidades de colaboración y negocio.</p>
           </div>
@@ -39,7 +39,7 @@ const BenefitSection = () => {
           <div className={`${styles.card} ${styles.small}` } 
         //   style={{ backgroundImage: `url('/images/paneles/4...jpg')` }}
           >
-            <Image src={logo}  alt="logo" className={styles.logo} />
+            {/* <Image src={logo}  alt="logo" className={styles.logo} /> */}
             <h6 className={styles.cardTitle}>Difusión y apoyo institucional</h6>
             <p>Amplificamos tu actividad a través de nuestros canales y brindamos respaldo institucional en iniciativas, proyectos o propuestas relevantes.</p>
           </div>

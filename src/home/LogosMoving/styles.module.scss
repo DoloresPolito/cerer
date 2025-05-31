@@ -5,10 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  padding-top: 12vh;
   overflow-x: hidden;
-margin-top: -50vh;
   h6 {
     font-size: 5vh;
     color: #39442b;
@@ -16,6 +13,10 @@ margin-top: -50vh;
     max-width: 100vh;
     letter-spacing: 1px;
     text-align: center;
+
+    span {
+      color: #27d16a;
+    }
   }
 
   .container {
@@ -24,5 +25,33 @@ margin-top: -50vh;
     justify-content: space-between;
     height: auto;
     padding-bottom: 12vh;
+  }
+
+  button {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 0vh 4vh;
+    border-radius: 30px;
+    border: 0.1vh solid black;
+    background-color: transparent;
+    letter-spacing: 1px;
+    cursor: pointer; 
+    p {
+      font-size: 2vh;
+      color: black;
+      font-family: 'VisbyMedium';
+    }
+
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+      background-color: #27d16a;
+      border-color: #27d16a;
+  
+      p {
+        color: white;
+      }
+    }
   }
 }

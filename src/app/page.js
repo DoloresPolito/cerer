@@ -6,21 +6,22 @@ import Cursor from "../components/Cursor";
 import ColorChangeOnScrollGsap from "@/components/ChangeColor";
 import { HeaderBar } from "@/structure/HeaderBar";
 import FixedMedia from "@/components/FixedMedia";
+import Description from "@/components/Description";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
-  // useEffect(() => {
-  //   (async () => {
-  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
-  //     const locomotiveScroll = new LocomotiveScroll();
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
 
-  //     setTimeout(() => {
-  //       setIsLoading(false);
-  //       document.body.style.cursor = "default";
-  //       window.scrollTo(0, 0);
-  //     }, 2000);
-  //   })();
-  // }, []);
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = "default";
+        window.scrollTo(0, 0);
+      }, 2000);
+    })();
+  }, []);
 
   const [width, setWidth] = useState(null);
 
@@ -43,14 +44,16 @@ export default function Home() {
       {/* {width > 600 ? <Cursor /> : <></>} */}
 
       <AnimatePresence mode="wait">
+        <div key="content">
+          <HeaderBar />
+          <FixedMedia />
 
-          <div key="content">
-            <HeaderBar />
-   <FixedMedia/>
-            <ColorChangeOnScrollGsap />
-           
+          {/* <Description /> */}
+
+<div>
+          <ColorChangeOnScrollGsap />
           </div>
-   
+        </div>
       </AnimatePresence>
     </>
   );

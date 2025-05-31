@@ -45,35 +45,25 @@
     justify-content: center;
     position: relative;
 
-    span {
-      font-weight: 300;
-      border-top: 1px solid #cbc288;
-      line-height: 120%;
-      padding-right: 10vw;
-      margin-right: 40px;
-      font-size: 2.5vh;
-      padding-top: 1vh;
-      color: #cbc288;
-    }
 
     h6 {
-      font-size: 3vh;
-      color: grey;
+      font-size: 3.5vh;
+      color: rgb(167, 167, 167);
       width: auto;
       letter-spacing: 1px;
       font-family: var(--font-roboto), sans-serif;
       padding-left: 5vw;
       padding-right: 5vw;
       margin-top: 20vh;
+      text-align: center;
+
+      span{
+        color:#27d16a
+      }
+
     }
 
-   
-
-    .styled-paragraph {
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-
+  
     @media screen and (max-width: 1000px) {
       padding-left: 0;
       padding-right: 0;

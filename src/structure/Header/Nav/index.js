@@ -5,6 +5,7 @@ import { links, footerLinks } from "./data";
 import { perspective, slideIn } from "./anim";
 import Link from "next/link";
 
+
 export default function Navbar() {
   const [selectedLink, setSelectedLink] = useState({ isActive: false, index: null });
 
@@ -66,6 +67,7 @@ export default function Navbar() {
             </motion.a>
           );
         })}
+
       </motion.div>
     </div>
   );

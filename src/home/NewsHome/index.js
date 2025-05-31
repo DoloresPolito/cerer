@@ -9,6 +9,7 @@ import { useInView } from "react-intersection-observer";
 import AnimatedDiv from "@/components/AnimatedDiv";
 import Image from "next/image";
 import location from "../../../public/icons/location-50.png"
+
 const NewsHome = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -69,7 +70,7 @@ const NewsHome = () => {
         <AnimatedDiv>
           <h6 className={styles.heading}>La energía se <span>transforma</span>, y nosotros te lo <span>contamos</span></h6>
         </AnimatedDiv>
-        {/* <h3 className={styles.reviewstitle}>subtitulo de novedades</h3> */}
+      
       </div>
 
       <AnimatedDiv>
@@ -118,8 +119,11 @@ const Card = ({ name, title, image }) => {
         <Image src={location} alt="ubicacion"/>
       <p className={styles.topText}>{name}</p>
       </div>
+<AnimatedDiv>
+
 
       <h6 className={styles.bottomText}>{title}</h6>
+      </AnimatedDiv>
     </div>
 
     <div className={styles.cardright}>

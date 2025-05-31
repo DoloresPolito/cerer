@@ -75,7 +75,11 @@
         font-size: 2.5vh;
         font-weight: 200;
         font-family: var(--font-roboto), sans-serif;
+        margin-top: 7vh;
         color: white;
+        @media only screen and (max-width: 800px) {
+text-align: center;
+        }
       }
 
       .title {
@@ -85,6 +89,9 @@
         // max-width: 120vh;
         letter-spacing: 1px;
         font-family: "VisbyMedium";
+        @media only screen and (max-width: 800px) {
+          text-align: center;
+                  }
 
         span {
           color: #27d16a;

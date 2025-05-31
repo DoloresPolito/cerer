@@ -13,14 +13,10 @@ export function HeaderBar() {
 
   return (
     <div className={styles.navsection}>
-      <div
-        className={styles.navcontainer}
- 
-      >
+      <div className={styles.navcontainer}>
         <Link href="/">
           <div className={styles.headerBrand}>
             <Image src={logo1} alt="logo" />
-           
           </div>
         </Link>
 

@@ -3,17 +3,16 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 10vh 4vh 5vh 4vh;
-    height: 93vh;
+    height: 98.5vh;
     box-sizing: border-box;
     background-color: #032823;
+
     opacity: 0.95;
-  
     z-index: 10000;
-    border-radius: 5vh;
+    border-radius: 3vh;
     margin-top: -1vh;
-    margin-right: 3vh;
-  
-  
+    margin-right: 0vh;
+
     @media only screen and (max-width: 480px) {
   
       width: 95vw;
@@ -71,7 +70,7 @@
           font-size: 2vh;
         width: 50%;
         margin-top: 2vh;
-        color: white;
+        color: #27d16a;
       }
     }
   }

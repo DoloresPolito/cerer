@@ -9,6 +9,9 @@
   margin: 0 auto;
   overflow-x: hidden;
   margin-top: 0vh;
+  @media only screen and (max-width: 800px) {
+    height: auto;
+  }
 
   .titles {
     display: flex;
@@ -23,9 +26,13 @@
       color: white;
       width: auto;
       letter-spacing: 1px;
+      @media only screen and (max-width: 800px) {
+        text-align: center;
+        padding: 0vh 3vh;
+      }
     }
-    span{
-      color:#27d16a
+    span {
+      color: #27d16a;
     }
   }
 }
@@ -106,11 +113,11 @@
       width: 100%;
     }
 
-    .titlediv{
+    .titlediv {
       display: flex;
       align-items: center;
 
-      img{
+      img {
         height: 4vh;
         width: 4vh;
         margin-right: 2vh;
@@ -121,15 +128,12 @@
       font-weight: 500;
     }
 
- 
-
-      h6 {
-        font-size: 4vh;
-        color: #39442b;
-        width: auto;
-        letter-spacing: 1px;
-      }
-
+    h6 {
+      font-size: 4vh;
+      color: #39442b;
+      width: auto;
+      letter-spacing: 1px;
+    }
   }
 }
 
@@ -139,8 +143,6 @@
   display: flex;
   justify-content: center;
 }
-
-
 
 .carouselcontainer {
   height: auto;

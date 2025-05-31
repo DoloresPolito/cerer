@@ -13,7 +13,7 @@ export default function ThreeItems() {
       number:"5",
       imageUrl: "/images/paneles/hero.png",
       delay: 0.3,
-      link: "/cara",
+      link: "/c",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export default function ThreeItems() {
       number:"35",
       imageUrl: "/images/paneles/paneles.png",
       delay: 0.9,
-      link: "/cuerpo",
+      link: "/",
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ export default function ThreeItems() {
       number:"+28",
       imageUrl: "/images/paneles/hero.png",
       delay: 1.5,
-      link: "/capilar",
+      link: "/",
     },
   ];
 

@@ -15,8 +15,8 @@ const menu = {
     transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
   },
   closed: {
-    width: "10vh",
-    height: "4vh",
+    width: "0vh",
+    height: "0vh",
     top: "0vh",
     right: "0vh",
 

@@ -28,7 +28,7 @@ export const footerLinks = [
         href: "mailto:cerer@gmail.com"
     },
     {
-        title: "Chatear por Whatsapp",
-        href: "https://wa.me/543446584076"
+        title: "Linkedin",
+        href: "https://www.linkedin.com"
     }
 ]

@@ -42,13 +42,13 @@ const NewsHome = () => {
       name: "Noticia 3",
       title: "7ma reunión de la mesa provincial de energía sostenible",
       text: ".",
-      image:"new3.png"
+      image:"reu1.JPG"
     },
     {
       name: "Noticia 4",
       title:
         "Entre Ríos - Evolución de la generación distribuida a partir de fuentes renovables",
-      text: ".",      image:"new4.png"
+      text: ".",      image:"reu2.JPG"
     },
     {
       name: "Noticia 5",

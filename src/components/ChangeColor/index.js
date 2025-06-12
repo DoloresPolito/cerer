@@ -90,7 +90,6 @@ function ColorChangeOnScrollGsap() {
       >
         <div className={styles.container}>
           <LandingV3 />
-
         </div>
       </section>
 
@@ -111,8 +110,6 @@ function ColorChangeOnScrollGsap() {
         <div className={styles.container}></div>
       </section> */}
 
-
-
       <section
         className={styles.section}
         data-bgcolor="#fcf5eb"
@@ -122,7 +119,6 @@ function ColorChangeOnScrollGsap() {
           <ExtraSection />
         </div>
       </section>
-
 
       <section
         className={styles.section}
@@ -139,10 +135,9 @@ function ColorChangeOnScrollGsap() {
         data-textcolor="white"
       >
         <div className={styles.container}>
-   <NewSection/>
+          <NewSection />
         </div>
       </section>
-      
 
       <section
         className={styles.section}
@@ -158,11 +153,8 @@ function ColorChangeOnScrollGsap() {
         data-bgcolor="#fcf5eb"
         data-textcolor="black"
       >
-        <div className={styles.container}>
-          {/* <BenefitSection /> */}
-        </div>
+        <div className={styles.container}>{/* <BenefitSection /> */}</div>
       </section>
-
 
       {/* <section
         className={styles.section}

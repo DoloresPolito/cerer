@@ -7,7 +7,6 @@
   justify-content: center;
 
   .gridContainer {
-    position: relative;
     display: grid;
     grid-template-areas:
       "img1 img3 img2"
@@ -19,10 +18,36 @@
     height: 100vh;
     position: relative;
 
-    @media screen and (max-width: 800px) {
-      display: flex;
-      flex-direction: column;
-      height: auto;
+    @media screen and (max-width: 1000px) {
+      grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+
+      // Ocultar img5 en este tamaño
+      .gridItem:nth-child(5) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-areas:
+        "img1"
+        "img2"
+        "img3"
+        "img4";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+
+      .gridItem {
+        height: auto;
+      }
+
+      // También ocultar img5 en móvil
+      .gridItem:nth-child(5) {
+        display: none;
+      }
     }
 
     .gridItem {
@@ -45,24 +70,21 @@
       z-index: 10;
       width: 40%;
 
-
       img {
         width: 100%;
         height: auto;
-
-          display: block;
-          margin: 0 auto;
-        
+        display: block;
+        margin: 0 auto;
       }
 
-      // @media screen and (max-width: 800px) {
-      //   width: 60%;
-      //   position: relative;
-      //   top: auto;
-      //   left: auto;
-      //   transform: none;
-      //   margin: 1rem auto;
-      // }
+      @media screen and (max-width: 600px) {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 60%;
+        margin: 2rem auto;
+      }
     }
   }
 }

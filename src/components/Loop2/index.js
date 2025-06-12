@@ -8,19 +8,14 @@ const Loop2 = ({ reverse }) => {
     { src: "/logos/cersolar2.png", alt: "Cersolar" },
     { src: "/logos/chico.svg", alt: "Coenergy" },
     { src: "/logos/ser.png", alt: "Ser" },
-    { src: "/logos/tryodo2.png", alt: "Tryodo" },
-    { src: "/logos/calvo.png", alt: "Calvo" },
-    { src: "/logos/cersolar2.png", alt: "Cersolar" },
-    { src: "/logos/chico.svg", alt: "Coenergy"},
-    { src: "/logos/ser.png", alt: "Ser" },
-    { src: "/logos/tryodo2.png", alt: "Tryodo" },
-    { src: "/logos/calvo.png", alt: "Calvo" },
-    { src: "/logos/cersolar2.png", alt: "Cersolar" },
-    { src: "/logos/chico.svg", alt: "Coenergy"},
-    { src: "/logos/ser.png", alt: "Ser" },
-    { src: "/logos/tryodo2.png", alt: "Tryodo" },
+    { src: "/logos/LG.png", alt: "LG" },
+    { src: "/logos/reenerger.png", alt: "ReEnerger" },
+    { src: "/logos/ecoenergy.png", alt: "EcoEnergy" },
+    { src: "/logos/enova.png", alt: "eNova"},
+    { src: "/logos/time.png", alt: "Time Solar" },
+    { src: "/logos/dyg.png", alt: "DyG" },
   ];
-
+ 
   return (
 
 

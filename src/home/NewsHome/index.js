@@ -27,39 +27,39 @@ const NewsHome = () => {
   const cards = [
     {
       name: "Noticia 1",
-      title: "Energía Limpia: El camino hacia un futuro con menos emisiones",
+      title: "Partipación en la Mesa Provincial de Energía Sostenible",
       text: ".",
       image:"new1.png"
     },
     {
       name: "Noticia 2",
       title:
-        "Argentina Energy Week 2025: encuentro sobre el futuro energético del país",
+        "Relacionamiento con Universidades",
       text: ".",
       image:"new2.png"
     },
     {
       name: "Noticia 3",
-      title: "7ma reunión de la mesa provincial de energía sostenible",
+      title: "ENERSA se suma a la Cámara de Energías Renovables de Entre Ríos (CERER)",
       text: ".",
       image:"reu1.JPG"
     },
     {
       name: "Noticia 4",
       title:
-        "Entre Ríos - Evolución de la generación distribuida a partir de fuentes renovables",
+        "CERER se reúne con autoridades y docentes  de  la  UTN Facultad Regional Paraná",
       text: ".",      image:"reu2.JPG"
     },
     {
       name: "Noticia 5",
       title:
-        "Empresas argentinas deben incorporar 20% de energías renovables desde enero 2025",
+        ".Empresas argentinas deben incorporar 20% de energías renovables desde enero 2025",
       text: ".",      image:"new1.png"
     },
     {
       name: "Noticia 6",
       title:
-        "Récord en energía renovable: Argentina marca un hito a fines del 2024",
+        ".Récord en energía renovable: Argentina marca un hito a fines del 2024",
       text: ".",      image:"new2.png"
     },
   ];

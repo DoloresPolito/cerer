@@ -16,6 +16,10 @@
     overflow: hidden;
     cursor: pointer;
 
+    @media screen and (max-width: 600px) {
+      
+      height: auto;
+    }
     // Contenedor de la imagen para aplicar hover
     // .backgroundImage {
     //   position: absolute;

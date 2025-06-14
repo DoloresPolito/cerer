@@ -18,6 +18,7 @@ import LogosMoving from "@/home/LogosMoving";
 import SwiperHeroNew from "@/components/SwiperHeroNew";
 import Swiper from "swiper";
 import BenefitSection from "@/home/BenefitsSection";
+import BenefitSectionV2 from "@/home/BenefitsSectionV2";
 import NewSection from "@/home/NewSection";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -153,16 +154,16 @@ function ColorChangeOnScrollGsap() {
         data-bgcolor="#fcf5eb"
         data-textcolor="black"
       >
-        <div className={styles.container}>{/* <BenefitSection /> */}</div>
+        <div className={styles.container}>    <BenefitSectionV2 /></div>
       </section>
 
-      {/* <section
+      <section
         className={styles.section}
         data-bgcolor="#111b21"
         data-textcolor="white"
       >
         <div className={styles.container}>
-          <Contact />
+     
         </div>
       </section>
 
@@ -172,7 +173,7 @@ function ColorChangeOnScrollGsap() {
         data-textcolor="black"
       >
         <div className={styles.container}></div>
-      </section> */}
+      </section>
     </main>
   );
 }

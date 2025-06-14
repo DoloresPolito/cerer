@@ -81,8 +81,8 @@ export default function Index() {
                 <>
                   <Link key={i} href={link.url}>
                     <motion.div className={styles.navitem} whileHover="hover">
-                      <p class="styled-paragraph">
-                        <span class="highlighted">{link.id} </span> {link.title}
+                      <p className="styled-paragraph">
+                        <span className="highlighted">{link.id} </span> {link.title}
                       </p>
                       <motion.div
                         className={styles.underline}

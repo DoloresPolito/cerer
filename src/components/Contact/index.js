@@ -11,8 +11,8 @@ export default function Index() {
         <div className={styles.contentcontainer}>
           <div className={styles.left}>
             <AnimatedDiv delay="200">
-              <h6 class="styled-paragraph">
-                <span class="highlighted">contactanos </span>Conectemos y trabajemos juntos para impulsar iniciativas renovables que marquen la diferencia en Entre Ríos.
+              <h6 className="styled-paragraph">
+                <span className="highlighted">contactanos </span>Conectemos y trabajemos juntos para impulsar iniciativas renovables que marquen la diferencia en Entre Ríos.
               </h6>
             </AnimatedDiv>
 

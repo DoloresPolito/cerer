@@ -9,7 +9,7 @@ export default function Index() {
         <AnimatedDiv>
           <div className={styles.body}>
             <AnimatedDiv>
-              <h6 class="styled-paragraph">
+              <h6 className="styled-paragraph">
                 Somos una organización comprometida con el desarrollo y la
                 promoción de las <span>energías renovables en Entre Ríos.</span> Impulsamos
                 iniciativas sustentables, conectamos actores del sector y

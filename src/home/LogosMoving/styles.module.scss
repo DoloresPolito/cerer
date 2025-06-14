@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
+
   h6 {
     font-size: 5vh;
     color: #39442b;
@@ -25,6 +26,8 @@
     justify-content: space-between;
     height: auto;
     padding-bottom: 12vh;
+    flex-direction: column;
+
   }
 
   button {

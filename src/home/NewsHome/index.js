@@ -8,7 +8,7 @@ import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import AnimatedDiv from "@/components/AnimatedDiv";
 import Image from "next/image";
-import location from "../../../public/icons/location-50.png"
+import location from "../../../public/icons/location-50.png";
 
 const NewsHome = () => {
   const controls = useAnimation();
@@ -28,39 +28,42 @@ const NewsHome = () => {
     {
       name: "Noticia 1",
       title: "Partipación en la Mesa Provincial de Energía Sostenible",
+      subtitle:
+        "La ley 10933 Energía Electrica Sostenible crea la MPES, integrada por organismo del estado provincial, Universidades ,Consejo Profesional de Ingenieros Especialistas, la Camara de Energias Renovables y Eco Urbano",
       text: ".",
-      image:"new1.png"
-    },
-    {
-      name: "Noticia 2",
-      title:
-        "Relacionamiento con Universidades",
-      text: ".",
-      image:"new2.png"
+      image: "new1.png",
+      locationtext: "",
     },
     {
       name: "Noticia 3",
-      title: "ENERSA se suma a la Cámara de Energías Renovables de Entre Ríos (CERER)",
+      title:
+        "ENERSA se suma a la Cámara de Energías Renovables de Entre Ríos (CERER)",
+      subtitle:
+        "Nos complace anunciar que ENERSA (Energía de Entre Ríos S.A.), la empresa distribuidora de energía eléctrica de la provincia, ya forma parte de nuestra Cámara. En el día de ayer se concretó una reunión entre representantes de CERER y @enersaarg en la que se formalizó la incorporación de la empresa energética a nuestra Cámara.",
       text: ".",
-      image:"reu1.JPG"
+      image: "new2.png",
+      locationtext: "",
     },
+    {
+      name: "Noticia 2",
+      title: "Relacionamiento con Universidades",
+      subtitle:
+        "CERER y la Facultad de Ingeniería de la UNER trabajan por una energía sostenible en Entre Ríos. Autoridades de la Cámara de Energías Renovables de Entre Ríos (CERER) visitaron la Facultad de Ingeniería de la UNER con el objetivo de fortalecer los vínculos institucionales y construir lazos de cooperación",
+      text: ".",
+      image: "new2.png",
+      image: "reu1.JPG",
+      locationtext: "",
+    },
+
     {
       name: "Noticia 4",
       title:
         "CERER se reúne con autoridades y docentes  de  la  UTN Facultad Regional Paraná",
-      text: ".",      image:"reu2.JPG"
-    },
-    {
-      name: "Noticia 5",
-      title:
-        ".Empresas argentinas deben incorporar 20% de energías renovables desde enero 2025",
-      text: ".",      image:"new1.png"
-    },
-    {
-      name: "Noticia 6",
-      title:
-        ".Récord en energía renovable: Argentina marca un hito a fines del 2024",
-      text: ".",      image:"new2.png"
+      subtitle:
+        "Durante el encuentro se dialogó sobre la importancia de promover el desarrollo sostenible en la provincia, y se compartieron miradas sobre el rol estratégico de la investigación, la formación técnica y la articulación con el sector productivo para avanzar en ese camino",
+      text: ".",
+      image: "reu2.JPG",
+      locationtext: "Paraná",
     },
   ];
 
@@ -68,9 +71,11 @@ const NewsHome = () => {
     <div className={styles.section} ref={ref}>
       <div className={styles.titles}>
         <AnimatedDiv>
-          <h6 className={styles.heading}>La energía se <span>transforma</span>, y nosotros te lo <span>contamos</span></h6>
+          <h6 className={styles.heading}>
+            La energía se <span>transforma</span>, y nosotros te lo{" "}
+            <span>contamos</span>
+          </h6>
         </AnimatedDiv>
-      
       </div>
 
       <AnimatedDiv>
@@ -92,7 +97,14 @@ const NewsHome = () => {
               >
                 {cards.map((card, index) => (
                   <SwiperSlide key={index} className={styles.slide}>
-                    <Card name={card.name} title={card.title} image={card.image}/>
+                    <Card
+                      name={card.name}
+                      title={card.title}
+                      image={card.image}
+                      locationtext={card.locationtext}
+                      subtitle={card.subtitle}
+             
+                    />
                   </SwiperSlide>
                 ))}
               </Swiper>
@@ -111,29 +123,28 @@ const NewsHome = () => {
 
 export default NewsHome;
 
-const Card = ({ name, title, image }) => {
+const Card = ({ name, title, image, locationtext, subtitle }) => {
   return (
     <div className={styles.cardcontainer}>
-    <div className={styles.cardleft}>
-      <div className={styles.titlediv}>
-        <Image src={location} alt="ubicacion"/>
-      <p className={styles.topText}>{name}</p>
+      <div className={styles.cardleft}>
+        <div className={styles.titlediv}>
+          <Image src={location} alt="ubicacion" />
+          <p className={styles.topText}>{locationtext}</p>
+        </div>
+        <AnimatedDiv>
+          <h6 className={styles.bottomText}>{title}</h6>
+        </AnimatedDiv>
+        <p>{subtitle}</p>
       </div>
-<AnimatedDiv>
 
-
-      <h6 className={styles.bottomText}>{title}</h6>
-      </AnimatedDiv>
-    </div>
-
-    <div className={styles.cardright}>
-      <Image
-        src={`/images/news/${image}`}
-        alt="image"
-        fill
-        style={{ objectFit: "cover" }}
-      />
-      {/* <a href="#noticia" className={styles.circleButton}>
+      <div className={styles.cardright}>
+        <Image
+          src={`/images/news/${image}`}
+          alt="image"
+          fill
+          style={{ objectFit: "cover" }}
+        />
+        {/* <a href="#noticia" className={styles.circleButton}>
         <svg viewBox="0 0 24 24" fill="none">
           <path
             d="M5 12h14M13 6l6 6-6 6"
@@ -144,7 +155,7 @@ const Card = ({ name, title, image }) => {
           />
         </svg>
       </a> */}
+      </div>
     </div>
-  </div>
   );
 };

@@ -6,10 +6,10 @@ import React from "react";
 import Image from "next/image";
 import completelogo from "../../../public/logo/logo-completo.png";
 import image1 from "../../../public/images/newhero/1.png";
-import image2 from "../../../public/images/newhero/2.png";
+import image2 from "../../../public/images/newhero/fondopanel.png";
 import image3 from "../../../public/images/newhero/3.png";
-import image4 from "../../../public/images/newhero/4.png";
-import image5 from "../../../public/images/newhero/5.png";
+import image4 from "../../../public/images/newhero/atardecer.png";
+import image5 from "../../../public/images/newhero/panel-pasto.png";
 
 export default function LandingV3() {
   return (

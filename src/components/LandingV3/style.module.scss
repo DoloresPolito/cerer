@@ -6,6 +6,28 @@
   align-items: center;
   justify-content: center;
 
+  .mobileImageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    .mobileLogo {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 300px;
+      z-index: 5;
+    
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
   .gridContainer {
     display: grid;
     grid-template-areas:
@@ -32,35 +54,20 @@
     }
 
     @media screen and (max-width: 600px) {
-      grid-template-areas:
-        "img1"
-     
-        "img4"
-  
-        "img3"
-        "img2"
-     ;
+      grid-template-areas: "img1";
       grid-template-columns: 1fr;
-      grid-template-rows: auto;
+      grid-template-rows: 100vh;
+      margin-top: 30vh;
+      // Asegura que ocupe toda la altura
 
       .gridItem {
-        height: auto;
+        height: 100vh; // Que cada item (el único visible) ocupe el 100% de la altura
       }
 
-      // También ocultar img5 en móvil
+      .gridItem:nth-child(2),
+      .gridItem:nth-child(3),
+      .gridItem:nth-child(4),
       .gridItem:nth-child(5) {
-        display: none;
-      }
-
-      .gridItem:nth-child(3) {
-        display: none;
-      }
-
-      .gridItem:nth-child(2) {
-        display: none;
-      }
-
-      .gridItem:nth-child(4) {
         display: none;
       }
     }
@@ -85,6 +92,8 @@
       z-index: 10;
       width: 40%;
 
+
+
       img {
         width: 100%;
         height: auto;
@@ -92,16 +101,19 @@
         margin: 0 auto;
       }
 
-      @media screen and (max-width: 600px) {
-   
-        top: 50;
-        left: 10%;
- 
-     
-        width: 80%;
-        margin: 2rem auto;
 
+      @media screen and (max-width: 600px) {
+        width: 50%;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%); // ya no centramos verticalmente
       }
+
+
+    
     }
+
+
+  
   }
 }

@@ -56,9 +56,10 @@
       height: 100%;
       padding:0vh  6vh;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
-      background-color: #27d16a;
+      align-items: center;
+      background-color: #155b40;
       @media screen and (max-width: 800px) {
         width: 50%;
       }
@@ -84,9 +85,9 @@
         // max-width: 120vh;
         letter-spacing: 1px;
         font-family: "VisbyMedium";
-        @media only screen and (max-width: 800px) {
-          text-align: center;
-        }
+        text-align: center;
+
+ line-height: 110%;
 
         span {
           color: #27d16a;

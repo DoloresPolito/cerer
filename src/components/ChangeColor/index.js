@@ -163,7 +163,7 @@ function ColorChangeOnScrollGsap() {
         data-textcolor="white"
       >
         <div className={styles.container}>
-     
+
         </div>
       </section>
 
@@ -172,7 +172,9 @@ function ColorChangeOnScrollGsap() {
         data-bgcolor="#f0ebe5"
         data-textcolor="black"
       >
-        <div className={styles.container}></div>
+        <div className={styles.container}>
+        <Contact/>
+        </div>
       </section>
     </main>
   );

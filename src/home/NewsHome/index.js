@@ -69,14 +69,14 @@ const NewsHome = () => {
 
   return (
     <div className={styles.section} ref={ref}>
-      <div className={styles.titles}>
+      {/* <div className={styles.titles}>
         <AnimatedDiv>
           <h6 className={styles.heading}>
             La energía se <span>transforma</span>, y nosotros te lo{" "}
             <span>contamos</span>
           </h6>
         </AnimatedDiv>
-      </div>
+      </div> */}
 
       <AnimatedDiv>
         <div className={styles.container}>
@@ -87,13 +87,18 @@ const NewsHome = () => {
                 centeredSlides={true}
                 initialSlide={1}
                 slidesPerView={"auto"}
-                spaceBetween={20}
+                spaceBetween={10}
                 navigation={{
                   nextEl: `.${styles.customnext}`,
                   prevEl: `.${styles.customprev}`,
                 }}
                 modules={[Navigation]}
                 className={styles.swiper}
+                breakpoints={{
+                  800: {
+                    slidesPerView: "auto",
+                  },
+                }}
               >
                 {cards.map((card, index) => (
                   <SwiperSlide key={index} className={styles.slide}>
@@ -123,7 +128,7 @@ const NewsHome = () => {
 
 export default NewsHome;
 
-const Card = ({ name, title, image, locationtext, subtitle }) => {
+const Card = ({  title, image, locationtext, subtitle }) => {
   return (
     <div className={styles.cardcontainer}>
       <div className={styles.cardleft}>

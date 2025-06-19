@@ -10,7 +10,7 @@ const Contact = () => {
 
   function onSubmit(data) {
     // sendEmail(data);
-    console.log("data form", data)
+
     setMessageSent(true)
   }
 
@@ -27,7 +27,7 @@ const Contact = () => {
         <div className={styles.inputcontainer}>
           <input
             type="text"
-            placeholder="Full Name"
+            placeholder="Nombre Completo"
             className={styles.input}
             {...register("name", { required: true })}
           />
@@ -43,14 +43,14 @@ const Contact = () => {
         <div className={styles.inputcontainer}>
           <input
             type="tel"
-            placeholder="Phone number"
+            placeholder="Número de teléfono"
             className={styles.input}
             {...register("phone", { required: true })}
           />
         </div>
         <div className={styles.inputcontainertextarea}>
           <textarea
-            placeholder="Message"
+            placeholder="Mensaje"
             className={`${styles.input} ${styles.textarea}`}
             {...register("message", { required: true })}
           ></textarea>
@@ -59,7 +59,7 @@ const Contact = () => {
           {/* <Button text="Send" color="#AAA9A9"/> */}
           <button className={styles.button}>
             {" "}
-            send
+          Enviar
           </button>
         </div>
       </form>

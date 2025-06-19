@@ -1,10 +1,33 @@
 .section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
 
+  .titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+
+    h6 {
+      font-size: 5vh;
+      color: white;
+      width: auto;
+      letter-spacing: 1px;
+      @media only screen and (max-width: 800px) {
+        text-align: center;
+        padding: 0vh 2vh;
+      }
+    }
+    span {
+      color: #27d16a;
+    }
+  }
   .container {
     position: relative;
     display: flex;
@@ -15,6 +38,7 @@
     // border-radius: 8vh;
     overflow: hidden;
     cursor: pointer;
+
 
     @media screen and (max-width: 600px) {
       
@@ -101,6 +125,8 @@ text-align: center;
           color: #27d16a;
         }
       }
+
+     
 
       .bottomRow {
         display: flex;

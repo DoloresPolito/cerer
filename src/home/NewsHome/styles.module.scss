@@ -1,5 +1,5 @@
 .section {
-  height: 120vh;
+height: auto;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -8,9 +8,11 @@
   z-index: 10;
   margin: 0 auto;
   overflow-x: hidden;
-  margin-top: 0vh;
+  padding-top: 5vh;
+
   @media only screen and (max-width: 800px) {
-    height: auto;
+     min-height: auto;
+  
   }
 
   .titles {
@@ -44,6 +46,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 800px) {
+    height: auto;
+  }
+
+  @media only screen and (max-width: 800px) {
+    height: auto !important;
+
+  }
 }
 
 .cardcontainer {
@@ -66,39 +76,57 @@
     height: auto;
   }
 
+  // @media only screen and (max-width: 800px) {
+  //   height: auto !important;
+
+  //   min-height: 80vh;
+  // }
+
+  @media only screen and (max-width: 800px) {
+    height: auto !important;
+    min-height: unset;
+    max-height: unset;
+    flex-direction: column;
+  }
+
   .cardright {
     width: 50%;
     height: 100%;
     position: relative;
 
+
+
     @media only screen and (max-width: 1000px) {
       width: 100%;
-      // height: 40vh;
+
+    }
+    @media only screen and (max-width: 800px) {
+      display: none;
     }
 
-    .circleButton {
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-      width: 50px;
-      height: 50px;
-      background-color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: transform 0.3s ease;
+    // .circleButton {
+    //   position: absolute;
+    //   bottom: 20px;
+    //   right: 20px;
+    //   width: 50px;
+    //   height: 50px;
+    //   background-color: white;
+    //   border-radius: 50%;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   cursor: pointer;
+    //   transition: transform 0.3s ease;
 
-      &:hover {
-        transform: scale(1.1);
-      }
+    //   &:hover {
+    //     transform: scale(1.1);
+    //   }
 
-      svg {
-        width: 20px;
-        height: 20px;
-      }
-    }
+    //   svg {
+    //     width: 20px;
+    //     height: 20px;
+    //   }
+    // }
   }
 
   .cardleft {
@@ -111,6 +139,11 @@
 
     @media only screen and (max-width: 1000px) {
       width: 100%;
+    }
+
+    @media only screen and (max-width: 800px) {
+      display: flex;
+      height: auto;
     }
 
     .titlediv {
@@ -134,14 +167,25 @@
       width: auto;
       letter-spacing: 1px;
     }
+
+  
   }
 }
 
 .slide {
-  width: 60vw !important;
+  width: 50vw !important;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
+  height: auto;
+
+  @media only screen and (max-width: 800px) {
+    width: 100% !important;
+
+    height: auto !important;
+  }
+
+
 }
 
 .carouselcontainer {
@@ -152,8 +196,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   width: 100%;
+  height: auto !important;
+
+  @media only screen and (max-width: 800px) {
+    width: 90vw;
+    height: auto !important;
+    display: flex;
+
+
+  }
 }
 
 .carouselcontent {
@@ -174,6 +226,14 @@
   @media only screen and (max-width: 1000px) {
     // left: 16%;
   }
+
+  @media only screen and (max-width: 800px) {
+    width: 90vw;
+    height: auto !important;
+    display: flex;
+
+
+  }
 }
 
 .arrowscontainer {
@@ -186,6 +246,10 @@
   width: 20vh;
   margin-top: 5vh;
   margin-bottom: 5vh;
+
+  @media only screen and (max-width: 800px) {
+    height: auto !important;
+  }
 }
 
 .swiper {

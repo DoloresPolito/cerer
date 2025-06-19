@@ -11,7 +11,8 @@ import NewsHome from "@/home/NewsHome";
 import NewSection from "@/home/NewSection";
 import LogosMoving from "@/home/LogosMoving";
 import LandingV3 from "@/components/LandingV3";
-import Description from "@/components/Description";
+import ExtraSection from "@/home/ExtraSection";
+
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -56,7 +57,7 @@ export default function Home() {
             {/* <ColorChangeOnScrollGsap /> */}
             <LandingV3 />
             <Description />
-
+            <ExtraSection />
           <NewsHome />
           <NewSection />
           <LogosMoving />

@@ -7,6 +7,11 @@ import ColorChangeOnScrollGsap from "@/components/ChangeColor";
 import { HeaderBar } from "@/structure/HeaderBar";
 import FixedMedia from "@/components/FixedMedia";
 import Description from "@/components/Description";
+import NewsHome from "@/home/NewsHome";
+import NewSection from "@/home/NewSection";
+import LogosMoving from "@/home/LogosMoving";
+import LandingV3 from "@/components/LandingV3";
+import Description from "@/components/Description";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -47,12 +52,14 @@ export default function Home() {
         <div key="content">
           <HeaderBar />
           <FixedMedia />
+       
+            {/* <ColorChangeOnScrollGsap /> */}
+            <LandingV3 />
+            <Description />
 
-          {/* <Description /> */}
-
-<div>
-          <ColorChangeOnScrollGsap />
-          </div>
+          <NewsHome />
+          <NewSection />
+          <LogosMoving />
         </div>
       </AnimatePresence>
     </>

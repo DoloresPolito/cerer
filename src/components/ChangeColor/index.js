@@ -121,13 +121,13 @@ function ColorChangeOnScrollGsap() {
         </div>
       </section>
 
-      <section
+      {/* <section
         className={styles.section}
         data-bgcolor="#0f3627"
         data-textcolor="white"
       >
         <div className={styles.container}>
-          <NewsHome />
+      /
         </div>
       </section>
       <section
@@ -175,7 +175,7 @@ function ColorChangeOnScrollGsap() {
         <div className={styles.container}>
         <Contact/>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

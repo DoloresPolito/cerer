@@ -15,6 +15,12 @@ h6 {
   font-family: 'VisbyLight';
   font-family: 'VisbyMedium';
   font-weight: 200;
+
+
+    @media screen and (max-width: 600px) {
+    font-size: 3.5vh !important;
+
+  }
 }
 
 

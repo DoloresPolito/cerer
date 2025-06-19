@@ -17,10 +17,10 @@ const ExtraSection = () => {
           </p>
           <div className={styles.bottomRow}>
             <AnimatedDiv>
-              <h2 className={styles.title}>
+              <h6 className={styles.title}>
                 <span>Comprometidos </span>con el Futuro Energético de Entre
                 Ríos
-              </h2>
+              </h6>
             </AnimatedDiv>
           </div>
         </div>

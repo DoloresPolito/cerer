@@ -69,14 +69,14 @@ const NewsHome = () => {
 
   return (
     <div className={styles.section} ref={ref}>
-      {/* <div className={styles.titles}>
+      <div className={styles.titles}>
         <AnimatedDiv>
           <h6 className={styles.heading}>
             La energía se <span>transforma</span>, y nosotros te lo{" "}
             <span>contamos</span>
           </h6>
         </AnimatedDiv>
-      </div> */}
+      </div>
 
       <AnimatedDiv>
         <div className={styles.container}>
@@ -132,10 +132,10 @@ const Card = ({  title, image, locationtext, subtitle }) => {
   return (
     <div className={styles.cardcontainer}>
       <div className={styles.cardleft}>
-        <div className={styles.titlediv}>
+        {/* <div className={styles.titlediv}>
           <Image src={location} alt="ubicacion" />
           <p className={styles.topText}>{locationtext}</p>
-        </div>
+        </div> */}
         <AnimatedDiv>
           <h6 className={styles.bottomText}>{title}</h6>
         </AnimatedDiv>

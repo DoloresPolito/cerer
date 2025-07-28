@@ -3,7 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import TopHeader from "../components/TopHeader";
 import { useEffect, useState } from "react";
 import Cursor from "../components/Cursor";
-import ColorChangeOnScrollGsap from "@/components/ChangeColor";
+// import ColorChangeOnScrollGsap from "@/components/ChangeColor";
 import { HeaderBar } from "@/structure/HeaderBar";
 import FixedMedia from "@/components/FixedMedia";
 import Description from "@/components/Description";
@@ -12,6 +12,7 @@ import NewSection from "@/home/NewSection";
 import LogosMoving from "@/home/LogosMoving";
 import LandingV3 from "@/components/LandingV3";
 import ExtraSection from "@/home/ExtraSection";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,15 +53,22 @@ export default function Home() {
       <AnimatePresence mode="wait">
         <div key="content">
           <HeaderBar />
+
           <FixedMedia />
-       
-            {/* <ColorChangeOnScrollGsap /> */}
-            <LandingV3 />
-            <Description />
-            <ExtraSection />
+          <Cursor />
+          {/* <ColorChangeOnScrollGsap /> */}
+
+          <LandingV3 />
+          <Description />
+
+
+          <ExtraSection />
           <NewsHome />
-          <NewSection />
+
+          {/* <BenefitSection/> */}
+          {/* <NewSection /> */}
           <LogosMoving />
+          <Contact />
         </div>
       </AnimatePresence>
     </>

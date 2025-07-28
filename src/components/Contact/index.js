@@ -12,7 +12,7 @@ export default function Index() {
           <div className={styles.left}>
             <AnimatedDiv delay="200">
               <h6 className="styled-paragraph">
-                <span className="highlighted">contactanos </span>
+             
                 Conectemos y trabajemos juntos para impulsar iniciativas renovables que marquen la diferencia en Entre Ríos.
               </h6>
             </AnimatedDiv>
@@ -20,7 +20,7 @@ export default function Index() {
           </div>
           <AnimatedDiv>
             <div className={styles.right}>
-              <Contact />
+              {/* <Contact /> */}
             </div>
           </AnimatedDiv>
         </div>

@@ -17,6 +17,12 @@ export default function ThreeItems() {
       number: "35",
       delay: 0.9,
     },
+    {
+      id: 3,
+      title: "Proyectos terminados",
+      number: "7",
+      delay: 2,
+    },
   ];
 
   return (

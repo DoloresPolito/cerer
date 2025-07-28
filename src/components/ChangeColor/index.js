@@ -3,8 +3,6 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Scrollbar from "smooth-scrollbar";
-
-import ProjectsV2 from "../ProjectsV2";
 import styles from "./styles.module.scss";
 import Description from "@/components/Description";
 import Contact from "@/components/Contact";

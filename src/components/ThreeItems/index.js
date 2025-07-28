@@ -14,13 +14,14 @@ export default function ThreeItems() {
     {
       id: 2,
       title: "Cantidad de miembros",
-      number: "+35",
+      number: "7",
       delay: 0.9,
     },
     {
       id: 3,
       title: "Proyectos terminados",
-      number: "7",
+      number: "+35",
+   
       delay: 2,
     },
   ];

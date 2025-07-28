@@ -9,6 +9,10 @@
     background-color: transparent;
     padding: 0.5rem;
   z-index: 10000;
+
+  @media only screen and (max-width: 750px) {
+    right: 1vh;
+  }
     a {
       display: flex;
       justify-content: center;
@@ -31,7 +35,7 @@
       }
 
       &:hover {
-        background-color: #27d16a;
+        background-color: #f6e9ca;
         color: #ffffff;
       }
     }

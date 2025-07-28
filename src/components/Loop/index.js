@@ -3,21 +3,7 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 
 const Loop = ({ reverse }) => {
-  // const logos = [
-  //   { src: "/logos/calvo.png", alt: "Calvo" },
-  //   { src: "/logos/cersolar2.png", alt: "Cersolar" },
-  //   { src: "/logos/chico.svg", alt: "Coenergy" },
-  //   { src: "/logos/reenerger.png", alt: "ReEnerger" },
-  //   { src: "/logos/SER.png", alt: "Ser" },
-  //   { src: "/logos/LG.png", alt: "LG" },
-   
-  //   { src: "/logos/ecoenergy.png", alt: "EcoEnergy" },
-  //   { src: "/logos/enova.png", alt: "eNova"},
-  //   { src: "/logos/time.png", alt: "Time Solar" },
-  //   // { src: "/logos/dyg.png", alt: "DyG" },
 
-   
-  // ];
 
   const logos = [
     { src: "/logos/calvo.png", alt: "Calvo", size: "small" },
@@ -43,7 +29,7 @@ const Loop = ({ reverse }) => {
               width={250}
               height={120}
            
-              // className={`${styles.logo} ${["Calvo", "Ser", "eNova"].includes(logo.alt) ? styles.smallLogo : ""}`}
+         
               className={`${styles.logo} ${
                 logo.size === "tiny"
                   ? styles.tinyLogo
@@ -63,7 +49,7 @@ const Loop = ({ reverse }) => {
               alt={logo.alt}
               width={250}
               height={120}
-              // className={`${styles.logo} ${["Calvo", "Ser"].includes(logo.alt) ? styles.smallLogo : ""}`}
+           
               className={`${styles.logo} ${
                 logo.size === "tiny"
                   ? styles.tinyLogo

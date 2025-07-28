@@ -14,7 +14,7 @@ export default function ThreeItems() {
     {
       id: 2,
       title: "Cantidad de miembros",
-      number: "35",
+      number: "+35",
       delay: 0.9,
     },
     {

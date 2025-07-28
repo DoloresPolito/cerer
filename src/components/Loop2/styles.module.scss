@@ -23,16 +23,17 @@
       align-items: center;
       justify-content: center;
       height: 18vh; // Altura fija razonable para alinear visualmente
+      background-color: red;
     }
   
     .logo {
       height: 100%;
       width: auto;
       max-height: 100%;
+      max-width: 40vh; // Agregá esto
       object-fit: contain;
       mix-blend-mode: multiply;
-
-      max-width: 40vh; // Agregá esto
+      filter: brightness(0.9) contrast(1.2); // 🔧 Ajustá estos valores si querés
 
     }
   

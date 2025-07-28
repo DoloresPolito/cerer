@@ -1,7 +1,7 @@
 .loopSection {
   overflow: hidden;
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   .marquee {
     display: flex;
     align-items: center;
@@ -18,12 +18,16 @@
   }
 
   .logoWrapper {
-    margin-left: 5vh;
-    position: relative;
-    width: 20vh;
-    max-height: 15vh;
+    margin-left: 3vh;
+    width: 25vh;
+    max-height: 20vh;
     position: relative;
     margin-right: 7vh;
+    background-color: #f6e9ca;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .logo {
@@ -32,8 +36,35 @@
     height: 100%;
     object-fit: cover;
     mix-blend-mode: multiply;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+
+
     
   }
+
+  // .smallLogo {
+  //   max-height: 70% !important;
+  //   max-width: 70% !important;
+  // }
+
+
+  .tinyLogo {
+    max-width: 50% !important;
+    max-height: 50% !important;
+  }
+  
+  .smallLogo {
+    max-width: 60% !important;
+    max-height: 60% !important;
+  }
+  
+  .largeLogo {
+    max-width: 120% !important;
+    max-height: 120% !important;
+  }
+
+
 
   @keyframes scroll {
     0% {

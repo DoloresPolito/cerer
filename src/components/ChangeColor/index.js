@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Scrollbar from "smooth-scrollbar";
 import styles from "./styles.module.scss";
 import Description from "@/components/Description";
-import Contact from "@/components/Contact";
+import Contact from "@/structure/Footer";
 import LandingV3 from "@/components/LandingV3";
 import Loop from "../Loop";
 import ReviewsSection from "@/components/Reviews";

@@ -12,7 +12,7 @@ import NewSection from "@/home/NewSection";
 import LogosMoving from "@/home/LogosMoving";
 import LandingV3 from "@/components/LandingV3";
 import ExtraSection from "@/home/ExtraSection";
-import Contact from "@/components/Contact";
+import Footer from "@/structure/Footer";
 import Benefits from "@/home/BenefitsSectionV2";
 
 export default function Home() {
@@ -72,7 +72,7 @@ export default function Home() {
           {/* <NewSection /> */}
           <ExtraSection />
           <LogosMoving />
-          <Contact />
+          <Footer />
         </div>
       </AnimatePresence>
     </>

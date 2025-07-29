@@ -4,29 +4,32 @@
   --font-roboto: "Roboto", sans-serif;
 }
 
-body {
-  font-family: var(--font-roboto);
-  font-family: "Roboto", sans-serif;
-}
 
 
 h5,
 h6 {
- 
-
-  font-family: 'PlayfairDisplayRegular';
+  font-family: "PlayfairDisplayRegular";
   font-weight: 100;
-  //   @media screen and (max-width: 600px) {
-  //   font-size: 3.5vh !important;
+  font-size: 5.5vh;
+  line-height: 120%;
+  letter-spacing: 0.09vh;
 
-  // }
+
+  @media only screen and (max-width: 750px) {
+    font-size: 4.5vh;
+  }
 }
 
-
-h4{
-  font-family: 'PlayfairDisplayMedium';
-  font-family: 'PlayfairDisplayMediumItalic';
+h4 {
+  font-family: var(--font-roboto), sans-serif;
+  font-size: 2.5vh;
+  letter-spacing: 0.08vh;
   font-weight: 200;
+  line-height: 120%;
+
+  @media only screen and (max-width: 750px) {
+    font-size: 2.2vh;
+  }
 }
 
 body {
@@ -35,5 +38,5 @@ body {
   font-family: var(--font-roboto);
   font-family: "Roboto", sans-serif;
   overflow-x: hidden !important;
-  background-color: #001D19;
+  background-color: #001d19;
 }

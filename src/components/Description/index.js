@@ -11,19 +11,19 @@ export default function Index() {
         <AnimatedDiv>
           <div className={styles.body}>
             <AnimatedDiv>
-              <h6 className={styles.text}>
+              <h6 className={styles.title}>
                 Somos una organización comprometida con el desarrollo y la
                 promoción de las <span>energías renovables en Entre Ríos.</span> 
               </h6>
             </AnimatedDiv>
 
             <AnimatedDiv>
-              <h6 className={styles.text2}>
+              <h4 className={styles.subtitle}>
                 Impulsamos
                 iniciativas sustentables, conectamos actores del sector y
                 trabajamos para fomentar una <span>transición energética</span> justa y
                 responsable en la región.
-              </h6>
+              </h4>
             </AnimatedDiv>
           </div>
         </AnimatedDiv>

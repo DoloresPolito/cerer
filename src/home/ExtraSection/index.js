@@ -17,14 +17,14 @@ const ExtraSection = () => {
             </AnimatedDiv>
           </div>
           
-          <p className={styles.text}>
+          <h4 className={styles.subtitle}>
             Desde la Cámara de Energía Renovable de Entre Ríos trabajamos para
             promover el desarrollo y la implementación de tecnologías limpias en
             la provincia. Impulsamos políticas sostenibles, acompañamos a los
             actores del sector y fomentamos el crecimiento de una matriz
             energética más eficiente, descentralizada y respetuosa con el medio
             ambiente.
-          </p>
+          </h4>
          
         </div>
       </div>

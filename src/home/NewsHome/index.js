@@ -71,7 +71,7 @@ const NewsHome = () => {
     <div className={styles.section} ref={ref}>
       <div className={styles.titles}>
         <AnimatedDiv>
-          <h6 className={styles.heading}>
+          <h6 className={styles.title}>
             La energía se <span>transforma</span>, y nosotros te lo{" "}
             <span>contamos</span>
           </h6>

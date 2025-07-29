@@ -45,18 +45,18 @@ export default function Benefits() {
       <div className={styles.benefitsection}>
         <div className={styles.left}>
           <AnimatedDiv>
-            <h6 className={styles.text}>Beneficios de ser parte</h6>
+            <h6 className={styles.title}>Beneficios de ser parte</h6>
           </AnimatedDiv>
 
           <AnimatedDiv>
-            <h6 className={styles.text2}>
+            <h4 className={styles.subtitle}>
               ¿Te gustaría ser parte?
               <br /> <span>Comunicate con nosotros para más información.</span>
-            </h6>
+            </h4>
           </AnimatedDiv>
           <button className={styles.button}>
-        <p>Quiero ser parte →</p>{" "}
-      </button>
+            <p>Quiero ser parte →</p>{" "}
+          </button>
         </div>
 
         <div className={styles.right}>

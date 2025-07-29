@@ -28,10 +28,6 @@
     padding: 0 2vh;
     color: #c69a72;
     width: auto;
-    letter-spacing: 1px;
-    font-size: 2.5vh;
-    font-weight: 300;
-    line-height: 130%;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -40,18 +36,25 @@
     height: 10vh;
     z-index: 1000;
 
-    @media only screen and (max-width: 600px) {
-      height: auto;
-      margin: 1vh 0vh;
-    }
 
-    @media only screen and (max-width: 600px) {
-      width: 100%;
-      font-size: 2.4vh;
-    }
-    @media only screen and (max-width: 800px) {
-      padding: 0vh 2vh;
-    }
+    font-family: "PlayfairDisplayRegular";
+    font-size: 2.5vh;
+    letter-spacing: 0.08vh;
+    font-weight: 100;
+    line-height: 120%;
+
+    // @media only screen and (max-width: 600px) {
+    //   height: auto;
+    //   margin: 1vh 0vh;
+    // }
+
+    // @media only screen and (max-width: 600px) {
+    //   width: 100%;
+    //   font-size: 2.4vh;
+    // }
+    // @media only screen and (max-width: 800px) {
+    //   padding: 0vh 2vh;
+    // }
 
     img {
       height: 1.6vh;
@@ -66,14 +69,13 @@
   .content {
     padding: 2vh 2vh;
     color: #c69a72;
-    font-size: 2.3vh;
+    font-size: 2.2vh;
     font-weight: 300;
-    line-height: 130%;
+    line-height: 120%;
     margin-bottom: 2vh;
     margin-top: 2vh;
-
-
-
     font-family: var(--font-roboto), sans-serif;
+
+    
   }
 }

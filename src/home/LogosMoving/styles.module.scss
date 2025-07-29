@@ -16,12 +16,10 @@
     align-items: center;
     justify-content: center;
 
-    h6 {
-      font-size: 5vh;
+    .title {
       color: #c69a72;
       width: auto;
       max-width: 100vh;
-      letter-spacing: 0.1vh;
       text-align: center;
       margin-top: 0vh;
       span {
@@ -39,33 +37,33 @@
     
     }
   
-    button {
-      display: flex;
-      justify-self: center;
-      align-self: center;
-      padding: 0vh 4vh;
-      border-radius: 30px;
-      border: 0.1vh solid black;
-      background-color: transparent;
-      letter-spacing: 1px;
-      cursor: pointer;
-      p {
-        font-size: 2vh;
-        color: black;
-        font-family: "VisbyMedium";
-      }
+    // button {
+    //   display: flex;
+    //   justify-self: center;
+    //   align-self: center;
+    //   padding: 0vh 4vh;
+    //   border-radius: 30px;
+    //   border: 0.1vh solid black;
+    //   background-color: transparent;
+    //   letter-spacing: 1px;
+    //   cursor: pointer;
+    //   p {
+    //     font-size: 2vh;
+    //     color: black;
+    //     font-family: "VisbyMedium";
+    //   }
   
-      transition: background-color 0.3s ease, border-color 0.3s ease;
+    //   transition: background-color 0.3s ease, border-color 0.3s ease;
   
-      &:hover {
-        background-color: #c69a72;
-        border-color: #c69a72;
+    //   &:hover {
+    //     background-color: #c69a72;
+    //     border-color: #c69a72;
   
-        p {
-          color: white;
-        }
-      }
-    }
+    //     p {
+    //       color: white;
+    //     }
+    //   }
+    // }
   }
 
 

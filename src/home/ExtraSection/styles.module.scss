@@ -16,9 +16,7 @@
     overflow: hidden;
     cursor: pointer;
 
-    @media screen and (max-width: 700px) {
-      height: auto;
-    }
+
 
     .backgroundImage {
       position: absolute;
@@ -53,24 +51,23 @@
       z-index: 1;
       width: 100%;
       height: 100%;
-      padding: 6vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-   
+      padding-left: 5vw;
+      padding-right: 5vw;
       @media screen and (max-width: 700px) {
-      
-        padding: 4vh 2vh;
-      }
+      height: auto;
+      padding-left: 3vw;
+      padding-right: 3vw;
+    }
 
       .subtitle {
         margin-top: 0vh;
         margin-bottom: 8vh;
         color: #f6e9ca;
         text-align: center;
-        padding-left: 5vw;
-        padding-right: 5vw;
 
       }
 
@@ -78,8 +75,7 @@
         color: #f6e9ca;
         width: auto;
         text-align: center;
-   
-
+  
         span {
           color: #c69a72;
         }

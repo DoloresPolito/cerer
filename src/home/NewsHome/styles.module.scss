@@ -8,13 +8,9 @@
   z-index: 10;
   margin: 0 auto;
   overflow-x: hidden;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
   background-color: #c69a72;
 
-  @media only screen and (max-width: 800px) {
-    min-height: auto;
-  }
+
 
   .titles {
     display: flex;

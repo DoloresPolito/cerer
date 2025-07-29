@@ -8,10 +8,9 @@ import Nav from "./Nav";
 const menu = {
   open: {
     width: "55vh",
-    height: "100vh",
-    top: "-1vh",
+    height: "99vh",
+    top: "-1.5vh",
     right: "-5vh",
-
     transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
   },
   closed: {

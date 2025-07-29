@@ -1,6 +1,6 @@
 "use client";
 import { AnimatePresence } from "framer-motion";
-import TopHeader from "../components/TopHeader";
+
 import { useEffect, useState } from "react";
 import Cursor from "../components/Cursor";
 // import ColorChangeOnScrollGsap from "@/components/ChangeColor";
@@ -52,7 +52,6 @@ export default function Home() {
       <AnimatePresence mode="wait">
         <div key="content">
           <HeaderBar />
-
           <FixedMedia />
           {width > 600 ? <Cursor /> : <></>}
 

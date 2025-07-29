@@ -1,44 +1,113 @@
-.faqssection {
+.benefitsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+
+  @media only screen and (max-width: 750px) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: #155446;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-top: 60vh;
 
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+      height: auto;
+    }
+
+    .text {
+      font-size: 5.5vh;
+      color: #f6e9ca;
+      width: auto;
+      letter-spacing: 0.1vh;
+      // font-family: var(--font-roboto), sans-serif;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      text-align: center;
+      line-height: 120%;
+      margin-bottom: 0vh;
+      span {
+        color: #c69a72;
+      }
+    }
+
+    .text2 {
+      font-size: 2.5vh;
+      color: #f6e9ca;
+      width: auto;
+      letter-spacing: 0.1vh;
+      font-family: var(--font-roboto), sans-serif;
+
+      text-align: center;
+      line-height: 120%;
+      max-width: 100vh;
+      margin-bottom: 10vh;
+
+      span {
+        color: #c69a72;
+      }
+    }
+
+
+
+    button {
+      display: flex;
+      justify-self: center;
+      align-self: center;
+      padding: 0vh 4vh;
+      border-radius: 30px;
+      border: 0.1vh solid black;
+      background-color: transparent;
+      letter-spacing: 1px;
+      cursor: pointer;
+      background-color: #c69a72;
+      border-color: #c69a72;
+      p {
+        font-size: 2vh;
+        color: black;
+        font-family: "VisbyMedium";
+      }
+  
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+  
+      &:hover {
+        background-color: #f6e9ca;
+        border-color: #f6e9ca;
+  
+       
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6e9ca;
+
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
     .faqscontainer {
       width: 80%;
-  
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  
-      @media only screen and (max-width: 1000px) {
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-      }
-  
-      @media only screen and (max-width: 600px) {
-        width: 90%;
-      }
+
     }
-  
-  
-  
-    h6 {
-        font-size: 5vh;
-        color: white;
-        width: auto;
-        letter-spacing: 1px;
-        color: rgb(167, 167, 167);
-  
- 
-        // font-family: var(--font-roboto), sans-serif;
-        @media only screen and (max-width: 800px) {
-          text-align: center;
-          padding: 0vh 2vh;
-        }
-      }
   }
+}

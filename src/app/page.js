@@ -13,6 +13,7 @@ import LogosMoving from "@/home/LogosMoving";
 import LandingV3 from "@/components/LandingV3";
 import ExtraSection from "@/home/ExtraSection";
 import Contact from "@/components/Contact";
+import Benefits from "@/home/BenefitsSectionV2";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -56,20 +57,21 @@ export default function Home() {
 
           <FixedMedia />
           {width > 600 ? <Cursor /> : <></>}
-          {/* <Cursor /> */}
+    
           {/* <ColorChangeOnScrollGsap /> */}
 
           <LandingV3 />
           <Description />
 
 
+     
+    
+          <NewsHome />
+          <ExtraSection />
+         <Benefits/>
+          {/* <NewSection /> */}
           <ExtraSection />
           <LogosMoving />
-          <NewsHome />
-
-          {/* <BenefitSection/> */}
-          {/* <NewSection /> */}
-        
           <Contact />
         </div>
       </AnimatePresence>

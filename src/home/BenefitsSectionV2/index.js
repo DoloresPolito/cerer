@@ -3,17 +3,15 @@ import { useState } from "react";
 import AccordionItem from "@/components/AccordionItem";
 import styles from "./styles.module.scss";
 // import { useAnimation } from "framer-motion";
-
-// import AnimationPrueba from "../AnimationsPrueba";
-
-export default function FaqsSection({background}) {
+import AnimatedDiv from "@/components/AnimatedDiv";
+export default function Benefits() {
   const [active, setActive] = useState("");
 
   const handleToggle = (id) => {
     setActive((prevActive) => (prevActive === id ? null : id));
   };
 
-  const faqsA = [
+  const benefits = [
     {
       id: 1,
       faq: "Pertenecer a la única Cámara especializada en Energías Renovables en Entre Ríos",
@@ -39,30 +37,42 @@ export default function FaqsSection({background}) {
       id: 5,
       faq: "Acceso a eventos y espacios de difusión",
       ans: "Participá de actividades, jornadas y encuentros que promueven el uso de energías renovables y aumentan la visibilidad de los actores que trabajan por una transición energética sustentable.",
-    }
+    },
   ];
-
-
 
   return (
     <>
-      <div className={styles.faqssection} style={{ backgroundColor: background }}>
-        <h6 className={`${styles.heading} `}>Beneficios de ser parte</h6>
+      <div className={styles.benefitsection}>
+        <div className={styles.left}>
+          <AnimatedDiv>
+            <h6 className={styles.text}>Beneficios de ser parte</h6>
+          </AnimatedDiv>
 
-        <div className={styles.faqscontainer}>
-          {faqsA.map((question) => (
-            <AccordionItem
-              key={question.id}
-              active={active}
-              handleToggle={() => handleToggle(question.id)}
-              id={question.id}
-              header={question.faq}
-              content={question.ans}
-            />
-          ))}
+          <AnimatedDiv>
+            <h6 className={styles.text2}>
+              ¿Te gustaría ser parte?
+              <br /> <span>Comunicate con nosotros para más información.</span>
+            </h6>
+          </AnimatedDiv>
+          <button className={styles.button}>
+        <p>Quiero ser parte →</p>{" "}
+      </button>
         </div>
 
-        {/* <AnimationPrueba/> */}
+        <div className={styles.right}>
+          <div className={styles.faqscontainer}>
+            {benefits.map((question) => (
+              <AccordionItem
+                key={question.id}
+                active={active}
+                handleToggle={() => handleToggle(question.id)}
+                id={question.id}
+                header={question.faq}
+                content={question.ans}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );

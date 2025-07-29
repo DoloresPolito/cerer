@@ -1,5 +1,4 @@
 import styles from "./style.module.scss";
-import Contact from "../ContactForm";
 import AnimatedDiv from "../AnimatedDiv";
 
 export default function Index() {
@@ -20,7 +19,7 @@ export default function Index() {
           </div>
           <AnimatedDiv>
             <div className={styles.right}>
-              {/* <Contact /> */}
+    
             </div>
           </AnimatedDiv>
         </div>

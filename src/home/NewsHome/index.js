@@ -8,7 +8,7 @@ import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import AnimatedDiv from "@/components/AnimatedDiv";
 import Image from "next/image";
-import location from "../../../public/icons/location-50.png";
+// import location from "../../../public/icons/location-50.png";
 
 const NewsHome = () => {
   const controls = useAnimation();

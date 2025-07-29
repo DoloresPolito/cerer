@@ -59,7 +59,8 @@
   overflow: hidden;
   color: #155446;
   transition: transform 0.3s ease; // para animar el cambio de tamaño
-
+  min-height: 40vh; // Asegura altura mínima
+  align-items: stretch; // Hace que los hijos crezcan parejo
   &:hover {
     transform: scale(0.97); // achica un poco al hacer hover
   }
@@ -81,7 +82,8 @@
     width: 50%;
     height: 100%;
     position: relative;
-
+    position: relative;
+    overflow: hidden;
     @media only screen and (max-width: 1000px) {
       display: none;
     }
@@ -119,13 +121,20 @@
     flex-direction: column;
     justify-content: space-between;
 
+    overflow: hidden;
+    word-break: break-word;
+    box-sizing: border-box;
+    flex-grow: 1;
     @media only screen and (max-width: 1000px) {
       width: 100%;
     }
 
+    // @media only screen and (max-width: 800px) {
+    //   display: flex;
+    //   height: auto;
+    // }
     @media only screen and (max-width: 800px) {
-      display: flex;
-      height: auto;
+      padding: 3vh 2vh;
     }
 
     // .titlediv {
@@ -148,10 +157,16 @@
       color: #39442b;
       width: auto;
       line-height: 110%;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
     }
 
     .text {
       font-size: 2vh;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
     }
   }
 }

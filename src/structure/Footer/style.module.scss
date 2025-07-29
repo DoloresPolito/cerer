@@ -39,6 +39,10 @@
           width: auto;
           font-size: 4vh;
           line-height: 100%;
+
+          @media only screen and (max-width: 800px) {
+            text-align: center;
+          }
         }
       }
       .right {

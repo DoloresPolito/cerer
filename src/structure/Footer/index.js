@@ -4,9 +4,11 @@ import AnimatedDiv from "../../components/AnimatedDiv";
 export default function Footer() {
   return (
     <>
-      <div className={styles.section} id="contact">
+      <div className={styles.section}>
         <div className={styles.contentcontainer}>
-          <div className={styles.left}>
+          <div className={styles.top}>
+
+ <div className={styles.left}>
             <AnimatedDiv delay="200">
               <h6 className={styles.title}>
                 Conectemos y trabajemos juntos para impulsar iniciativas
@@ -20,6 +22,14 @@ export default function Footer() {
           
             </div>
           </AnimatedDiv>
+
+          </div>
+
+          <div className={styles.bottom}>
+
+            <p className={styles.rights}>Todos los derechos reservados ©</p>
+          </div>
+         
         </div>
       </div>
     </>

@@ -1,78 +1,68 @@
 .section {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   background-color: #001d19;
-  padding-left: 5vw;
-  padding-right: 5vw;
-
-  @media only screen and (max-width: 1000px) {
-    height: auto;
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
+  height: auto;
 
   .contentcontainer {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    @media only screen and (max-width: 1000px) {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 0vh;
-    }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 98%;
 
-    .left {
+    .top {
+      border-bottom: 1px solid #f6e9ca;
+      height: 90%;
+      width: 100%;
       display: flex;
       flex-direction: row;
-      width: 30%;
-      height: auto;
-      // margin-left: 3vw;
-      align-items: flex-end;
-      // padding-bottom: 3vh;
-      gap: 3vw;
-      @media only screen and (max-width: 1000px) {
-        // margin-left: 0vw;
-        justify-content: center;
-        width: 100%;
+
+      @media only screen and (max-width: 800px) {
+        flex-direction: column;
       }
 
-      .title {
-        color: #f6e9ca;
-        width: auto;
-        font-size: 5vh;
-        line-height: 100%;
-      }
+      .left {
+        width: 40%;
+        display: flex;
+        padding: 3vh;
 
-      .styled-paragraph {
-        font-size: 1rem;
-        line-height: 1.5;
+        @media only screen and (max-width: 800px) {
+          width: 100%;
+        }
+
+        .title {
+          color: #f6e9ca;
+          width: auto;
+          font-size: 4vh;
+          line-height: 100%;
+        }
+      }
+      .right {
+        width: 60%;
+        display: flex;
+        @media only screen and (max-width: 800px) {
+          width: 100%;
+        }
       }
     }
 
-    .right {
+    .bottom {
+      height: 10%;
+      width: 100%;
       display: flex;
-      flex-direction: column;
-      width: 50%;
-      height: 300px;
-  
-      @media only screen and (max-width: 1000px) {
-        width: 100%;
-        height: auto;
+      align-items: center;
+
+      @media only screen and (max-width: 800px) {
+        justify-content: center;
       }
 
-      @media only screen and (max-width: 600px) {
-        width: 90%;
+      .rights {
+        color: #f6e9ca;
       }
-    }
-
-    p {
-      font-size: 1vw;
-      font-weight: 300;
-      // margin-top: 5vh;
-      letter-spacing: 0.5px;
-      line-height: 120%;
     }
   }
 }

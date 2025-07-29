@@ -84,17 +84,13 @@
         }
       }
 
-      h6 {
+      p {
         margin-bottom: 1rem;
         color: #f6e9ca;
-        font-size: 2vh;
         text-align: center;
         margin: 0;
-        font-family: var(--font-roboto), sans-serif;
         margin-bottom: 3vh;
-        @media only screen and (max-width: 750px) {
-          font-size: 3vh !important;
-        }
+        
       }
     }
   

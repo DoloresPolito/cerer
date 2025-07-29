@@ -137,9 +137,9 @@ const Card = ({  title, image, locationtext, subtitle }) => {
           <p className={styles.topText}>{locationtext}</p>
         </div> */}
         <AnimatedDiv>
-          <h6 className={styles.bottomText}>{title}</h6>
+          <h6 className={styles.cardTitle}>{title}</h6>
         </AnimatedDiv>
-        <p>{subtitle}</p>
+        <p className={styles.text}>{subtitle}</p>
       </div>
 
       <div className={styles.cardright}>

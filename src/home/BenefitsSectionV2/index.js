@@ -53,6 +53,7 @@ export default function Benefits() {
               ¿Te gustaría ser parte?
               <br /> <span>Comunicate con nosotros para más información.</span>
             </h4>
+   
           </AnimatedDiv>
           <button className={styles.button}>
             <p>Quiero ser parte →</p>{" "}

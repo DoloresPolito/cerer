@@ -39,7 +39,7 @@ export default function ThreeItems() {
               <div className={styles.textcontainer}>
                 <AnimatedDiv delay={item.delay}>
                   <h5>{item.number}</h5>
-                  <h6>{item.title}</h6>
+                  <p>{item.title}</p>
                 </AnimatedDiv>
               </div>
             </motion.div>

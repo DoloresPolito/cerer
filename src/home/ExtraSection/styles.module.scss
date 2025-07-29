@@ -12,12 +12,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 70vh;
     overflow: hidden;
     cursor: pointer;
 
-
-
+    @media screen and (max-width: 700px) {
+      
+      height: auto;}
     .backgroundImage {
       position: absolute;
       top: 0;

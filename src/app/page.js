@@ -49,28 +49,23 @@ export default function Home() {
 
   return (
     <>
-
-
       <AnimatePresence mode="wait">
         <div key="content">
           <HeaderBar />
 
           <FixedMedia />
           {width > 600 ? <Cursor /> : <></>}
-    
+
           {/* <ColorChangeOnScrollGsap /> */}
 
           <LandingV3 />
           <Description />
 
-
-     
-    
           <NewsHome />
           <ExtraSection />
-         <Benefits/>
+          <Benefits />
           {/* <NewSection /> */}
-          <ExtraSection />
+          {/* <ExtraSection /> */}
           <LogosMoving />
           <Footer />
         </div>

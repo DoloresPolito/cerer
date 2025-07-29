@@ -7,29 +7,22 @@ export default function Footer() {
       <div className={styles.section}>
         <div className={styles.contentcontainer}>
           <div className={styles.top}>
-
- <div className={styles.left}>
-            <AnimatedDiv delay="200">
-              <h6 className={styles.title}>
-                Conectemos y trabajemos juntos para impulsar iniciativas
-                renovables que marquen la diferencia en Entre Ríos.
-              </h6>
-            </AnimatedDiv>
-          </div>
-          <AnimatedDiv>
-            <div className={styles.right}>
-
-          
+            <div className={styles.left}>
+              <AnimatedDiv delay="200">
+                <h6 className={styles.title}>
+                  Conectemos y trabajemos juntos para impulsar iniciativas
+                  renovables que marquen la diferencia en Entre Ríos.
+                </h6>
+              </AnimatedDiv>
             </div>
-          </AnimatedDiv>
-
+            <AnimatedDiv>
+              <div className={styles.right}></div>
+            </AnimatedDiv>
           </div>
 
           <div className={styles.bottom}>
-
             <p className={styles.rights}>Todos los derechos reservados ©</p>
           </div>
-         
         </div>
       </div>
     </>

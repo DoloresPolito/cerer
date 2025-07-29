@@ -14,7 +14,7 @@ export default function Benefits() {
   const benefits = [
     {
       id: 1,
-      faq: "Pertenecer a la única Cámara especializada en Energías Renovables en Entre Ríos",
+      faq: "Ser parte de la única Cámara de Energías Renovables de Entre Ríos.",
       ans: "Sumate a la primera y única organización en la provincia con un enfoque exclusivo en el desarrollo de energías renovables. Un espacio de referencia y acción para impulsar el crecimiento del sector.",
     },
     {

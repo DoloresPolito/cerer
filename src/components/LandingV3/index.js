@@ -13,7 +13,7 @@ import image4 from "../../../public/images/newhero/atardecer.png";
 import image5 from "../../../public/images/newhero/panel-pasto.png";
 
 import mobileImage1 from "../../../public/images/newhero/mobile1.png";
-import mobileImage2 from "../../../public/images/newhero/mobile2.png";
+// import mobileImage2 from "../../../public/images/newhero/mobile2.png";
 
 export default function LandingV3() {
   const [isMobile, setIsMobile] = useState(false);

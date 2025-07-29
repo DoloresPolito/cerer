@@ -5,6 +5,7 @@ import Loop from "@/components/Loop";
 const LogosMoving = () => {
   return (
     <div className={styles.section}>
+      <div className={styles.fullcontainer}>
       <h6>
         Miembros de la Cámara de <span>Energías Renovables</span> de Entre Ríos
       </h6>
@@ -15,6 +16,8 @@ const LogosMoving = () => {
       <button className={styles.button}>
         <p>Quiero ser parte →</p>{" "}
       </button>
+      </div>
+      
     </div>
   );
 };

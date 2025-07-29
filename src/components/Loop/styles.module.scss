@@ -7,7 +7,7 @@
     align-items: center;
     animation: scroll 60s linear infinite;
     white-space: nowrap;
-
+    width: max-content; 
     &:hover {
       animation-play-state: paused;
     }
@@ -42,11 +42,6 @@
 
     
   }
-
-  // .smallLogo {
-  //   max-height: 70% !important;
-  //   max-width: 70% !important;
-  // }
 
 
   .tinyLogo {

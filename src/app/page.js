@@ -48,14 +48,15 @@ export default function Home() {
 
   return (
     <>
-      {/* {width > 600 ? <Cursor /> : <></>} */}
+
 
       <AnimatePresence mode="wait">
         <div key="content">
           <HeaderBar />
 
           <FixedMedia />
-          <Cursor />
+          {width > 600 ? <Cursor /> : <></>}
+          {/* <Cursor /> */}
           {/* <ColorChangeOnScrollGsap /> */}
 
           <LandingV3 />
@@ -63,11 +64,12 @@ export default function Home() {
 
 
           <ExtraSection />
+          <LogosMoving />
           <NewsHome />
 
           {/* <BenefitSection/> */}
           {/* <NewSection /> */}
-          <LogosMoving />
+        
           <Contact />
         </div>
       </AnimatePresence>

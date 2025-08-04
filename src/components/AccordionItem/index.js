@@ -14,9 +14,10 @@ export const AccordionItem = ({
   return (
     <div className={styles.card}>
       <div onClick={() => handleToggle(id)} className={styles.header}>
-        {id}. 
-        {header}
-
+        <div className={styles.left}>
+          <span className={styles.number}>{id}.</span>
+          <span className={styles.question}>{header}</span>
+        </div>
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
           width="34"

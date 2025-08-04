@@ -61,10 +61,10 @@ export default function Home() {
           <Description />
 
           <NewsHome />
-          <ExtraSection />
+       
           <Benefits />
-          {/* <NewSection /> */}
-          {/* <ExtraSection /> */}
+          <ExtraSection />
+
           <LogosMoving />
           <Footer />
         </div>

@@ -8,10 +8,10 @@ export const links = [
         href: "/noticias"
     },
 
-    {
-        title: "Contacto",
-        href: "/contacto"
-    }
+    // {
+    //     title: "Contacto",
+    //     href: "/contacto"
+    // }
 ]
 
 export const footerLinks = [

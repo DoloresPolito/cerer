@@ -2,10 +2,11 @@
 import { useState } from "react";
 import AccordionItem from "@/components/AccordionItem";
 import styles from "./styles.module.scss";
-// import { useAnimation } from "framer-motion";
 import AnimatedDiv from "@/components/AnimatedDiv";
+import Modal from "@/components/Modal";
 export default function Benefits() {
   const [active, setActive] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleToggle = (id) => {
     setActive((prevActive) => (prevActive === id ? null : id));
@@ -32,7 +33,6 @@ export default function Benefits() {
       faq: "Relacionamiento con colegas de toda la provincia",
       ans: "Generá vínculos con otros profesionales, empresas y organizaciones del sector renovable en toda la geografía entrerriana. Un espacio ideal para compartir experiencias, desafíos y soluciones.",
     },
-
     {
       id: 5,
       faq: "Acceso a eventos y espacios de difusión",
@@ -53,10 +53,10 @@ export default function Benefits() {
               ¿Te gustaría ser parte?
               <br /> <span>Comunicate con nosotros para más información.</span>
             </h4>
-   
           </AnimatedDiv>
-          <button className={styles.button}>
-            <p>Quiero ser parte →</p>{" "}
+
+          <button className={styles.button} onClick={() => setIsModalOpen(true)}>
+            <p>Quiero ser parte →</p>
           </button>
         </div>
 
@@ -75,6 +75,10 @@ export default function Benefits() {
           </div>
         </div>
       </div>
+
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        
+      </Modal>
     </>
   );
 }

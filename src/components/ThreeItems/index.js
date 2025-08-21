@@ -7,20 +7,20 @@ export default function ThreeItems() {
   const items = [
     {
       id: 1,
-      title: "Años de trabajo",
-      number: "5",
+      title: "Cantidad de Asociados",
+      number: "26",
       delay: 0.3,
     },
     {
       id: 2,
-      title: "Cantidad de miembros",
-      number: "7",
+      title: "Usuarios Generadores",
+      number: "423",
       delay: 0.9,
     },
     {
       id: 3,
-      title: "Proyectos terminados",
-      number: "+35",
+      title: "Potencia Instalada",
+      number: "17MW",
    
       delay: 2,
     },

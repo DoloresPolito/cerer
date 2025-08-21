@@ -29,7 +29,7 @@ export default function Benefits() {
     },
     {
       id: 4,
-      faq: "Conexión con colegas de toda la provincia",
+      faq: "Relacionamiento con colegas de toda la provincia",
       ans: "Generá vínculos con otros profesionales, empresas y organizaciones del sector renovable en toda la geografía entrerriana. Un espacio ideal para compartir experiencias, desafíos y soluciones.",
     },
 

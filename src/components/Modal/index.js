@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import styles from "./styles.module.scss";
 // import { sendContactForm } from "../lib/api";
-
+import ContactForm from "../ContactForm";
 const initValues = {
   razonsocial: "",
   nombreyapellido: "",
@@ -74,8 +74,8 @@ export default function Modal({ children, isOpen, onClose }) {
         <button className={styles.closeButton} onClick={onClose}>
           ✕
         </button>
-
-        <div className="form-container">
+<ContactForm/>
+        {/* <div className="form-container">
           <form onSubmit={onSubmit}>
             <input
               type="text"
@@ -137,7 +137,7 @@ export default function Modal({ children, isOpen, onClose }) {
               </button>
             </div>
           </form>
-        </div>
+        </div> */}
 
         {children}
       </div>

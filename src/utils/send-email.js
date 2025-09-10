@@ -1,20 +1,20 @@
-export function sendEmail(data) {
-    const apiEndpoint = '/api/email';
+export async function sendEmail(data) {
+  const apiEndpoint = '/api/email';
 
-
-    fetch(apiEndpoint, {
+  try {
+    const res = await fetch(apiEndpoint, {
       method: 'POST',
       body: JSON.stringify(data),
-    })
-      .then((res) => res.json())
-      .then((response) => {
-        // alert(response.message);
+    });
 
-        setTimeout(() => {
-          window.location.reload();
-        }, 1000);
-      })
-      .catch((err) => {
-        alert(err);
-      });
+    const response = await res.json();
+
+    if (!res.ok) {
+      throw new Error(response.error || "Error enviando el correo");
+    }
+
+    return response; // ⬅️ Devolvemos la respuesta al componente
+  } catch (err) {
+    throw err;
+  }
 }

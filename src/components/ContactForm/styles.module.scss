@@ -1,89 +1,109 @@
 .formcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  background-color: #f7edd6;
+
+  h6{
+
+    text-align: center;
+ 
+  }
+  form {
     display: flex;
     flex-direction: column;
-    align-items: flex-end !important;
-    justify-content: flex-end;
-    // width: 40vw;
-    height: auto;
-  
-    // @media only screen and (max-width: 1000px) {
-      
-    //   width: 90vw;
-    //   margin-top: 10vh;
-    //   margin-bottom: 10vh;
-    // }
-  
-    form {
-      display: flex;
-      flex-direction: column;
-      width: 100%; 
-    }
-  }
-  
-  .inputcontainer,
-  .inputcontainertextarea {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%; 
-    margin: 2vh 0;
-    @media only screen and (max-width: 1000px) {
-      width: 100%; 
-    }
-  }
-  
-  .input {
-    height: 3vh;
-    width: 100%; 
-    border: none;
-    padding-right: 1vw; 
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 2vh;
-    font-weight: 300;
-    border-bottom: 1px solid black;
-  
-    outline: none; 
-    color:black;
-  
-    &::placeholder {
-      color:black;
-      text-align: right; 
-    }
-  }
-  
-  .textarea {
-    height: 10vh;
     width: 100%;
-    padding-right: 1vw; 
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 2vh;
-    font-weight: 300;
-    outline: none;   
-    color:black;
+  }
+}
 
-  
-    &::placeholder {
-        color:black;
-      font-family: "Plus Jakarta Sans", sans-serif;
-      text-align: right; 
-    }
-  }
-  
-  .buttoncontainer {
+.inputcontainer,
+.inputcontainertextarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 2vh 0;
+  @media only screen and (max-width: 1000px) {
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
   }
-  
-  .button {
-    height: 6vh;
-    width: auto;
-    border-bottom: 1px solid black;
-  
-    outline: none;
-    border: none;
-    color:black;
-    cursor: pointer;
-    font-size: 2vh;
-    font-weight: 300;
+}
+
+.input {
+  height: 3vh;
+  width: 100%;
+  border: none;
+  padding-right: 1vw;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2vh;
+  font-weight: 300;
+  border-bottom: 1px solid black;
+  background-color: #f7edd6;
+  outline: none;
+  color: black;
+
+  &::placeholder {
+    color: black;
+    text-align: right;
   }
+}
+
+.textarea {
+  height: 10vh;
+  width: 100%;
+  padding-right: 1vw;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2vh;
+  font-weight: 300;
+  outline: none;
+  color: black;
+
+  &::placeholder {
+    color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-align: right;
+  }
+}
+
+.buttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.button {
+  height: 3vh;
+  width: auto;
+  margin-top: 2vh;
+
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+  cursor: pointer;
+  font-size: 2vh;
+  font-weight: 300;
+  background-color: #f7edd6;
+
+  &:hover {
+    color: rgb(85, 81, 81);
+    border-bottom: 1px solid rgb(85, 81, 81);
+  }
+}
+
+// .spinner {
+//   width: 4vh;
+//   height: 4vh;
+//   border: 2px solid black;
+//   border-top: 2px solid transparent;
+//   border-radius: 50%;
+//   animation: spin 0.7s linear infinite;
+// }
+
+// @keyframes spin {
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

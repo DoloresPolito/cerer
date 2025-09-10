@@ -1,24 +1,38 @@
 "use client";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-// import { sendEmail } from "@/utils/send-email";
+import { sendEmail } from "@/utils/send-email";
 import styles from "./styles.module.scss";
 
 const ContactForm = () => {
   const { register, handleSubmit } = useForm();
-  const [messageSent, setMessageSent] = useState(false);
+  const [status, setStatus] = useState("idle");
+  // idle | loading | success | error
+  const [errorMessage, setErrorMessage] = useState("");
 
-  function onSubmit(data) {
-    // sendEmail(data);
-    console.log("data form", data);
-    setMessageSent(true);
+  async function onSubmit(data) {
+    setStatus("loading");
+    setErrorMessage("");
+
+    try {
+      await sendEmail(data);
+      setStatus("success");
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage(err.message || "Error al enviar el mensaje.");
+    }
   }
 
   return (
     <div className={styles.formcontainer}>
-      {messageSent ? (
-        <></>
+      {status === "success" ? (
+        <h6>El mensaje se envió correctamente.</h6>
+      ) : status === "error" ? (
+        <h6>Error al enviar el mensaje.<br/> Por favor intentelo más tarde.</h6>
       ) : (
+        // {messageSent ? (
+        //   <><h6>El mensaje se envió correctamente</h6></>
+        // ) : (
         <>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className={styles.inputcontainer}>
@@ -82,7 +96,15 @@ const ContactForm = () => {
             </div>
             <div className={styles.buttoncontainer}>
               {/* <Button text="Send" color="#AAA9A9"/> */}
-              <button className={styles.button}> Enviar</button>
+              {/* <button className={styles.button}> Enviar</button> */}
+
+              <button className={styles.button} disabled={status === "loading"}>
+                {/* {status === "loading" ? (
+                  <span className={styles.spinner}></span>
+                ) : ( */}
+                  Enviar
+                {/* )} */}
+              </button>
             </div>
           </form>
         </>

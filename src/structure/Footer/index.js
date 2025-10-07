@@ -18,12 +18,19 @@ export default function Footer() {
               <div className={styles.right}>
                 <h5>Contacto</h5>
                 <div className={styles.options}>
-                  <p>
-                    Email
-                  </p>
-                  <p>
+                  <a          href="https://www.instagram.com/cerer.camara.energias.er/"
+              target="_blank"
+              rel="noopener noreferrer">
                     Instagram
-                  </p>
+                  </a>
+                  <a    href="mailto:camaraerer@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer">
+                    Email
+                  </a>
+
+              
+
                 </div>
               </div>
             </AnimatedDiv>

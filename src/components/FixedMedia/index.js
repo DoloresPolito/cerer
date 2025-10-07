@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function FixedMedia() {
   return (
     <div className={styles.section}>
-      <a href="mailto:ejemplo@correo.com" target="_blank" rel="noopener noreferrer">
+      <a href="mailto:camaraerer@gmail.com" target="_blank" rel="noopener noreferrer">
         <Image src={mail} alt="email"/>
       </a>
       {/* <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className={styles.picture}>

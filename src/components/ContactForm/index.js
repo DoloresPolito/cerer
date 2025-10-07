@@ -26,9 +26,12 @@ const ContactForm = () => {
   return (
     <div className={styles.formcontainer}>
       {status === "success" ? (
-        <h6>El mensaje se envió correctamente.</h6>
+        <h6>El mensaje se envió correctamente.<br/>
+        <span>Gracias por tu interés en formar parte. Pronto nos estaremos comunicando con vos.</span>
+
+        </h6>
       ) : status === "error" ? (
-        <h6>Error al enviar el mensaje.<br/> Por favor intentelo más tarde.</h6>
+        <h6>Error al enviar el mensaje.<br/><span> Por favor intentelo más tarde.</span></h6>
       ) : (
         // {messageSent ? (
         //   <><h6>El mensaje se envió correctamente</h6></>
@@ -54,7 +57,7 @@ const ContactForm = () => {
 
             <div className={styles.inputcontainer}>
               <input
-                type="number"
+                type="text"
                 placeholder="DNI / CUIT"
                 className={styles.input}
                 {...register("dnicuit", { required: true })}

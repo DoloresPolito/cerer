@@ -28,7 +28,7 @@
 
 
   @media only screen and (max-width: 600px) {
-    margin-left: 1vh;
+    margin-left: 0.5vh;
   }
 
 
@@ -39,9 +39,11 @@
     margin-left: 6vh;
     margin-top: 3.5vh;
     @media only screen and (max-width: 600px) {
-      height: 5vh;
-      width: 5vh;
-      margin-right: 1.5vh;
+      height: 6vh;
+      width: 6vh;
+      // margin-right: 1.5vh;
+      margin-left: 1vh;
+      margin-top: 3vh;
     }
   }
 }

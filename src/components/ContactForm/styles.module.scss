@@ -6,10 +6,20 @@
   height: auto;
   background-color: #f7edd6;
 
-  h6{
-
+  
+  h6 {
     text-align: center;
- 
+    line-height: 1.2; // ajusta si querés más o menos espacio
+   
+  
+    span {
+      display: block; // asegura que quede en una línea aparte
+      font-size: 2.5vh;
+      margin: 0;
+      padding: 0;
+      line-height: 1.2;
+      margin-top: 4vh;
+    }
   }
   form {
     display: flex;
@@ -88,8 +98,9 @@
   background-color: #f7edd6;
 
   &:hover {
-    color: rgb(85, 81, 81);
-    border-bottom: 1px solid rgb(85, 81, 81);
+
+    border-bottom: 1px solid #c69a72;
+    color: #c69a72;
   }
 }
 

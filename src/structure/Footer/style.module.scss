@@ -5,7 +5,9 @@
   align-content: center;
   background-color: #001d19;
   height: auto;
-min-height: 50vh;
+  min-height: 50vh;
+  box-sizing: border-box;
+
   .contentcontainer {
     display: flex;
     flex-direction: column;
@@ -20,25 +22,28 @@ min-height: 50vh;
       width: 100%;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
 
       @media only screen and (max-width: 800px) {
         flex-direction: column;
       }
 
       .left {
-        width: 40%;
         display: flex;
-        padding: 3vh;
+        width: 60%;
 
         @media only screen and (max-width: 800px) {
           width: 100%;
           padding: 0vh;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
         }
 
         .title {
           color: #f6e9ca;
           width: auto;
-          font-size: 4vh;
+          font-size: 5vh;
           line-height: 100%;
 
           @media only screen and (max-width: 800px) {
@@ -48,12 +53,63 @@ min-height: 50vh;
         }
       }
       .right {
-        width: 60%;
+        color: #f6e9ca;
+        width: auto;
+        font-size: 4vh;
+        line-height: 100%;
+        width: 20vw;
         display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
         @media only screen and (max-width: 800px) {
           width: 100%;
+          text-align: center;
+          align-items: center;
+
+          h5 {
+            margin: 0;
+          }
+        }
+
+        .options {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+
+          width: 100%;
+  
+
+          p {
+            margin: 1vh;
+          }
+
+          @media only screen and (max-width: 800px) {
+            height: auto;
+            text-align: center;
+            align-items: center;
+            margin-bottom: 3vh;
+            margin-top: 3vh;
+            p {
+              margin: 1vh;
+            }
+          }
         }
       }
+
+      // .right {
+      //   width: 60% ;
+      //   display: flex;
+      //   background-color: red;
+      //   height: 100%;
+      //   h5 {
+      //     font-size: 2vh;
+      //   }
+
+      //   @media only screen and (max-width: 800px) {
+      //     width: 100%;
+      //   }
+      // }
     }
 
     .bottom {

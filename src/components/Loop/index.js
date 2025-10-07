@@ -18,10 +18,11 @@ const Loop = ({ reverse }) => {
   
   ];
 
+  const allLogos = [...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos];
   return (
     <div className={`${styles.loopSection} ${reverse ? styles.reverse : ""}`}>
       <div className={styles.marquee}>
-        {logos.map((logo, index) => (
+        {allLogos.map((logo, index) => (
           <div className={styles.logoWrapper} key={index}>
             <Image
               src={logo.src}

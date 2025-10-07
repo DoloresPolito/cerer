@@ -10,13 +10,22 @@ export default function Footer() {
             <div className={styles.left}>
               <AnimatedDiv delay="200">
                 <h6 className={styles.title}>
-                  Conectemos y trabajemos juntos para impulsar iniciativas
-                  renovables que marquen la diferencia en Entre Ríos.
+                Impulsando la energía <br/>renovable en Entre Ríos.
                 </h6>
               </AnimatedDiv>
             </div>
             <AnimatedDiv>
-              <div className={styles.right}></div>
+              <div className={styles.right}>
+                <h5>Contacto</h5>
+                <div className={styles.options}>
+                  <p>
+                    Email
+                  </p>
+                  <p>
+                    Instagram
+                  </p>
+                </div>
+              </div>
             </AnimatedDiv>
           </div>
 

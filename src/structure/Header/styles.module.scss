@@ -4,14 +4,15 @@
   top: 5vh;
   z-index: 9999;
   display: flex;
+  // background-color: red;
 
-  @media only screen and (max-width: 700px) {
-    right: 5vh;
-  }
+  // @media only screen and (max-width: 700px) {
+  //   right: 5vh;
+  // }
 
   .buttoncontainer {
     display: flex;
-    
+
     @media only screen and (max-width: 950px) {
       display: none;
     }
@@ -19,12 +20,12 @@
 
   .menu {
     width: 30vh;
-    height: 100vh;
+    height: 90vh;
     position: relative;
     z-index: 1;
     background-color: #001d19;
     border-radius: 5vh;
     opacity: 0.95;
-
+    background-color: #032823;
   }
 }

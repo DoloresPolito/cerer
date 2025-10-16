@@ -8,7 +8,7 @@ const logos = [
   { src: "/logos/cersolar2.png", alt: "Cersolar", size: "default" },
   { src: "/logos/chico.svg", alt: "Coenergy", size: "large" },
   { src: "/logos/reenerger.png", alt: "ReEnerger", size: "default" },
-  { src: "/logos/SER.png", alt: "Ser", size: "tiny" },
+  { src: "/logos/ser.png", alt: "Ser", size: "tiny" },
   { src: "/logos/LG.png", alt: "LG", size: "default" },
   { src: "/logos/time.png", alt: "Time Solar", size: "small" },
   { src: "/logos/ecoenergy.png", alt: "EcoEnergy", size: "default" }, // ejemplo de agrandado

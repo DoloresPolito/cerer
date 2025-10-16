@@ -28,31 +28,31 @@ export default function LandingV3() {
   return (
     <div className={styles.section} id="home">
       {isMobile ? (
-         <motion.div
-         className={styles.mobileImageWrapper}
-         variants={fadeInScale}
-         initial="initial"
-         animate="enter"
-         transition={{ delay: 0.6 }}
-       >
-         <Image
-           src={mobileImage1}
-           alt="Imagen mobile hero"
-           layout="fill"
-           objectFit="cover"
-           priority
-         />
-     
-     <motion.div
-    className={styles.mobileLogo}
-    variants={slideUp}
-    initial="initial"
-    animate="enter"
-    transition={{ delay: 0.8 }}
-  >
-    <Image src={completelogo} alt="Logo CERER" />
-  </motion.div>
-       </motion.div>
+        <motion.div
+          className={styles.mobileImageWrapper}
+          variants={fadeInScale}
+          initial="initial"
+          animate="enter"
+          transition={{ delay: 0.6 }}
+        >
+          <Image
+            src={mobileImage1}
+            alt="Imagen mobile hero"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+
+          <motion.div
+            className={styles.mobileLogo}
+            variants={slideUp}
+            initial="initial"
+            animate="enter"
+            transition={{ delay: 0.8 }}
+          >
+            <Image src={completelogo} alt="Logo CERER" />
+          </motion.div>
+        </motion.div>
       ) : (
         <div className={styles.gridContainer}>
           <motion.div
@@ -112,6 +112,7 @@ export default function LandingV3() {
             style={{ gridArea: "img5" }}
           >
             <Image src={image5} alt="Turbina al amanecer" layout="responsive" />
+
           </motion.div>
 
           <motion.div

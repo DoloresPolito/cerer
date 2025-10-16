@@ -64,8 +64,9 @@ export default function Home() {
        
           <Benefits />
           <ExtraSection />
-
           <LogosMoving />
+          {/* {width > 600 ?   : <></>} */}
+         
           <Footer />
         </div>
       </AnimatePresence>

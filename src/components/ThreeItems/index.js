@@ -21,7 +21,6 @@ export default function ThreeItems() {
       id: 3,
       title: "Potencia Instalada",
       number: "17MW",
-   
       delay: 2,
     },
   ];

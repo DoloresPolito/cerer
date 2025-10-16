@@ -28,6 +28,12 @@
     opacity: 0.95;
     background-color: #032823;
 
-   
+
+   @media only screen and (max-width: 480px) {
+    top: 0;
+      right:1vh;
+      width: 0vh;
+      width: 30vw;
+   }
   }
 }

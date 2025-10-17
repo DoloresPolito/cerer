@@ -52,26 +52,27 @@
 }
 
 .cardcontainer {
-  height: 70vh;
   width: 60vw;
   border-radius: 3vh;
   display: flex;
   flex-direction: row;
   overflow: hidden;
   color: #155446;
-  transition: transform 0.3s ease; // para animar el cambio de tamaño
-  min-height: 40vh; // Asegura altura mínima
-  align-items: stretch; // Hace que los hijos crezcan parejo
+  transition: transform 0.3s ease;
+  align-items: stretch;
+  background-color: #f6e9ca;
+  height: auto; // ✅ Que se adapte al contenido
+  min-height: 50vh; // Altura mínima base para mantener estética
 
- 
   &:hover {
-    transform: scale(0.97); // achica un poco al hacer hover
+    transform: scale(0.97);
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1200px) {
     flex-direction: column;
     width: 90%;
     height: auto;
+    min-height: unset;
   }
 
   @media only screen and (max-width: 800px) {
@@ -83,82 +84,75 @@
 
   .cardright {
     width: 50%;
-    height: 100%;
-    position: relative;
     position: relative;
     overflow: hidden;
-    @media only screen and (max-width: 1000px) {
-      display: none;
+
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+      height: 40vh; // ✅ Imagen visible, pero más chica
+      display: block;
     }
 
-    // .circleButton {
-    //   position: absolute;
-    //   bottom: 20px;
-    //   right: 20px;
-    //   width: 50px;
-    //   height: 50px;
-    //   background-color: white;
-    //   border-radius: 50%;
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: center;
-    //   cursor: pointer;
-    //   transition: transform 0.3s ease;
-
-    //   &:hover {
-    //     transform: scale(1.1);
-    //   }
-
-    //   svg {
-    //     width: 20px;
-    //     height: 20px;
-    //   }
-    // }
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+      height: 0vh; // ✅ Imagen visible, pero más chica
+      display: block;
+    }
   }
 
   .cardleft {
     width: 50%;
-    background-color: #f6e9ca;
-    padding: 4vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    word-break: break-word;
+    justify-content: flex-start; // ✅ No empuja el texto hacia abajo
+    padding: 5vh 4vh;
+    background-color: #f6e9ca;
     box-sizing: border-box;
-    flex-grow: 1;
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 1200px) {
       width: 100%;
+      padding: 4vh 3vh;
     }
-
-
-    @media only screen and (max-width: 800px) {
-      padding: 5vh 3vh;
-    }
-
 
     .cardTitle {
-      font-size: 4vh;
+      font-size: 3.5vh; // un poco más chico para ahorrar espacio
       color: #39442b;
-      width: auto;
       line-height: 110%;
-      overflow-wrap: break-word;
-      word-break: break-word;
-      hyphens: auto;
-      margin: 0;
-      margin-bottom: 6vh;
+      margin-bottom: 2vh;
     }
 
     .text {
-      font-size: 2vh;
-      overflow-wrap: break-word;
-      word-break: break-word;
-      hyphens: auto;
+      font-size: 1.9vh;
       text-align: justify;
+      flex-grow: 0; // ❌ no empuja el botón hacia abajo
+      margin-bottom: 3vh;
+    }
+
+    .buttonContainer {
+      margin-top: auto; // ✅ el botón se mantiene al final
+    }
+
+    .button {
+      display: inline-block;
+      background-color: transparent;
+      border: 1.5px solid #155446;
+      color: #155446;
+      padding: 1vh 3vh;
+      border-radius: 2vh;
+      font-size: 1.8vh;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      align-self: flex-start;
+
+      &:hover {
+        background-color: #155446;
+        color: #f6e9ca;
+      }
     }
   }
 }
+
 
 .slide {
   width: 50vw !important;

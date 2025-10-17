@@ -29,20 +29,23 @@ const NewsHome = () => {
       name: "Noticia 1",
       title: "Partipación en la Mesa Provincial de Energía Sostenible",
       subtitle:
-        "La ley 10933 Energía Electrica Sostenible crea la MPES, integrada por organismo del estado provincial, Universidades ,Consejo Profesional de Ingenieros Especialistas, la Camara de Energias Renovables y Eco Urbano",
+        "Conformación del Plan Provincial para el Desarrollo de las Energías Renovables, Planificación a mediano y largo plazo de la incorporación de las energías renovables en la matriz energética provincial, Implementación de esquemas de promoción de las energías renovables permitidos en la presente ley.",
       text: ".",
       image: "new1.png",
       locationtext: "",
+      link:"https://www.instagram.com/p/DHbu4YiPKdJ/?img_index=1"
     },
     {
       name: "Noticia 3",
       title:
         "ENERSA se suma a la Cámara de Energías Renovables de Entre Ríos (CERER)",
       subtitle:
-        "Nos complace anunciar que ENERSA (Energía de Entre Ríos S.A.), la empresa distribuidora de energía eléctrica de la provincia, ya forma parte de nuestra Cámara. En el día de ayer se concretó una reunión entre representantes de CERER y @enersaarg en la que se formalizó la incorporación de la empresa energética a nuestra Cámara.",
+        "Nos complace anunciar que ENERSA (Energía de Entre Ríos S.A.), la empresa distribuidora de energía eléctrica de la provincia, ya forma parte de nuestra Cámara. Se concretó una reunión entre representantes de CERER y @enersaarg en la que se formalizó la incorporación de la empresa energética a nuestra Cámara.",
       text: ".",
       image: "new2.png",
       locationtext: "",
+      link:"https://www.instagram.com/cerer.camara.energias.er/p/DJow4QYOCnU/?img_index=1"
+      
     },
     {
       name: "Noticia 2",
@@ -53,6 +56,7 @@ const NewsHome = () => {
       image: "new2.png",
       image: "reu1.JPG",
       locationtext: "",
+      link:"https://www.instagram.com/p/DJaEHFtPfj4/?img_index=1"
     },
 
     {
@@ -64,6 +68,7 @@ const NewsHome = () => {
       text: ".",
       image: "reu2.JPG",
       locationtext: "Paraná",
+      link:""
     },
   ];
 
@@ -108,7 +113,7 @@ const NewsHome = () => {
                       image={card.image}
                       locationtext={card.locationtext}
                       subtitle={card.subtitle}
-             
+                      link={card.link}
                     />
                   </SwiperSlide>
                 ))}
@@ -128,18 +133,20 @@ const NewsHome = () => {
 
 export default NewsHome;
 
-const Card = ({  title, image, locationtext, subtitle }) => {
+const Card = ({ title, image, locationtext, subtitle, link }) => {
   return (
     <div className={styles.cardcontainer}>
       <div className={styles.cardleft}>
-        {/* <div className={styles.titlediv}>
-          <Image src={location} alt="ubicacion" />
-          <p className={styles.topText}>{locationtext}</p>
-        </div> */}
         <AnimatedDiv>
           <h6 className={styles.cardTitle}>{title}</h6>
         </AnimatedDiv>
         <p className={styles.text}>{subtitle}</p>
+
+        <div className={styles.buttonContainer}>
+          <a href={link} className={styles.button}>
+            Ver más →
+          </a>
+        </div>
       </div>
 
       <div className={styles.cardright}>
@@ -149,17 +156,6 @@ const Card = ({  title, image, locationtext, subtitle }) => {
           fill
           style={{ objectFit: "cover" }}
         />
-        {/* <a href="#noticia" className={styles.circleButton}>
-        <svg viewBox="0 0 24 24" fill="none">
-          <path
-            d="M5 12h14M13 6l6 6-6 6"
-            stroke="#333"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </a> */}
       </div>
     </div>
   );

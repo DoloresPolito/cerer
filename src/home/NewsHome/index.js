@@ -26,6 +26,75 @@ const NewsHome = () => {
 
   const cards = [
     {
+      name: "1",
+      title: "Entre Rios escaló en el ranking de generación distribuida.",
+      subtitle:
+        "Destacamos el sostenido crecimiento de la generación distribuida en la provincia, que continúa ganando protagonismo a nivel nacional. Con más de 17 MW entre potencia instalada y proyectos en trámite, Entre Ríos avanza firme en la transición energética, impulsada por políticas públicas, la participación ciudadana y el compromiso del sector privado, consolidándose como referente en energías limpias y sostenibles.",
+      text: ".",
+      image: "new1.png",
+      locationtext: "",
+      link:"https://www.instagram.com/p/DOWw9t4kQQ5/?img_index=1"
+    },
+
+    {
+      name: "2",
+      title: "Se inauguró el primer parque solar en Sauce Pinto",
+      subtitle:
+        "Se inauguró en Sauce Pinto un parque solar de 300 kW, integrado por 540 paneles y 10 inversores de 30 kW, con una generación estimada de 480 MWh anuales. Esta nueva planta, que equivale al consumo de unas 200 familias, refuerza la matriz eléctrica provincial con energía limpia y marca un nuevo avance hacia una Entre Ríos más sostenible y resiliente.",
+      text: ".",
+      image: "new1.png",
+      locationtext: "",
+      link:"https://www.instagram.com/p/DPhBumBjZ1N/?img_index=4"
+    },
+
+    {
+      name: "3",
+      title: "Entre Ríos avanza con sus primeros parques solares",
+      subtitle:
+        "Se avanza en la construcción de dos parques solares en Sauce Pinto y Sauce Montrull, con una potencia prevista de 300 kW cada uno. En Sauce Pinto la obra está en su etapa final, mientras que en Sauce Montrull se realizan las tareas iniciales. Ambos proyectos sumarán generación limpia a la red provincial, fortaleciendo un modelo energético más sostenible y descentralizado para Entre Ríos.",
+      text: ".",
+      image: "new1.png",
+      locationtext: "",
+      link:"https://www.instagram.com/p/DPFPHeqDakW/?img_index=1"
+    },
+
+    {
+      name: "4",
+      title: "Primer relevamiento oficial del sector solar fotovoltaico en Argentina",
+      subtitle:
+        "Invitamos a participar del Primer Censo del sector solar fotovoltaico en Argentina, impulsado por CADER e INTI. El relevamiento busca identificar las capacidades, ubicación y empleo del sector para fortalecer la cadena de valor y la planificación estratégica nacional. Está dirigido a empresas y profesionales vinculados a la energía solar, no a usuarios finales.",
+      text: ".",
+      image: "new1.png",
+      locationtext: "",
+      link:"https://www.instagram.com/p/DOyeA0ZjWqK/?img_index=1"
+    },
+    {
+      name: "5",
+      title: "Energías renovables en alza en Entre Ríos",
+      subtitle:
+        "Durante el primer semestre de 2025, Enersa incorporó 1,6 MW de nueva potencia renovable, alcanzando 3,4 MW totales y un crecimiento del 92 % respecto a 2024. Este avance impulsa la generación distribuida en Entre Ríos y refuerza el compromiso provincial con una matriz energética más limpia y eficiente.",
+      text: ".",
+      image: "new1.png",
+      locationtext: "",
+      link:"https://www.instagram.com/p/DNQzKF-R3vp/"
+    },
+
+    {
+      name: "6",
+      title: "Balance CERER 2024",
+      subtitle:
+        "Durante 2024, desde la Cámara de Energías Renovables de Entre Ríos (CERER) impulsamos mejoras técnicas, simplificación de trámites y nuevos espacios de articulación con instituciones públicas y privadas. Estas acciones fortalecieron la generación distribuida, promovieron la capacitación en energías limpias y consolidaron el crecimiento sostenible de la provincia.",
+      text: ".",
+      image: "new1.png",
+      locationtext: "",
+      link:"https://www.instagram.com/p/DDiEHATvvCu/"
+    },
+
+    {
+
+
+
+      
       name: "Noticia 1",
       title: "Partipación en la Mesa Provincial de Energía Sostenible",
       subtitle:
@@ -70,6 +139,8 @@ const NewsHome = () => {
       locationtext: "Paraná",
       link:""
     },
+
+    
   ];
 
   return (
@@ -140,7 +211,8 @@ const Card = ({ title, image, locationtext, subtitle, link }) => {
         <AnimatedDiv>
           <h6 className={styles.cardTitle}>{title}</h6>
         </AnimatedDiv>
-        <p className={styles.text}>{subtitle}</p>
+     
+        <p className={styles.cardDescription}>{subtitle}</p>
 
         <div className={styles.buttonContainer}>
           <a href={link} className={styles.button}>

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import AnimatedDiv from "../../components/AnimatedDiv";
 import { motion } from "framer-motion";
 
 export default function ThreeItems() {
@@ -36,10 +35,10 @@ export default function ThreeItems() {
               animate={{ backgroundSize: "100%", opacity: 1 }}
             >
               <div className={styles.textcontainer}>
-                <AnimatedDiv delay={item.delay}>
+         
                   <h5>{item.number}</h5>
                   <p>{item.title}</p>
-                </AnimatedDiv>
+             
               </div>
             </motion.div>
           );

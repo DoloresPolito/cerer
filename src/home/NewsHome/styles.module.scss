@@ -9,9 +9,7 @@
   margin: 0 auto;
   overflow-x: hidden;
 
-
   background-color: #c69a72;
-
 
   .titles {
     display: flex;
@@ -53,16 +51,13 @@
 
 .cardcontainer {
   width: 60vw;
-  border-radius: 3vh;
   display: flex;
   flex-direction: row;
+  align-items: stretch; // ✅ fuerza que ambas columnas tengan el mismo alto
   overflow: hidden;
-  color: #155446;
-  transition: transform 0.3s ease;
-  align-items: stretch;
+  border-radius: 3vh;
   background-color: #f6e9ca;
-  height: auto; // ✅ Que se adapte al contenido
-  min-height: 50vh; // Altura mínima base para mantener estética
+  transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(0.97);
@@ -71,15 +66,10 @@
   @media only screen and (max-width: 1200px) {
     flex-direction: column;
     width: 90%;
-    height: auto;
-    min-height: unset;
   }
 
   @media only screen and (max-width: 800px) {
-    height: auto !important;
-    min-height: unset;
-    max-height: unset;
-    flex-direction: column;
+    width: 100%;
   }
 
   .cardright {
@@ -89,46 +79,69 @@
 
     @media only screen and (max-width: 1200px) {
       width: 100%;
-      height: 40vh; // ✅ Imagen visible, pero más chica
-      display: block;
+      flex-grow: 1; // ✅ permite que crezca para igualar al texto
+      height: auto; // ⚡ elimina altura fija
+      min-height: 35vh; // mantiene una base visual
+      display: flex;
     }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    
 
     @media only screen and (max-width: 800px) {
       width: 100%;
-      height: 0vh; // ✅ Imagen visible, pero más chica
+      height: 35vh; // ✅ altura igual para todas las cards
       display: block;
     }
+
+  
   }
 
-  .cardleft {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; // ✅ No empuja el texto hacia abajo
-    padding: 5vh 4vh;
-    background-color: #f6e9ca;
-    box-sizing: border-box;
 
-    @media only screen and (max-width: 1200px) {
-      width: 100%;
-      padding: 4vh 3vh;
-    }
+
+    .cardleft {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 3vh 4vh 5vh 4vh;
+      box-sizing: border-box;
+  
+      @media only screen and (max-width: 1200px) {
+        width: 100%;
+      }
+    
 
     .cardTitle {
-      font-size: 3.5vh; // un poco más chico para ahorrar espacio
+      font-size: 3.5vh;
       color: #39442b;
       line-height: 110%;
-      margin-bottom: 2vh;
+      margin-bottom: 1vh; 
+
+    }
+
+    .cardDescription {
+      flex-grow: 0;
+      max-height: 50vh; // ✅ todas las descripciones tendrán el mismo alto
+      overflow: hidden; // evita que el texto se desborde
+      text-overflow: ellipsis;
+   
     }
 
     .text {
       font-size: 1.9vh;
       text-align: justify;
       flex-grow: 0; // ❌ no empuja el botón hacia abajo
-      margin-bottom: 3vh;
+ 
     }
 
     .buttonContainer {
+
       margin-top: auto; // ✅ el botón se mantiene al final
     }
 
@@ -152,7 +165,6 @@
     }
   }
 }
-
 
 .slide {
   width: 50vw !important;
@@ -200,7 +212,6 @@
     justify-content: center !important;
     margin: 0 auto;
   }
-
 
   @media only screen and (max-width: 800px) {
     width: 90vw;

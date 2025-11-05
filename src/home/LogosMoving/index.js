@@ -13,6 +13,14 @@ const logos = [
   { src: "/logos/time.png", alt: "Time Solar", size: "small" },
   { src: "/logos/ecoenergy.png", alt: "EcoEnergy", size: "default" }, // ejemplo de agrandado
   { src: "/logos/enova.png", alt: "eNova", size: "small" },
+  { src: "/logos/amperio.jpeg", alt: "Amperio", size: "small" },
+  { src: "/logos/biosolares.jpeg", alt: "Biosolares", size: "small" },
+  { src: "/logos/estener2.png", alt: "Estener", size: "small" },
+  { src: "/logos/meyco2.png", alt: "Meyco", size: "tiny" },
+  { src: "/logos/tecnos.png", alt: "Tecnos", size: "default" },
+  { src: "/logos/infinito.jpeg", alt: "Infinito", size: "small" },
+  { src: "/logos/crespo.jpeg", alt: "Crespo", size: "small" },
+  // { src: "/logos/rigelec.png", alt: "Rigelec", size: "small" },
 
 ];
 

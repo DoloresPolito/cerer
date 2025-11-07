@@ -20,6 +20,8 @@ const logos = [
   { src: "/logos/tecnos.png", alt: "Tecnos", size: "default" },
   { src: "/logos/infinito.jpeg", alt: "Infinito", size: "small" },
   { src: "/logos/crespo.jpeg", alt: "Crespo", size: "small" },
+  { src: "/logos/lyc.png", alt: "L&C", size: "small" },
+  { src: "/logos/tryodo2.png", alt: "Tryodo", size: "small" },
   // { src: "/logos/rigelec.png", alt: "Rigelec", size: "small" },
 
 ];

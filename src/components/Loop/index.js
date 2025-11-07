@@ -8,7 +8,7 @@ const Loop = ({ reverse }) => {
     { src: "/logos/cersolar2.png", alt: "Cersolar", size: "default" },
     { src: "/logos/chico.svg", alt: "Coenergy", size: "large" },
     { src: "/logos/reenerger.png", alt: "ReEnerger", size: "default" },
-    { src: "/logos/SER.png", alt: "Ser", size: "tiny" },
+    { src: "/logos/ser.png", alt: "Ser", size: "tiny" },
     { src: "/logos/LG.png", alt: "LG", size: "default" },
     { src: "/logos/time.png", alt: "Time Solar", size: "small" },
     { src: "/logos/ecoenergy.png", alt: "EcoEnergy", size: "default" }, // ejemplo de agrandado
@@ -25,28 +25,30 @@ const Loop = ({ reverse }) => {
     { src: "/logos/tecnos.png", alt: "Tecnos", size: "default" },
     { src: "/logos/infinito.jpeg", alt: "Infinito", size: "small" },
     { src: "/logos/crespo.jpeg", alt: "Crespo", size: "small" },
+    { src: "/logos/lyc.png", alt: "L&C", size: "small" },
+    { src: "/logos/tryodo2.png", alt: "Tryodo", size: "small" },
   ];
 
   const allLogos1 = [
     ...logos1,
+    ...logos2,
     ...logos1,
+    ...logos2,
     ...logos1,
+    ...logos2,
     ...logos1,
-    ...logos1,
-    ...logos1,
-    ...logos1,
-    ...logos1,
+    ...logos2,
     ...logos1,
   ];
   const allLogos2 = [
     ...logos2,
+    ...logos1,
     ...logos2,
+    ...logos1,
     ...logos2,
+    ...logos1,
     ...logos2,
-    ...logos2,
-    ...logos2,
-    ...logos2,
-    ...logos2,
+    ...logos1,
     ...logos2,
   ];
 

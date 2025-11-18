@@ -13,6 +13,7 @@ const Loop = ({ reverse }) => {
     { src: "/logos/time.png", alt: "Time Solar", size: "small" },
     { src: "/logos/ecoenergy.png", alt: "EcoEnergy", size: "default" }, // ejemplo de agrandado
     { src: "/logos/enova.png", alt: "eNova", size: "small" },
+    { src: "/logos/dexaco.png", alt: "Dexaco", size: "default" },
 
     // { src: "/logos/rigelec.png", alt: "Rigelec", size: "small" },
   ];

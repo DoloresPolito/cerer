@@ -23,6 +23,7 @@ const logos = [
   { src: "/logos/lyc.png", alt: "L&C", size: "small" },
   { src: "/logos/tryodo2.png", alt: "Tryodo", size: "small" },
   { src: "/logos/energiu.png", alt: "Energiu", size: "default" },
+  { src: "/logos/dexaco.png", alt: "Dexaco", size: "default" },
   // { src: "/logos/rigelec.png", alt: "Rigelec", size: "small" },
 
 ];

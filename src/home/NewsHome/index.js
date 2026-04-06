@@ -27,13 +27,35 @@ const NewsHome = () => {
   const cards = [
     {
       name: "1",
+      title: "Más de 800 MW en proyectos renovables en Argentina",
+      subtitle:
+        "El Gobierno nacional incorporó 14 nuevos proyectos de energías renovables al RENPER, superando los 800 MW de potencia instalada, con predominio de desarrollos solares, seguidos por eólicos y un proyecto de biogás. Entre Ríos también forma parte de este proceso con una iniciativa en Viale, actualmente en instancia de inscripción, marcando un nuevo avance en la planificación energética y el crecimiento del sector a nivel nacional y provincial.",
+      text: ".",
+      image: "incorporacion.jpg",
+      locationtext: "",
+      link: "https://www.instagram.com/p/DWriJwjGGPG/?igsh=ZXdycDZqYnZyMWJ0",
+    },
+
+    {
+      name: "1",
+      title: "Cambios en el mercado solar global: un nuevo escenario para la industria",
+      subtitle:
+        "La industria solar global atraviesa un proceso de reordenamiento tras un período de sobreoferta, con señales de ajuste en la capacidad productiva, principalmente en China. Este nuevo escenario podría impactar en los precios de los módulos, los márgenes del sector y la planificación de proyectos, dando lugar a una etapa de transición hacia un mayor equilibrio entre oferta y demanda a nivel internacional.",
+      text: ".",
+      image: "cambios.jpg",
+      locationtext: "",
+      link: "https://www.instagram.com/p/DWbsViFDWtj/?igsh=NnJzcDR2MGJjbjhi",
+    },
+
+    {
+      name: "1",
       title: "Entre Rios escaló en el ranking de generación distribuida.",
       subtitle:
         "Destacamos el sostenido crecimiento de la generación distribuida en la provincia, que continúa ganando protagonismo a nivel nacional. Con más de 17 MW entre potencia instalada y proyectos en trámite, Entre Ríos avanza firme en la transición energética, impulsada por políticas públicas, la participación ciudadana y el compromiso del sector privado, consolidándose como referente en energías limpias y sostenibles.",
       text: ".",
       image: "ranking.png",
       locationtext: "",
-      link:"https://www.instagram.com/p/DOWw9t4kQQ5/?img_index=1"
+      link: "https://www.instagram.com/p/DOWw9t4kQQ5/?img_index=1",
     },
 
     {
@@ -44,7 +66,7 @@ const NewsHome = () => {
       text: ".",
       image: "sanuce.png",
       locationtext: "",
-      link:"https://www.instagram.com/p/DPhBumBjZ1N/?img_index=4"
+      link: "https://www.instagram.com/p/DPhBumBjZ1N/?img_index=4",
     },
 
     {
@@ -55,18 +77,19 @@ const NewsHome = () => {
       text: ".",
       image: "parques.png",
       locationtext: "",
-      link:"https://www.instagram.com/p/DPFPHeqDakW/?img_index=1"
+      link: "https://www.instagram.com/p/DPFPHeqDakW/?img_index=1",
     },
 
     {
       name: "4",
-      title: "Primer relevamiento oficial del sector solar fotovoltaico en Argentina",
+      title:
+        "Primer relevamiento oficial del sector solar fotovoltaico en Argentina",
       subtitle:
         "Invitamos a participar del Primer Censo del sector solar fotovoltaico en Argentina, impulsado por CADER e INTI. El relevamiento busca identificar las capacidades, ubicación y empleo del sector para fortalecer la cadena de valor y la planificación estratégica nacional. Está dirigido a empresas y profesionales vinculados a la energía solar, no a usuarios finales.",
       text: ".",
       image: "new1.png",
       locationtext: "",
-      link:"https://www.instagram.com/p/DOyeA0ZjWqK/?img_index=1"
+      link: "https://www.instagram.com/p/DOyeA0ZjWqK/?img_index=1",
     },
     {
       name: "5",
@@ -76,7 +99,7 @@ const NewsHome = () => {
       text: ".",
       image: "alza.png",
       locationtext: "",
-      link:"https://www.instagram.com/p/DNQzKF-R3vp/"
+      link: "https://www.instagram.com/p/DNQzKF-R3vp/",
     },
 
     {
@@ -87,14 +110,10 @@ const NewsHome = () => {
       text: ".",
       image: "balance.jpg",
       locationtext: "",
-      link:"https://www.instagram.com/p/DDiEHATvvCu/"
+      link: "https://www.instagram.com/p/DDiEHATvvCu/",
     },
 
     {
-
-
-
-      
       name: "Noticia 1",
       title: "Partipación en la Mesa Provincial de Energía Sostenible",
       subtitle:
@@ -102,7 +121,7 @@ const NewsHome = () => {
       text: ".",
       image: "new2.png",
       locationtext: "",
-      link:"https://www.instagram.com/p/DHbu4YiPKdJ/?img_index=1"
+      link: "https://www.instagram.com/p/DHbu4YiPKdJ/?img_index=1",
     },
     {
       name: "Noticia 3",
@@ -113,8 +132,7 @@ const NewsHome = () => {
       text: ".",
       image: "enersa.png",
       locationtext: "",
-      link:"https://www.instagram.com/cerer.camara.energias.er/p/DJow4QYOCnU/?img_index=1"
-      
+      link: "https://www.instagram.com/cerer.camara.energias.er/p/DJow4QYOCnU/?img_index=1",
     },
     {
       name: "Noticia 2",
@@ -125,7 +143,7 @@ const NewsHome = () => {
       image: "new2.png",
       image: "reu1.JPG",
       locationtext: "",
-      link:"https://www.instagram.com/p/DJaEHFtPfj4/?img_index=1"
+      link: "https://www.instagram.com/p/DJaEHFtPfj4/?img_index=1",
     },
 
     {
@@ -137,10 +155,8 @@ const NewsHome = () => {
       text: ".",
       image: "reu2.JPG",
       locationtext: "Paraná",
-      link:""
+      link: "",
     },
-
-    
   ];
 
   return (
@@ -211,11 +227,11 @@ const Card = ({ title, image, locationtext, subtitle, link }) => {
         <AnimatedDiv>
           <h6 className={styles.cardTitle}>{title}</h6>
         </AnimatedDiv>
-     
+
         <p className={styles.cardDescription}>{subtitle}</p>
 
         <div className={styles.buttonContainer}>
-          <a href={link} className={styles.button}>
+          <a href={link} className={styles.button} target="_blank">
             Ver más →
           </a>
         </div>

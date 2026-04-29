@@ -27,6 +27,36 @@ const NewsHome = () => {
   const cards = [
     {
       name: "1",
+      title: "ABB electromovilidad",
+      subtitle:
+        "La Cámara de Energías Renovables de Entre Ríos invita a una jornada sobre electromovilidad y sostenibilidad en el transporte, un espacio para conocer tendencias y tecnologías del sector. La charla estará a cargo del Ing. Roberto Stazzoni, especialista de ABB en Argentina, quien abordará movilidad eléctrica, infraestructura de carga, soluciones tecnológicas y perspectivas del sector.",
+      text: ".",
+      image: "abb.jpg",
+      locationtext: "",
+      link: "https://www.instagram.com/p/DXuK5G5DVQj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    },
+    {
+      name: "1",
+      title: "Día mundial de la tierra",
+      subtitle:
+        "El 22 de abril, Día de la Tierra, invita a reflexionar sobre el impacto de nuestras decisiones en el ambiente. La forma en que producimos y consumimos energía es clave para avanzar hacia un modelo más sostenible, donde las energías renovables y el uso eficiente de los recursos cumplen un rol fundamental. Desde la Cámara de Energías Renovables de Entre Ríos (#CERER) reafirmamos nuestro compromiso con un desarrollo energético responsable.",
+      text: ".",
+      image: "planeta.png",
+      locationtext: "",
+      link: "https://www.instagram.com/p/DXcBqmXDcPU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    },
+    {
+      name: "1",
+      title: "Inversión y energía limpia en la agenda de Entre Ríos",
+      subtitle:
+        "La ciudad de Crespo fue sede de un encuentro institucional centrado en el desarrollo energético y las oportunidades de inversión, en el marco de la visita del embajador de Alemania en Argentina. Durante la jornada se destacó el potencial de Entre Ríos en energías renovables y se presentaron iniciativas del sector, como las impulsadas por @dosbioarg, orientadas a la generación de energía limpia y al aprovechamiento de recursos productivos, fortaleciendo la articulación entre actores públicos, privados e internacionales.",
+      text: ".",
+      image: "inversion.png",
+      locationtext: "",
+      link: "https://www.instagram.com/p/DXP5pzUGKHO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    },
+    {
+      name: "1",
       title: "Más de 800 MW en proyectos renovables en Argentina",
       subtitle:
         "El Gobierno nacional incorporó 14 nuevos proyectos de energías renovables al RENPER, superando los 800 MW de potencia instalada, con predominio de desarrollos solares, seguidos por eólicos y un proyecto de biogás. Entre Ríos también forma parte de este proceso con una iniciativa en Viale, actualmente en instancia de inscripción, marcando un nuevo avance en la planificación energética y el crecimiento del sector a nivel nacional y provincial.",
@@ -38,7 +68,8 @@ const NewsHome = () => {
 
     {
       name: "1",
-      title: "Cambios en el mercado solar global: un nuevo escenario para la industria",
+      title:
+        "Cambios en el mercado solar global: un nuevo escenario para la industria",
       subtitle:
         "La industria solar global atraviesa un proceso de reordenamiento tras un período de sobreoferta, con señales de ajuste en la capacidad productiva, principalmente en China. Este nuevo escenario podría impactar en los precios de los módulos, los márgenes del sector y la planificación de proyectos, dando lugar a una etapa de transición hacia un mayor equilibrio entre oferta y demanda a nivel internacional.",
       text: ".",

@@ -29,7 +29,7 @@ export const AccordionItem = ({
         >
           <path
             d="M8.25 9L12 12.75L15.75 9"
-            stroke="#155446"
+            stroke="#034CA3"
             strokeWidth="1"
             strokeLinecap="round"
             strokeLinejoin="round"

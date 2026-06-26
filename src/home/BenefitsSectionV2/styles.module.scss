@@ -1,88 +1,81 @@
 .benefitsection {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
 
-  @media only screen and (max-width: 750px) {
+  @media (max-width: 750px) {
     flex-direction: column;
-    height: auto;
   }
 
   .left {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    justify-content: space-between;
     width: 50%;
-    background-color: #155446;
-    justify-content: center;
-    align-items: center;
+    background-color: #034CA3;
+    padding: 8vh 5vw;
+    box-sizing: border-box;
 
-    @media only screen and (max-width: 750px) {
+    @media (max-width: 750px) {
       width: 100%;
-      height: auto;
-      padding: 6vh 0vh;
+      padding: 7vh 6vw;
     }
 
     .title {
-      color: #f6e9ca;
-      width: auto;
-      padding-left: 5vw;
-      padding-right: 5vw;
-      text-align: center;
-      margin: 0vh;
+      color: white;
+      font-weight: 300;
+      margin: 0;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
 
       span {
-        color: #c69a72;
+        color: #24a682;
       }
     }
 
     .subtitle {
-      color: #f6e9ca;
-      width: auto;
-      text-align: center;
-      max-width: 100vh;
-      margin-bottom: 10vh;
+      color: rgba(255, 255, 255, 0.65);
+      font-weight: 300;
+      line-height: 1.5;
+      margin: 4vh 0 0;
 
       span {
-        color: #c69a72;
-      }
-
-      @media only screen and (max-width: 750px) {
-        margin-bottom: 5vh;
+        color: rgba(255, 255, 255, 0.9);
       }
     }
 
-    button {
-      display: flex;
-      justify-self: center;
-      align-self: center;
-      padding: 0vh 4vh;
-      border-radius: 30px;
-      border: 0.1vh solid black;
-      background-color: transparent;
-      letter-spacing: 1px;
-      cursor: pointer;
-      background-color: #c69a72;
-      border-color: #c69a72;
-      p {
-        font-size: 2vh;
-        color: black;
-        font-family: var(--font-roboto), sans-serif;
-      }
+    .cta {
+      margin-top: auto;
+      padding-top: 6vh;
+    }
 
-      transition: background-color 0.3s ease, border-color 0.3s ease;
+    button {
+      display: inline-flex;
+      align-items: center;
+      padding: 1.4vh 3vh;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.22s ease;
+
+      p {
+        font-size: 1.8vh;
+        font-weight: 300;
+        color: white;
+        margin: 0;
+        letter-spacing: 0.04em;
+        font-family: var(--font-inter), sans-serif;
+      }
 
       &:hover {
-        background-color: #f6e9ca;
-        border-color: #f6e9ca;
-      }
+        background: white;
+        border-color: white;
 
-      @media only screen and (max-width: 750px) {
-
-      margin-bottom: 3vh;
+        p {
+          color: #034CA3;
+        }
       }
     }
   }
@@ -90,28 +83,21 @@
   .right {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 50%;
     justify-content: center;
-    align-items: center;
-    background-color: #f6e9ca;
+    width: 50%;
+    background-color: white;
+    padding: 8vh 5vw;
+    box-sizing: border-box;
 
-    @media only screen and (max-width: 750px) {
+    @media (max-width: 750px) {
       width: 100%;
-      padding: 6vh 0vh;
+      padding: 6vh 6vw;
     }
+
     .faqscontainer {
-      width: 90%;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      @media only screen and (max-width: 750px) {
-        width: 95%;
-      }
     }
   }
-
-  
-} 
+}

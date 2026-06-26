@@ -1,13 +1,17 @@
-import { Roboto} from "@next/font/google";
+import { Roboto, Inter } from "next/font/google";
 import "./globals.scss";
 import "../styles/fonts.css";
-
-
 
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   variable: "--font-roboto",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-inter",
 });
 
 export const metadata = {
@@ -52,9 +56,7 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body className={`${roboto.variable}`}>
-        {children}
-      </body>
+      <body className={`${roboto.variable} ${inter.variable}`}>{children}</body>
     </html>
   );
 }

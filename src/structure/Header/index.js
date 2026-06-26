@@ -1,75 +1,59 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Button from "./Button";
 import styles from "./styles.module.scss";
 import Nav from "./Nav";
 
-const menuDesktop = {
+const menuVariants = {
   open: {
-    width: "55vh",
-    height: "99vh",
-    top: "-1.5vh",
-    right: "-3vh",
-    transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
+    x: "0%",
+    transition: { duration: 0.65, type: "tween", ease: [0.76, 0, 0.24, 1] },
   },
   closed: {
-    width: "0vh",
-    height: "0vh",
-    top: "0vh",
-    right: "0vh",
-
-    transition: {
-      duration: 0.75,
-      delay: 0.35,
-      type: "tween",
-      ease: [0.76, 0, 0.24, 1],
-    },
+    x: "100%",
+    transition: { duration: 0.65, delay: 0.3, type: "tween", ease: [0.76, 0, 0.24, 1] },
   },
 };
 
-const menuMobile = {
-  open: {
-    width: "50vh",
-    height: "99vh",
-    top: "-1.5vh",
-    right: "-2vh",
-    transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
-  },
-  closed: {
-    width: "0vh",
-    height: "0vh",
-    top: "0vh",
-    right: "0vh",
-
-    transition: {
-      duration: 0.75,
-      delay: 0.35,
-      type: "tween",
-      ease: [0.76, 0, 0.24, 1],
-    },
-  },
+const overlayVariants = {
+  open: { opacity: 1, pointerEvents: "all" },
+  closed: { opacity: 0, pointerEvents: "none" },
 };
 
 export default function Index() {
   const [isActive, setIsActive] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflow = isActive ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [isActive]);
+
   return (
     <div className={styles.header}>
+      {/* Overlay behind panel */}
+      <motion.div
+        className={styles.overlay}
+        variants={overlayVariants}
+        animate={isActive ? "open" : "closed"}
+        initial="closed"
+        transition={{ duration: 0.4 }}
+        onClick={() => setIsActive(false)}
+      />
+
+      {/* Slide-in panel */}
       <motion.div
         className={styles.menu}
-        variants={menuMobile}
+        variants={menuVariants}
         animate={isActive ? "open" : "closed"}
         initial="closed"
       >
-        <AnimatePresence>{isActive && <Nav />}</AnimatePresence>
+        <AnimatePresence>
+          {isActive && <Nav close={() => setIsActive(false)} />}
+        </AnimatePresence>
       </motion.div>
-      <Button
-        isActive={isActive}
-        toggleMenu={() => {
-          setIsActive(!isActive);
-        }}
-      />
+
+      <Button isActive={isActive} toggleMenu={() => setIsActive(!isActive)} />
     </div>
   );
 }

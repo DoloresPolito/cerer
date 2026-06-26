@@ -1,0 +1,284 @@
+.main {
+  background: white;
+  padding-top: 10vh;
+}
+
+/* Shared label */
+.label {
+  display: block;
+  font-size: 1.6vh;
+  font-weight: 400;
+  color: #24a682;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 2.5vh;
+}
+
+/* ── Hero ── */
+.hero {
+  padding: 10vh 5vw 8vh;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (max-width: 768px) {
+    padding: 8vh 6vw 6vh;
+  }
+}
+
+.heroTitle {
+  font-size: 7.5vh;
+  font-weight: 300;
+  color: #111;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 0 6vh;
+  max-width: 75vw;
+
+  span {
+    color: #034CA3;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 5vh;
+    max-width: 90vw;
+  }
+}
+
+.heroRule {
+  height: 1px;
+  background: #111;
+  width: 6vw;
+  transform-origin: left;
+  min-width: 48px;
+}
+
+/* ── Statement ── */
+.statement {
+  padding: 10vh 5vw;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (max-width: 768px) {
+    padding: 8vh 6vw;
+  }
+}
+
+.statementInner {
+  max-width: 78vw;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.statementLabel {
+  display: block;
+  font-size: 1.6vh;
+  font-weight: 400;
+  color: #24a682;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 3.5vh;
+}
+
+.quote {
+  font-size: 3.4vh;
+  font-weight: 300;
+  color: #111;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  margin: 0;
+  border: none;
+  padding: 0;
+
+  em {
+    font-style: normal;
+    color: #034CA3;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 2.8vh;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.4vh;
+  }
+}
+
+/* ── Objetivos ── */
+.objetivos {
+  padding: 10vh 5vw 12vh;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (max-width: 768px) {
+    padding: 8vh 6vw 10vh;
+  }
+}
+
+.objetivosHeader {
+  margin-bottom: 7vh;
+}
+
+.objetivosTitle {
+  font-size: 4.5vh;
+  font-weight: 300;
+  color: #111;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 3.5vh;
+  }
+}
+
+.objetivosList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.objetivo {
+  display: grid;
+  grid-template-columns: 8vw 1fr;
+  gap: 0 3vw;
+  padding: 5vh 3vw;
+  border-top: 1px solid #e5e5e5;
+  align-items: start;
+  cursor: default;
+  transition: background 0.3s ease;
+
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &:hover {
+    background: #034CA3;
+
+    .objetivoNum {
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    .objetivoBody {
+      h3 { color: white; }
+      p { color: rgba(255, 255, 255, 0.7); }
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5vh;
+    padding: 5vh 4vw;
+  }
+}
+
+.objetivoNum {
+  font-size: 1.8vh;
+  font-weight: 300;
+  color: #034CA3;
+  letter-spacing: 0.04em;
+  padding-top: 0.3vh;
+  transition: color 0.3s ease;
+}
+
+.objetivoBody {
+  h3 {
+    font-size: 2.6vh;
+    font-weight: 300;
+    color: #111;
+    margin: 0 0 2vh;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+  }
+
+  p {
+    font-size: 1.85vh;
+    font-weight: 300;
+    color: #555;
+    line-height: 1.75;
+    margin: 0;
+    max-width: 56vw;
+    transition: color 0.3s ease;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+}
+
+/* ── Valores ── */
+.valores {
+  padding: 10vh 5vw 12vh;
+
+  @media (max-width: 768px) {
+    padding: 8vh 6vw 10vh;
+  }
+}
+
+.valoresInner {
+  display: grid;
+  grid-template-columns: 38% 1fr;
+  gap: 0 5vw;
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 5vh;
+  }
+}
+
+.valoresLeft {
+  position: sticky;
+  top: 12vh;
+
+  h2 {
+    font-size: 4vh;
+    font-weight: 300;
+    color: #111;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  @media (max-width: 900px) {
+    position: static;
+  }
+}
+
+.valoresRight {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.valor {
+  padding: 4vh 0;
+  border-top: 1px solid #e5e5e5;
+  display: grid;
+  grid-template-columns: 18vw 1fr;
+  gap: 0 2vw;
+  align-items: start;
+
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.2vh;
+  }
+}
+
+.valorName {
+  font-size: 2vh;
+  font-weight: 400;
+  color: #111;
+  letter-spacing: -0.01em;
+}
+
+.valor p {
+  font-size: 1.8vh;
+  font-weight: 300;
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}

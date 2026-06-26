@@ -1,0 +1,154 @@
+.main {
+  padding-top: 10vh;
+  min-height: 100vh;
+  background: white;
+}
+
+/* Filter bar */
+.filterBar {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 5vh 5vw 4.5vh;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (max-width: 768px) {
+    padding: 4vh 5vw 3.5vh;
+    gap: 2vh 0;
+  }
+}
+
+.filterBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2vh;
+  font-weight: 300;
+  color: #bbb;
+  padding: 0;
+  margin-right: 4vw;
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease;
+  line-height: 1;
+
+  @media (max-width: 768px) {
+    font-size: 1.9vh;
+    margin-right: 8vw;
+  }
+
+  sup {
+    font-size: 0.7em;
+    letter-spacing: 0;
+    margin-left: 0.35em;
+    vertical-align: super;
+  }
+
+  &:hover {
+    color: #111;
+  }
+}
+
+.filterActive {
+  color: #111;
+  font-weight: 400;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9vh 3vw;
+  padding: 7vh 5vw 14vh;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 6vh;
+    padding: 5vh 5vw 10vh;
+  }
+}
+
+/* Card */
+.card {
+  cursor: pointer;
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  margin-bottom: 2.8vh;
+  cursor: none;
+
+  img {
+    object-fit: cover;
+    transition: transform 0.65s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.04);
+  }
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: white;
+  color: #111;
+  font-size: 1.3vh;
+  font-weight: 500;
+  padding: 0.45vh 1.1vh;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.cursor {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: #034CA3;
+  color: white;
+  font-size: 1.5vh;
+  font-weight: 400;
+  padding: 1vh 2.2vh;
+  border-radius: 4px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  letter-spacing: 0.04em;
+  z-index: 3;
+}
+
+.cursorVisible {
+  opacity: 1;
+}
+
+.cardBody {
+  padding: 0;
+}
+
+.date {
+  color: #999;
+  font-size: 1.55vh;
+  font-weight: 300;
+  margin: 0 0 1.4vh;
+  letter-spacing: 0.02em;
+}
+
+.title {
+  font-size: 3.4vh;
+  font-weight: 300;
+  line-height: 1.22;
+  color: #111;
+  margin: 0;
+  letter-spacing: -0.015em;
+  transition: text-decoration 0.15s ease;
+}
+
+.titleHovered {
+  text-decoration: underline;
+}

@@ -189,6 +189,7 @@ const NewsHome = () => {
       link: "",
     },
   ];
+  
 
   return (
     <div className={styles.section} ref={ref}>

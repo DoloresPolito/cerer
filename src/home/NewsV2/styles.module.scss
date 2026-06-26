@@ -1,0 +1,144 @@
+.section {
+  width: min(1400px, 92%);
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 2rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  cursor: pointer;
+}
+
+.imageContainer {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.08);
+}
+
+.date {
+  margin-top: 2vh;
+  font-size: 1.8vh;
+  opacity: 0.6;
+}
+
+.title {
+  transition: all 0.3s ease;
+  color: rgb(57, 57, 57);
+  margin-top: -0.5vh;
+}
+
+.card:hover .title {
+  text-decoration: underline;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+
+  transition: 0.4s;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  span {
+    background: white;
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+  }
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 100;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(60vw, 900px);
+  height: 100vh;
+  background: white;
+  overflow-y: auto;
+  z-index: 101;
+  padding: 2vh 2vh;
+  animation: slideIn 0.4s ease;
+}
+
+.drawerDate {
+  color: #888;
+  font-size: 1.4vh;
+  margin-bottom: 2vh;
+}
+
+.drawerTitle {
+  color: #222;
+  margin-bottom: 3vh;
+}
+
+.drawerImage {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+
+  margin-bottom: 4vh;
+
+  overflow: hidden;
+}
+
+.drawerImageTag {
+  object-fit: cover;
+}
+
+.drawerContent {
+  color: #444;
+  line-height: 180%;
+  font-size: 1.9vh;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

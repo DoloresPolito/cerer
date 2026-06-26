@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import styles from "./styles.module.scss";
 import Loop from "@/components/Loop";
 import Image from "next/image";
+import AnimatedDiv from "@/components/AnimatedDiv";
 
 const logos = [
   { src: "/logos/calvo.png", alt: "Calvo", size: "small" },
@@ -11,7 +13,7 @@ const logos = [
   { src: "/logos/ser.png", alt: "Ser", size: "tiny" },
   { src: "/logos/LG.png", alt: "LG", size: "default" },
   { src: "/logos/time.png", alt: "Time Solar", size: "small" },
-  { src: "/logos/ecoenergy.png", alt: "EcoEnergy", size: "default" }, // ejemplo de agrandado
+  { src: "/logos/ecoenergy.png", alt: "EcoEnergy", size: "default" },
   { src: "/logos/enova.png", alt: "eNova", size: "small" },
   { src: "/logos/amperio.jpeg", alt: "Amperio", size: "small" },
   { src: "/logos/biosolares.jpeg", alt: "Biosolares", size: "small" },
@@ -24,38 +26,59 @@ const logos = [
   { src: "/logos/tryodo2.png", alt: "Tryodo", size: "small" },
   { src: "/logos/energiu.png", alt: "Energiu", size: "default" },
   { src: "/logos/dexaco.png", alt: "Dexaco", size: "default" },
-  // { src: "/logos/rigelec.png", alt: "Rigelec", size: "small" },
-
 ];
 
 const LogosMoving = () => {
+  const half = Math.ceil(logos.length / 2);
+  const topLogos = logos.slice(0, half);
+  const bottomLogos = logos.slice(half);
+
   return (
     <div className={styles.section}>
-      <div className={styles.fullcontainer}>
-        <h6 className={styles.title}>
-          Miembros de la Cámara de <span>Energías Renovables</span> de Entre Ríos
-        </h6>
 
-        {/* Desktop version */}
-        <div className={styles.movingContainer}>
-          <Loop reverse={true} />
-          <Loop reverse={false} />
+      <div className={styles.header}>
+        <div className={styles.headerLeft}>
+          <AnimatedDiv>
+            <span className={styles.label}>Nuestros miembros</span>
+          </AnimatedDiv>
+          <AnimatedDiv delay={100}>
+            {/* <h6 className={styles.title}>
+              Miembros de la Cámara de<br /><span>Energías Renovables</span> de Entre Ríos
+            </h6> */}
+          </AnimatedDiv>
         </div>
 
-        {/* Mobile version */}
-        <div className={styles.staticContainer}>
-          {logos.map((logo, index) => (
-            <div key={index} className={styles.logoWrapper}>
-              <Image
-                src={logo.src}
-                alt={`Logo ${index + 1}`}
-                fill
-                className={styles.logo}
-              />
-            </div>
-          ))}
-        </div>
+        <AnimatedDiv delay={200}>
+          <div className={styles.headerRight}>
+            <p className={styles.count}>{logos.length}+</p>
+            <p className={styles.description}>
+              empresas y organizaciones comprometidas con el futuro energético de la región.
+            </p>
+          </div>
+        </AnimatedDiv>
       </div>
+
+      {/* Desktop */}
+      <div className={styles.movingContainer}>
+        <Loop logos={topLogos} reverse={false} />
+        <Loop logos={bottomLogos} reverse={true} />
+      </div>
+
+      {/* Mobile */}
+      <div className={styles.staticContainer}>
+        {logos.map((logo, index) => (
+          <div key={index} className={styles.logoWrapper}>
+            <Image
+              src={logo.src}
+              alt={`Logo ${index + 1}`}
+              fill
+              sizes="(max-width: 500px) 45vw, 28vw"
+              className={styles.logo}
+            />
+          </div>
+        ))}
+      </div>
+
     </div>
   );
 };

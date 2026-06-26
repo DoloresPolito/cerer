@@ -102,11 +102,7 @@ const ContactForm = () => {
               {/* <button className={styles.button}> Enviar</button> */}
 
               <button className={styles.button} disabled={status === "loading"}>
-                {/* {status === "loading" ? (
-                  <span className={styles.spinner}></span>
-                ) : ( */}
-                  Enviar
-                {/* )} */}
+                {status === "loading" ? "Enviando..." : "Enviar →"}
               </button>
             </div>
           </form>

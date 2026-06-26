@@ -44,20 +44,24 @@ export default function Benefits() {
     <>
       <div className={styles.benefitsection}>
         <div className={styles.left}>
-          <AnimatedDiv>
-            <h6 className={styles.title}>Beneficios de ser parte</h6>
-          </AnimatedDiv>
+          <div>
+            <AnimatedDiv>
+              <h6 className={styles.title}>Beneficios <span>de ser parte</span></h6>
+            </AnimatedDiv>
 
-          <AnimatedDiv>
-            <h4 className={styles.subtitle}>
-              ¿Te gustaría ser parte?
-              <br /> <span>Comunicate con nosotros para más información.</span>
-            </h4>
-          </AnimatedDiv>
+            <AnimatedDiv delay={150}>
+              <h4 className={styles.subtitle}>
+                ¿Te gustaría sumarte?{" "}
+                <span>Comunicate con nosotros para más información.</span>
+              </h4>
+            </AnimatedDiv>
+          </div>
 
-          <button className={styles.button} onClick={() => setIsModalOpen(true)}>
-            <p>Quiero ser parte →</p>
-          </button>
+          <div className={styles.cta}>
+            <button onClick={() => setIsModalOpen(true)}>
+              <p>Quiero ser parte →</p>
+            </button>
+          </div>
         </div>
 
         <div className={styles.right}>

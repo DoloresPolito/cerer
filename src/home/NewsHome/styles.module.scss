@@ -9,7 +9,8 @@
   margin: 0 auto;
   overflow-x: hidden;
 
-  background-color: #c69a72;
+  // background-color: #c69a72;
+  background-color: white;
 
   .titles {
     display: flex;
@@ -20,7 +21,7 @@
     margin-top: 0vh;
 
     .title {
-      color: #f6e9ca;
+      color: #24a682;
       width: auto;
       @media only screen and (max-width: 800px) {
         text-align: center;
@@ -28,7 +29,7 @@
       }
     }
     span {
-      color: #155446;
+      color: #034CA3;
     }
   }
 }
@@ -91,38 +92,30 @@
       height: 100%;
     }
 
-    
-
     @media only screen and (max-width: 800px) {
       width: 100%;
       height: 35vh; // ✅ altura igual para todas las cards
       display: block;
     }
-
-  
   }
 
+  .cardleft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3vh 4vh 5vh 4vh;
+    box-sizing: border-box;
 
-
-    .cardleft {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      padding: 3vh 4vh 5vh 4vh;
-      box-sizing: border-box;
-  
-      @media only screen and (max-width: 1200px) {
-        width: 100%;
-      }
-    
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+    }
 
     .cardTitle {
       font-size: 3.5vh;
       color: #39442b;
       line-height: 110%;
-      margin-bottom: 1vh; 
-
+      margin-bottom: 1vh;
     }
 
     .cardDescription {
@@ -130,18 +123,15 @@
       max-height: 50vh; // ✅ todas las descripciones tendrán el mismo alto
       overflow: hidden; // evita que el texto se desborde
       text-overflow: ellipsis;
-   
     }
 
     .text {
       font-size: 1.9vh;
       text-align: justify;
       flex-grow: 0; // ❌ no empuja el botón hacia abajo
- 
     }
 
     .buttonContainer {
-
       margin-top: auto; // ✅ el botón se mantiene al final
     }
 

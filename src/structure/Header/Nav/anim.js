@@ -15,8 +15,7 @@ export const perspective = {
             // duration: 0.65, 
             delay: 0.5 + (i * 0.1), 
             ease: [.215,.61,.355,1],
-            opacity: { duration: 0.35},
-            opacity: { duration: 1, delay:0.7 } // Duración específica para la opacidad
+            opacity: { duration: 1, delay: 0.7 }
         }
     }),
     exit: {

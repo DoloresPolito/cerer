@@ -1,72 +1,48 @@
 "use client";
 import { AnimatePresence } from "framer-motion";
-
-import { useEffect, useState } from "react";
-import Cursor from "../components/Cursor";
-// import ColorChangeOnScrollGsap from "@/components/ChangeColor";
+import { useEffect } from "react";
 import { HeaderBar } from "@/structure/HeaderBar";
-import FixedMedia from "@/components/FixedMedia";
-import Description from "@/components/Description";
-import NewsHome from "@/home/NewsHome";
-import NewSection from "@/home/NewSection";
 import LogosMoving from "@/home/LogosMoving";
-import LandingV3 from "@/components/LandingV3";
+import HeroNew from "@/components/HeroNew";
+import DescriptionNew from "@/components/DescriptionNew";
 import ExtraSection from "@/home/ExtraSection";
 import Footer from "@/structure/Footer";
 import Benefits from "@/home/BenefitsSectionV2";
+import NewsHomeCar from "@/home/NewsHomeCar";
+import SitiosInteres from "@/home/SitiosInteres";
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-
-      setTimeout(() => {
-        setIsLoading(false);
-        document.body.style.cursor = "default";
-        window.scrollTo(0, 0);
-      }, 2000);
-    })();
-  }, []);
-
-  const [width, setWidth] = useState(null);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    history.scrollRestoration = "manual";
+    window.scrollTo(0, 0);
+    document.body.style.cursor = "default";
   }, []);
 
   return (
     <>
       <AnimatePresence mode="wait">
         <div key="content">
-          <HeaderBar />
-          <FixedMedia />
-          {width > 600 ? <Cursor /> : <></>}
+          {/* Content above ExtraSection: sits on top (zIndex 2) */}
+          <div style={{ position: "relative", zIndex: 2, background: "white" }}>
+            <HeaderBar />
+            <HeroNew />
+            <DescriptionNew />
 
-          {/* <ColorChangeOnScrollGsap /> */}
+            {/* <NewsHome /> */}
+            <NewsHomeCar/>
 
-          <LandingV3 />
-          <Description />
+            <Benefits />
+            <SitiosInteres />
+          </div>
 
-          <NewsHome />
-       
-          <Benefits />
+          {/* ExtraSection: sticky behind content (zIndex 1) */}
           <ExtraSection />
-          <LogosMoving />
-          {/* {width > 600 ?   : <></>} */}
-         
+
+          {/* Content below ExtraSection: covers it as it scrolls in (zIndex 2) */}
+          <div style={{ position: "relative", zIndex: 2, background: "white" }}>
+            <LogosMoving />
+          </div>
+
           <Footer />
         </div>
       </AnimatePresence>

@@ -1,42 +1,54 @@
+"use client";
+import { motion } from "framer-motion";
 import styles from "./styles.module.scss";
-import AnimatedDiv from "@/components/AnimatedDiv";
 
 const ExtraSection = () => {
   return (
     <div className={styles.section}>
-      <div className={styles.container}>
-        <div className={styles.backgroundImage}></div>
-        <div className={styles.content}>
-          <div className={styles.bottomRow}>
-            <AnimatedDiv>
-              <h6 className={styles.title}>
-                <span>Comprometidos </span>con el Futuro Energético de Entre
-                Ríos
-              </h6>
-            </AnimatedDiv>
-          </div>
+      <div className={styles.backgroundImage} />
+      <div className={styles.overlay} />
 
-          <h4 className={styles.subtitle}>
-            Desde la Cámara de Energía Renovable de Entre Ríos promovemos el uso
-            de energías provenientes de fuentes renovables y sostenibles, así
-            como tecnologías y sistemas de almacenamiento que mejoran la
-            eficiencia energética. Nuestro objetivo es contribuir a la
-            mitigación del cambio climático y la protección del ambiente.
-            Representamos y defendemos los intereses de nuestros asociados y
-            fomentamos la investigación, el estudio y el desarrollo científico y
-            tecnológico vinculado a las energías renovables y al cuidado
-            ambiental.
-          </h4>
-        </div>
+      <div className={styles.content}>
+        <motion.span
+          className={styles.label}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.9, ease: [0.215, 0.61, 0.355, 1] }}
+        >
+          Nuestra misión
+        </motion.span>
+
+        <motion.h2
+          className={styles.title}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.9, delay: 0.1, ease: [0.215, 0.61, 0.355, 1] }}
+        >
+          <span className={styles.titleDesktop}>
+            Comprometidos <span className={styles.dim}>con el</span><br />
+            Futuro Energético<br />
+            <span className={styles.dim}>de Entre Ríos</span>
+          </span>
+          <span className={styles.titleMobile}>
+            Comprometidos<br />
+            <span className={styles.dim}>con el</span><br />
+            Futuro Energético<br />
+            <span className={styles.dim}>de Entre Ríos</span>
+          </span>
+        </motion.h2>
+
+        <motion.p
+          className={styles.tagline}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.9, delay: 0.22, ease: [0.215, 0.61, 0.355, 1] }}
+        >
+          Impulsamos la transición energética justa y responsable en la región.
+        </motion.p>
       </div>
-      {/* <div className={styles.titles}>
-        <AnimatedDiv>
-          <h6 className={styles.heading}>
-            La energía se <span>transforma</span>, y nosotros te lo{" "}
-            <span>contamos</span>
-          </h6>
-        </AnimatedDiv>
-      </div> */}
     </div>
   );
 };

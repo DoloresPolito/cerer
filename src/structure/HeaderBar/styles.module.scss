@@ -5,9 +5,8 @@
   height: 12vh;
   width: 100%;
   background-color: transparent;
-  position: absolute;
-  margin-top: -2vh;
   position: fixed;
+  top: 0;
   z-index: 10000;
 
   .navcontainer {
@@ -15,35 +14,24 @@
     height: 10vh;
     z-index: 90000;
     display: flex;
-
+    align-items: center;
   }
 }
 
 .headerBrand {
   display: flex;
-  flex-direction: row !important;
   align-items: center;
   width: 50%;
-  height: 10vh;
-
-
-  @media only screen and (max-width: 600px) {
-    margin-left: 0.5vh;
-  }
-
-
 
   img {
     height: 7vh;
     width: 7vh;
     margin-left: 6vh;
-    margin-top: 3.5vh;
+
     @media only screen and (max-width: 600px) {
       height: 6vh;
       width: 6vh;
-      // margin-right: 1.5vh;
-      margin-left: 1vh;
-      margin-top: 3vh;
+      margin-left: 4vw;
     }
   }
 }
@@ -51,5 +39,4 @@
 .headerOptions {
   display: flex;
   align-items: center;
-
 }

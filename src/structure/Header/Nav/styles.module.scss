@@ -1,85 +1,65 @@
 .nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 5vh 4vh 5vh 4vh;
-    height: 99vh;
-    box-sizing: border-box;
-    background-color: #032823;
-    opacity: 0.95;
-    z-index: 10000;
-    border-radius: 3vh;
-    margin-top: -1vh;
-    margin-right: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 6vh 6vh;
+  box-sizing: border-box;
 
-    @media only screen and (max-width: 480px) {
-  
-      width: 90vw;
-      position: absolute; 
-      top: 0;
-      right:-2vh;
-      margin-right: 1.2vh;
-      padding: 5vh 2vh 5vh 2vh;
+  @media (max-width: 480px) {
+    padding: 0 4vh 5vh;
+  }
+}
 
-  
+.body {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+  flex: 1;
+  justify-content: center;
+
+  .linkContainer {
+    perspective-origin: bottom;
+    overflow: hidden;
+  }
+
+  .link {
+    display: block;
+    text-decoration: none;
+    color: #444;
+    font-size: 8vh;
+    font-weight: 300;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.45;
     }
-  
-  
-    .body {
-      display: flex;
-      gap: 10px;
-      flex-direction: column;
 
-      .linkContainer {
-        perspective-origin: bottom;
-      }
-      a {
-        text-decoration: none;
-
-        color: #f6e9ca;
-        font-family: "PlayfairDisplayRegular";
-        font-weight: 100;
-        font-size: 5.5vh;
-        line-height: 120%;
-        letter-spacing: 0.09vh;
-        @media only screen and (max-width: 480px) {
-          font-size: 4vh;
-        }
-      }
-  
-      .textContainer {
-        position: relative;
-        display: inline-block; // Solo ocupa el ancho del texto
-      }
-    
-      .underline {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 0.2vh;
-        background-color: #f6e9ca;
-        width: 0;
-      }
-    
-      .active .underline {
-        background-color: #f6e9ca;
-      }
-    }
-    .footer {
-      display: flex;
-      flex-wrap: wrap;
-      cursor: pointer;
-      font-family: var(--font-roboto), sans-serif;
-      a {
-          font-size: 2vh;
-        width: 50%;
-        margin-top: 2vh;
-        color: #f6e9ca;
-        letter-spacing: 0.08vh;
-
-        &:hover {
-          color: #c69a72;
-        }
-      }
+    @media (max-width: 480px) {
+      font-size: 5.5vh;
     }
   }
+}
+
+.footer {
+  display: flex;
+  gap: 3vh;
+  padding-top: 4vh;
+  border-top: 1px solid #e5e5e5;
+
+  .footerlink {
+    font-size: 1.8vh;
+    font-weight: 400;
+    color: #111;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.45;
+    }
+  }
+}

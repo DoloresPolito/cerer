@@ -265,7 +265,7 @@ const newnews = [
     
       "Desde la Cámara de Energías Renovables de Entre Ríos celebramos la realización de estos espacios de capacitación e intercambio, que fortalecen el conocimiento técnico y fomentan el trabajo conjunto entre instituciones, profesionales y organismos públicos para continuar promoviendo un desarrollo energético responsable en la provincia."
     ],
-    image: "jornada.jpg",
+    image: "jornada2.jpg",
     location: "Entre Ríos",
     instagramUrl: "https://www.instagram.com/p/DaD9oZ2mEDy/?img_index=1",
   },

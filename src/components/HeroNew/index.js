@@ -2,10 +2,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import heroImage from "../../../public/images/newhero/fondopanel.png";
-import mobileImage from "../../../public/images/newhero/mobile1.png";
 
 const heroLines = [
   [["Cámara", 0.3], ["de", 0.42]],
@@ -14,14 +12,6 @@ const heroLines = [
 ];
 
 export default function HeroNew() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth <= 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
 
   return (
     <section className={styles.section}>
@@ -33,7 +23,7 @@ export default function HeroNew() {
           transition={{ duration: 2.4, ease: [0.33, 1, 0.68, 1] }}
         >
           <Image
-            src={isMobile ? mobileImage : heroImage}
+            src={heroImage}
             alt="Energías renovables en Entre Ríos"
             fill
             style={{ objectFit: "cover" }}

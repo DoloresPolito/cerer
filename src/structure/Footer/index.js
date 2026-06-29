@@ -31,7 +31,7 @@ export default function Footer() {
                 Facebook ↗
               </a>
               <a href="mailto:camaraerer@gmail.com">
-                Email ↗
+                Contacto ↗
               </a>
             </div>
           </div>

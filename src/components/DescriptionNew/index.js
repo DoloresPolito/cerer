@@ -4,9 +4,10 @@ import Link from "next/link";
 import styles from "./styles.module.scss";
 
 const stats = [
-  { number: "26", label: "Empresas asociadas" },
-  { number: "423", label: "Usuarios generadores" },
-  { number: "17MW", label: "Potencia instalada" },
+
+  { number: "496", label: "Usuarios generadores" },
+  { number: "19MW", label: "Potencia instalada" },
+  { number: "191", label: "Proyectos en trámite" }
 ];
 
 export default function DescriptionNew() {

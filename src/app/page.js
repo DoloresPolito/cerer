@@ -9,7 +9,7 @@ import ExtraSection from "@/home/ExtraSection";
 import Footer from "@/structure/Footer";
 import Benefits from "@/home/BenefitsSectionV2";
 import NewsHomeCar from "@/home/NewsHomeCar";
-import SitiosInteres from "@/home/SitiosInteres";
+import SitiosInteres from "@/home/SitiosInteresList";
 
 export default function Home() {
   useEffect(() => {

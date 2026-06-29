@@ -23,7 +23,7 @@ export const footerLinks = [
         href: "https://www.instagram.com/cerer.camara.energias.er/"
     },
     {
-        title: "Email",
+        title: "Contacto",
         href: "mailto:camaraerer@gmail.com"
     },
 ]

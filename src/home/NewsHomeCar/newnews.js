@@ -243,6 +243,32 @@ const newnews = [
     location: "Entre Ríos",
     instagramUrl: "https://www.instagram.com/p/DZ2lIwyEVvT/?img_index=1",
   },
+  {
+    id: 12,
+    type: "Noticia",
+    date: "2026-06-26",
+    title: "Jornada sobre Eficiencia Energética y Etiquetado de Viviendas",
+
+    subtitle:
+      "Profesionales, instituciones y especialistas participaron de un encuentro en Paraná para conocer los avances del etiquetado de eficiencia energética de viviendas y las iniciativas que impulsa la provincia en materia de construcción sostenible.",
+    
+    content: [
+      "En la ciudad de Paraná se llevó a cabo la Jornada sobre Eficiencia Energética y Avances del Etiquetado de Viviendas en Entre Ríos, un espacio de actualización técnica e intercambio que reunió a profesionales, especialistas, estudiantes e instituciones vinculadas al sector energético y de la construcción.",
+    
+      "La actividad fue organizada por el Colegio de Arquitectura y Urbanismo de Entre Ríos junto a la Fundación Erasus, y contó con la participación de autoridades de la Secretaría de Energía y referentes técnicos que compartieron los avances en materia de eficiencia energética, normativa vigente y políticas públicas orientadas a promover edificaciones con un mejor desempeño energético.",
+    
+      "Uno de los principales temas abordados fue la implementación de la Ley Provincial N.º 10.907, que establece el procedimiento para el etiquetado de eficiencia energética de viviendas en Entre Ríos. Esta herramienta permite clasificar los inmuebles según su comportamiento energético, brindando información sobre su nivel de eficiencia y fomentando construcciones más confortables, sostenibles y con un uso responsable de la energía.",
+    
+      "Durante la jornada también se destacó el interés generado por las futuras capacitaciones destinadas a la formación de certificadores de etiquetado energético de viviendas. Estas instancias permitirán fortalecer las capacidades técnicas de los profesionales y contribuirán a la implementación del sistema de etiquetado en toda la provincia.",
+    
+      "El desarrollo de este tipo de iniciativas representa un paso importante para impulsar la eficiencia energética en el sector de la construcción, reducir el consumo de energía y promover prácticas que acompañen la transición hacia una matriz energética más sostenible.",
+    
+      "Desde la Cámara de Energías Renovables de Entre Ríos celebramos la realización de estos espacios de capacitación e intercambio, que fortalecen el conocimiento técnico y fomentan el trabajo conjunto entre instituciones, profesionales y organismos públicos para continuar promoviendo un desarrollo energético responsable en la provincia."
+    ],
+    image: "jornada.jpg",
+    location: "Entre Ríos",
+    instagramUrl: "https://www.instagram.com/p/DaD9oZ2mEDy/?img_index=1",
+  },
 
   // ── AGREGAR NUEVAS NOTICIAS AQUÍ ABAJO ──
   // Copiá el bloque de arriba, actualizá id, date, title, etc.

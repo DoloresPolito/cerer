@@ -270,6 +270,60 @@ const newnews = [
     instagramUrl: "https://www.instagram.com/p/DaD9oZ2mEDy/?img_index=1",
   },
 
+  {
+    id: 13,
+    type: "Noticia",
+    date: "2026-07-19",
+    title: "Incrementos nacionales en las tarifas eléctricas",
+
+    subtitle:
+  "Las recientes actualizaciones del Mercado Eléctrico Mayorista impactarán en los costos de abastecimiento eléctrico de las industrias categorizadas como Grandes Usuarios de la Distribuidora (GUDI), impulsando la búsqueda de estrategias para optimizar el consumo y reducir costos.",
+
+content: [
+  "Las modificaciones implementadas a nivel nacional en el Mercado Eléctrico Mayorista generan cambios en las tarifas eléctricas que afectarán a las industrias encuadradas como Grandes Usuarios de la Distribuidora (GUDI), incrementando los costos de abastecimiento de energía para este segmento.",
+
+  "De acuerdo con el análisis publicado por Dos Florines, la programación estacional de invierno y la aplicación del Cargo Estabilizado GUDI constituyen los principales factores que explican el aumento en las facturas eléctricas de estas empresas.",
+
+  "Frente a este escenario, resulta fundamental que las industrias evalúen alternativas para optimizar sus costos energéticos y mejorar su competitividad. Entre las opciones analizadas se encuentran la incorporación de sistemas fotovoltaicos para autoconsumo, el ingreso al Mercado Eléctrico Mayorista bajo la categoría de Gran Usuario del Mercado Eléctrico (GUME) y otras modalidades de contratación del suministro eléctrico.",
+
+  "La gestión eficiente de la energía adquiere un rol cada vez más relevante para la planificación y el desarrollo de las actividades productivas, haciendo necesario analizar las herramientas disponibles que permitan reducir costos y aumentar la eficiencia de los procesos.",
+
+  "Desde la Cámara de Energías Renovables de Entre Ríos consideramos que este tipo de información resulta clave para que las empresas puedan anticiparse a los cambios del mercado eléctrico y evaluar soluciones que contribuyan a una gestión energética más eficiente y sostenible.",
+
+  "Para conocer el análisis completo sobre los incrementos tarifarios y las alternativas disponibles para las industrias GUDI, invitamos a leer la nota publicada por Dos Florines."
+],
+    image: "pi-parana.png",
+    location: "Entre Ríos",
+    instagramUrl: "https://www.instagram.com/cerer.camara.energias.er/p/Da8Ne6LkarE/",
+  },
+
+  {
+    id: 14,
+    type: "Noticia",
+    date: "2026-07-31",
+    title: "La energía solar continua sumando proyectos para el sector productivo",
+
+    subtitle:
+    "La Granja Avícola El Ombú, ubicada en El Solar, Entre Ríos, incorporó dos sistemas solares fotovoltaicos on-grid para abastecer parte de su demanda eléctrica, fortaleciendo el uso de energías renovables en el sector productivo.",
+  
+  content: [
+    "En la localidad de El Solar, Entre Ríos, se realizó la instalación de un nuevo sistema de generación solar fotovoltaica en la Granja Avícola El Ombú, incorporando energía renovable para abastecer parte de su demanda eléctrica.",
+  
+    "La obra comprende dos sistemas solares fotovoltaicos On-Grid de 50 kW cada uno, montados sobre los techos de los galpones productivos. En total, la instalación cuenta con 216 paneles solares bifaciales Jinko de 615 Wp, alcanzando una potencia instalada superior a 130 kWp.",
+  
+    "El sistema se completa con dos inversores Huawei On-Grid de 50 kW, habilitados para la inyección de excedentes de energía a la Cooperativa CELP, permitiendo aprovechar la generación renovable e integrarla a la red eléctrica.",
+  
+    "Este tipo de proyectos refleja el crecimiento de la generación distribuida aplicada al sector productivo y la incorporación de tecnologías que promueven un uso más eficiente de la energía, contribuyendo a reducir costos operativos y a mejorar la sostenibilidad de las actividades agroindustriales.",
+  
+    "Desde la Cámara de Energías Renovables de Entre Ríos celebramos la concreción de este tipo de iniciativas, que impulsan la adopción de energías renovables y demuestran el potencial de la generación distribuida para el desarrollo productivo de la provincia.",
+  
+    "La obra fue ejecutada por Amperio Energy, empresa asociada de la Cámara de Energías Renovables de Entre Ríos."
+  ],
+    image: "el-solar.png",
+    location: "Entre Ríos",
+    instagramUrl: "https://www.instagram.com/p/DbdODaaHEUo/?igsh=anI4OWp4cW9veHdy",
+  },
+
   // ── AGREGAR NUEVAS NOTICIAS AQUÍ ABAJO ──
   // Copiá el bloque de arriba, actualizá id, date, title, etc.
   // La más reciente siempre va al final y aparece primera en pantalla.

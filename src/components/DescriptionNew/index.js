@@ -5,9 +5,9 @@ import styles from "./styles.module.scss";
 
 const stats = [
 
-  { number: "496", label: "Usuarios generadores" },
-  { number: "19MW", label: "Potencia instalada" },
-  { number: "191", label: "Proyectos en trámite" }
+  { number: "542", label: "Usuarios generadores" },
+  { number: "21,18MW", label: "Potencia instalada" },
+  { number: "122", label: "Proyectos en trámite" }
 ];
 
 export default function DescriptionNew() {

@@ -351,6 +351,205 @@ const newnews = [
     location: "Entre Ríos",
     instagramUrl: "https://www.instagram.com/p/DbwaRgCmI3Z/?img_index=1",
   },
+
+
+
+  {
+    id: 16,
+    type: "Noticia",
+    date: "2026-08-15",
+    title:
+
+    "Nuevas oportunidades de inversión y desarrollo para Entre Ríos",
+  
+  subtitle:
+  
+    "Entre Ríos fue sede de una nueva edición de AHK On Tour, una iniciativa de la Cámara de Industria y Comercio Argentino-Alemana que reunió a empresas, autoridades y actores del sector productivo para generar oportunidades de inversión, cooperación e intercambio.",
+  
+  content: [
+  
+    "Durante las jornadas se abordaron distintos sectores estratégicos para la provincia, entre ellos la agroindustria, la bioeconomía, la economía circular, la industria y la transición energética.",
+  
+    "Uno de los proyectos destacados fue la presentación de Ñande Zukunft, iniciativa de Dosbio para desarrollar la primera planta de Bio-GNL de Entre Ríos, que contempla una inversión superior a USD 200 millones y financiamiento del Gobierno Federal de Alemania por EUR 190 millones.",
+  
+    "Este tipo de encuentros permite generar nuevos vínculos y acercar conocimiento, tecnología e inversión al entramado productivo entrerriano, abriendo oportunidades para el desarrollo de proyectos vinculados a la energía y a otros sectores estratégicos.",
+  
+    "La articulación entre empresas, instituciones y organismos públicos resulta fundamental para acompañar el crecimiento productivo y energético de Entre Ríos.",
+  
+  ],
+    image: "reunion1.png",
+    location: "Entre Ríos",
+    instagramUrl: "https://www.instagram.com/p/DcCPyEIGPbx/?img_index=1",
+  },
+
+  {
+    id: 17,
+    type: "Noticia",
+    date: "2026-08-29",
+
+    title:
+
+    "El parque solar del Autódromo de Paraná cubrió la demanda durante la final del TC",
+  
+  subtitle:
+  
+    "El Parque Solar Fotovoltaico de Enersa, ubicado en el Autódromo Ciudad de Paraná, alcanzó durante la final del Turismo Carretera una generación equivalente al 116,9% de la demanda eléctrica instantánea del predio. En ese momento, la producción solar superó el consumo y permitió inyectar el excedente a la red de distribución.",
+  
+  content: [
+  
+    "El registro se produjo alrededor de las 14 horas del domingo, durante una jornada de gran actividad y convocatoria.",
+  
+    "En el balance general del fin de semana, el parque fotovoltaico aportó el 58,8% de la energía consumida en el Autódromo. El sábado representó el 50% del consumo total de la jornada, mientras que el domingo alcanzó el 69,8%.",
+  
+    "La experiencia permite observar en un caso concreto el aporte de la generación distribuida: producir energía cerca del lugar donde se consume y, cuando la generación supera la demanda, incorporar el excedente a la red eléctrica.",
+  
+    "La instalación forma parte del programa de Recursos Energéticos Distribuidos (DER) de Enersa, orientado a incorporar generación en puntos estratégicos de la provincia y aprovechar la infraestructura eléctrica existente.",
+  
+    "Este tipo de experiencias permite seguir evaluando el aporte de las energías renovables y su integración al sistema eléctrico provincial, especialmente en escenarios de alta demanda.",
+  
+  ],
+
+    image: "autodromo.png",
+    location: "Entre Ríos",
+    instagramUrl: "https://www.instagram.com/p/DcmRzGLmEf8/?img_index=1",
+  },
+
+
+  {
+    id: 18,
+    type: "Noticia",
+    date: "2026-09-5",
+
+    title:
+
+    "Entre Ríos consolida el crecimiento de la generación distribuida",
+  
+  subtitle:
+  
+    "En menos de tres años, Entre Ríos pasó de contar con 3 usuarios generadores en diciembre de 2023 a 542 en julio de 2026, mostrando un crecimiento sostenido de la generación distribuida en la provincia.",
+  
+  content: [
+  
+    "En el mismo período, la participación de Entre Ríos en la potencia renovable distribuida a nivel nacional pasó del 0,8% al 12,8%. Estos datos forman parte de una reciente nota publicada por @serindustria, que recoge la mirada de la Ing. Manuela Canteros (@soymanucanteros), fundadora e integrante de la Comisión Directiva de CERER, sobre la evolución del sector y los desafíos que se presentan para continuar creciendo.",
+  
+    "Uno de los factores que acompañó este proceso fue la consolidación del marco regulatorio provincial. La Ley Nº 10.933, aprobada en 2021 y reglamentada a fines de 2023, estableció las condiciones para la incorporación formal de usuarios al esquema de generación distribuida.",
+  
+    "El crecimiento también encuentra hoy nuevos desafíos. Entre ellos, el acceso al financiamiento aparece como un aspecto central para facilitar nuevas inversiones. Si bien existe interés por parte de usuarios y sectores productivos, el desembolso inicial necesario para una instalación continúa siendo una limitación para muchos proyectos.",
+  
+    "Contar con alternativas de crédito e incentivos que acompañen la inversión puede contribuir a sostener este crecimiento y ampliar la participación de las energías renovables en la matriz energética provincial.",
+  
+    "La nota aborda además otros temas vinculados al presente y futuro del sector, como almacenamiento, infraestructura eléctrica, fabricación nacional y nuevas modalidades de comercialización de energía. Invitamos a leerla completa en https://www.serindustria.com.ar/entre-rios-dispara-la-generacion-solar-pero-el-credito-pone-un-freno-al-crecimiento/",
+  
+  ],
+
+    image: "distribuida.png",
+    location: "Entre Ríos",
+    instagramUrl: "https://www.instagram.com/p/Dc4cMD9GC4E/?img_index=1",
+  },
+
+  {
+    id: 19,
+    type: "Noticia",
+    date: "2026-09-12",
+
+    title:
+
+    "Energía renovable para autoconsumo industrial",
+  
+  subtitle:
+  
+    "La Provincia de Entre Ríos anunció un esquema de asistencia destinado a grandes usuarios industriales, ante el impacto de los incrementos extraordinarios registrados en el Mercado Eléctrico Mayorista (MEM).",
+  
+  content: [
+  
+    "La medida contempla alternativas de refinanciación y diferimiento de pagos, con el objetivo de brindar mayor previsibilidad a las empresas frente al aumento del componente energético de sus facturas.",
+  
+    "En este contexto, la gestión de la energía adquiere una importancia cada vez mayor dentro de los procesos productivos. Junto con las herramientas destinadas a atender la coyuntura, la generación renovable para autoconsumo representa una alternativa para reducir la energía demandada de la red y contribuir al ahorro energético de las industrias.",
+  
+    "Un ejemplo presentado durante la jornada fue el de Molinos Centro S.A., en el Parque Industrial de Villaguay, donde funciona una instalación solar fotovoltaica de 154,7 kWp. Según la información difundida, la energía generada representa aproximadamente el 39% del consumo total de la planta.",
+  
+    "La incorporación de generación renovable en establecimientos industriales permite producir parte de la energía en el mismo lugar donde se consume y, cuando existen excedentes, posibilita su inyección a la red.",
+  
+    "Frente a un escenario de mayores costos, analizar el consumo, mejorar la eficiencia y evaluar alternativas de generación renovable para autoconsumo son herramientas que pueden contribuir a una mejor gestión energética del sector productivo.",
+  
+    "Fuente: https://radiomegaentrerios.com.ar/2026/09/03/la-provincia-anuncio-un-plan-para-aliviar-el-costo-de-la-energia-a-las-industrias-entrerrianas/",
+  
+  ],
+
+    image: "industrial.png",
+    location: "Entre Ríos",
+    instagramUrl: "https://www.instagram.com/p/DdKO-7eGKeK/?img_index=1",
+  },
+
+
+  {
+    id: 20,
+    type: "Noticia",
+    date: "2026-09-19",
+
+    title:
+
+    "El Parque Solar Sauce Pinto cumplió su primer año de funcionamiento",
+  
+  subtitle:
+  
+    "La instalación, desarrollada por Enersa en el marco del programa GenER, produjo 505,14 MWh de energía renovable durante sus primeros 12 meses, un volumen equivalente al consumo eléctrico anual de aproximadamente 220 hogares entrerrianos.",
+  
+  content: [
+  
+    "Según los datos difundidos, la generación registrada superó en un 4,4 % las estimaciones previstas y permitió evitar alrededor de 219 toneladas de dióxido de carbono.",
+  
+    "Ubicado en Sauce Pinto y operativo desde septiembre de 2025, el parque cuenta con 540 paneles fotovoltaicos, 10 inversores y una potencia instalada de 310,5 kWp, con una potencia de salida de 300 kW.",
+  
+    "Además de la energía generada, los resultados de su primer año de funcionamiento reflejan el desempeño de la tecnología fotovoltaica en la red eléctrica provincial y se suman a los distintos proyectos solares que ya se encuentran operativos en Entre Ríos.",
+  
+    "La experiencia de Sauce Pinto se incorpora al crecimiento de la generación renovable que viene registrando nuestra provincia y reafirma el compromiso de seguir impulsando las energías renovables.",
+  
+  ],
+
+    image: "sauce2.png",
+    location: "Entre Ríos",
+    instagramUrl: "https://www.instagram.com/p/Ddcic9TmO1x/?stkn=bHd4dnhveXp4NHlz",
+  },
+
+
+  {
+    id: 21,
+    type: "Noticia",
+    date: "2026-09-26",
+
+    title:
+
+    "Enersa licita un sistema de almacenamiento con baterías para Federación",
+  
+  subtitle:
+  
+    "ENERSA abrió una licitación para incorporar un sistema de almacenamiento de energía mediante baterías, conocido como BESS, que será instalado en el Parque Industrial de Federación.",
+  
+  content: [
+  
+    "El sistema estará destinado a sostener los picos de demanda de la subestación Federación, especialmente durante el verano, y reemplazar la generación diésel que actualmente funciona como respaldo en el Parque Industrial.",
+  
+    "La solución será independiente, estará conectada a la red de 13,2 kV y deberá contar con una autonomía mínima de cuatro horas a potencia nominal. También podrá brindar servicios de regulación de tensión y frecuencia, responder ante perturbaciones y operar en isla o realizar un arranque en negro.",
+  
+    "Los sistemas BESS permiten almacenar energía y entregarla cuando el sistema lo requiere, aportando mayor flexibilidad y capacidad de respuesta a la red eléctrica.",
+  
+    "La incorporación de esta tecnología posiciona a Entre Ríos entre las provincias que comienzan a avanzar en la implementación de sistemas de almacenamiento BESS, una solución de reciente desarrollo en el país y con un papel cada vez más relevante en la modernización de los sistemas eléctricos.",
+  
+    "Su implementación en Federación permitirá sumar una herramienta de última generación para reforzar el abastecimiento eléctrico, mejorar la respuesta ante situaciones de alta demanda y acompañar el desarrollo de un sistema energético con mayor capacidad de integración de fuentes renovables.",
+  
+    "Podés leer la nota completa en el siguiente link: https://www.enersa.com.ar/enersa-incorporara-baterias-para-reforzar-el-servicio-electrico-en-federacion",
+  
+  ],
+
+    image: "federacion.png",
+    location: "Entre Ríos",
+    instagramUrl: "https://www.instagram.com/p/DdukNnwGHq5/?img_index=1",
+  },
+
+
+
+
   // ── AGREGAR NUEVAS NOTICIAS AQUÍ ABAJO ──
   // Copiá el bloque de arriba, actualizá id, date, title, etc.
   // La más reciente siempre va al final y aparece primera en pantalla.

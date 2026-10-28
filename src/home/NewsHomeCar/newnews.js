@@ -548,6 +548,70 @@ const newnews = [
   },
 
 
+  {
+    id: 22,
+    type: "Noticia",
+    date: "2026-10-17",
+
+    title: "CERER participó de la 3ª Jornada Internacional de Turismo",
+
+    subtitle:
+      "La Cámara de Energías Renovables de Entre Ríos participó del bloque “Turismo Promueve - Energías Sustentables y DTI”, realizado en la Facultad de Ciencias de la Administración de la UNER.",
+    
+    content: [
+    
+      "El 15 de octubre, CERER participó de la 3ª Jornada Internacional de Turismo, en un espacio de intercambio que reunió a referentes de Argentina, Uruguay y Chile para compartir experiencias y analizar herramientas vinculadas al turismo, la innovación, la sustentabilidad y la integración regional.",
+    
+      "Durante el bloque “Turismo Promueve - Energías Sustentables y DTI”, la Cámara abordó el aporte de las energías renovables al sector turístico y la importancia de incorporar la gestión energética en hoteles, alojamientos y otros establecimientos vinculados a la actividad.",
+    
+      "La eficiencia energética permite optimizar los consumos, mientras que la generación renovable ofrece herramientas para reducir la energía demandada de la red y avanzar hacia una gestión más sostenible.",
+    
+      "Además de su contribución ambiental, las energías renovables pueden convertirse en un activo estratégico para el turismo, mejorando la competitividad y la rentabilidad de los establecimientos, enriqueciendo la experiencia de los visitantes y promoviendo el desarrollo regional.",
+    
+      "Desde CERER valoramos estos espacios de intercambio que permiten acercar las energías renovables a distintos sectores y generar nuevas oportunidades para su incorporación en las actividades productivas y de servicios de nuestra provincia.",
+    
+      "Agradecemos a la Facultad de Ciencias de la Administración de la UNER, EMCONTUR y la Subsecretaría de Turismo de Concordia por la invitación y por generar este espacio de intercambio.",
+    
+      "Instagram: @emcontur @enersaarg @fcad.uner @cccconcordiaer @turismo.concordia @turismoer",
+    
+      "#CERER #EnergíasRenovables #EntreRíos #TurismoPromueve #Concordia",
+    
+    ],
+    image: "jornada.png",
+    location: "Entre Ríos",
+    instagramUrl: "https://www.instagram.com/p/DeklJi1GOar/?img_index=1",
+  },
+
+
+  {
+    id: 23,
+    type: "Perspectiva",
+    date: "2026-10-22",
+
+    title: "Día Mundial del Ahorro de Energía",
+
+    subtitle:
+      "El uso responsable de la energía es fundamental para el desarrollo sostenible y la optimización de los recursos disponibles.",
+    
+    content: [
+    
+      "Mejorar la eficiencia de los equipos, reducir consumos innecesarios y promover una gestión energética adecuada permite disminuir costos y aprovechar mejor la energía, tanto en hogares como en comercios e industrias.",
+    
+      "A estas medidas se suma la incorporación de fuentes renovables, que permiten avanzar hacia un modelo energético más sostenible y diversificado.",
+    
+      "La generación de energía para autoconsumo, especialmente en el sector productivo, representa una alternativa para cubrir parte de la demanda eléctrica con recursos propios y reducir los costos energéticos.",
+    
+      "Desde CERER promovemos una mirada integral que contemple el uso eficiente de la energía y el crecimiento de la generación renovable en Entre Ríos, impulsando prácticas que contribuyan a un desarrollo más sostenible.",
+    
+      "#CERER #DíaMundialDelAhorroDeEnergía #EficienciaEnergética #EnergíasRenovables #EntreRíos",
+    
+    ],
+    image: "ahorro.png",
+    location: "Entre Ríos",
+    instagramUrl: "https://www.instagram.com/p/DexXAzNGDy6/?img_index=1",
+  },
+
+
 
 
   // ── AGREGAR NUEVAS NOTICIAS AQUÍ ABAJO ──

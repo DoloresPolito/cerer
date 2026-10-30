@@ -611,7 +611,39 @@ const newnews = [
     instagramUrl: "https://www.instagram.com/p/DexXAzNGDy6/?img_index=1",
   },
 
+  {
+    id: 22,
+    type: "Noticia",
+    date: "2026-10-30",
 
+    title: "Entre Ríos impulsa la construcción con madera",
+
+    subtitle:
+      "En el marco del 3.º Workshop ExpoMadera Entre Ríos, se firmó un Convenio Marco de Cooperación Institucional para promover el uso de la madera en la construcción de viviendas y obras públicas provinciales.",
+    
+    content: [
+    
+      "El Instituto Autárquico de Planeamiento y Vivienda (IAPV), la Federación Argentina de la Industria de la Madera y Afines (FAIMA) y la Cámara de Industriales Madereros y Forestales de Entre Ríos y Sur de Corrientes (IMFER) firmaron un acuerdo para impulsar la incorporación de la madera en el desarrollo de viviendas y obras públicas en la provincia.",
+    
+      "El convenio establece una agenda de trabajo conjunta orientada a incorporar progresivamente sistemas constructivos industrializados con madera en las políticas habitacionales de Entre Ríos, aprovechando el potencial productivo de la cadena forestoindustrial regional.",
+    
+      "Entre las principales líneas de cooperación se encuentran la asistencia técnica, la capacitación de profesionales y trabajadores, la investigación de nuevas tecnologías, la normalización de productos y el desarrollo y validación de prototipos de viviendas de madera para su aplicación en la obra pública provincial.",
+    
+      "Durante el encuentro también se abordaron distintas soluciones y tecnologías constructivas, como Wood Frame, construcción modular, estructuras de madera, aislaciones y eficiencia energética, junto con nuevas aplicaciones de la madera en la arquitectura y la construcción.",
+    
+      "Estas iniciativas buscan fortalecer la innovación y la calidad constructiva, promover soluciones habitacionales sostenibles y generar nuevas oportunidades para el crecimiento de la industria maderera entrerriana.",
+    
+      "Desde CERER acompañamos institucionalmente esta iniciativa, que promueve la incorporación de criterios de sustentabilidad y eficiencia energética en el desarrollo de nuevos sistemas constructivos, fortaleciendo el vínculo entre la industria, la innovación y el desarrollo regional.",
+    
+      "Instagram: @faimaargentina @casadeentrerios @iapventrerios.oficial @camaraimfer",
+    
+      "#CERER #EntreRíos #ExpoMadera #ConstrucciónSostenible #ForestoIndustria",
+    
+    ],
+    image: "maderaa.png",
+    location: "Entre Ríos",
+    instagramUrl: "https://www.instagram.com/p/DfIljNSGBad/?img_index=1",
+  },
 
 
   // ── AGREGAR NUEVAS NOTICIAS AQUÍ ABAJO ──
